@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "jzshazi",
-    "texture": "58ef61e2-1e20-4a0f-a8e0-11e2d4912d44",
+    "name": "room_num",
+    "texture": "8d3c0868-c371-44bb-a1ef-95f7b0c5296a",
     "atlas": "",
     "rect": [
-      2,
       0,
-      36,
-      37
+      0,
+      264,
+      29
     ],
     "offset": [
-      0,
-      0.5
+      -18,
+      5.5
     ],
     "originalSize": [
-      40,
-      38
+      300,
+      40
     ]
   }
 }

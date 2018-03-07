@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "jzshazi",
-    "texture": "58ef61e2-1e20-4a0f-a8e0-11e2d4912d44",
+    "name": "buy",
+    "texture": "c02c4076-8257-49d8-a7a2-ff24fb1f7d9b",
     "atlas": "",
     "rect": [
-      2,
       0,
-      36,
-      37
+      0,
+      48,
+      50
     ],
     "offset": [
       0,
-      0.5
+      0
     ],
     "originalSize": [
-      40,
-      38
+      48,
+      50
     ]
   }
 }

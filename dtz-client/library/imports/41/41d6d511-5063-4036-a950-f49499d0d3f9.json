@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "jzshazi",
-    "texture": "58ef61e2-1e20-4a0f-a8e0-11e2d4912d44",
+    "name": "diamond_bg",
+    "texture": "299ff269-e068-4ec7-b408-ebc63d5ed9f5",
     "atlas": "",
     "rect": [
-      2,
       0,
-      36,
-      37
+      0,
+      260,
+      52
     ],
     "offset": [
       0,
-      0.5
+      3.5
     ],
     "originalSize": [
-      40,
-      38
+      260,
+      59
     ]
   }
 }
