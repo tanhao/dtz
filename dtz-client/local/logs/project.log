@@ -1,0 +1,54 @@
+2018-03-07T14:09:57.361Z - normal: Load ~/.CocosCreator/settings.json
+2018-03-07T14:09:57.366Z - normal: checking language setting...
+2018-03-07T14:09:57.366Z - normal: Language: zh
+2018-03-07T14:09:59.578Z - success: protocol editor-framework registered
+2018-03-07T14:09:59.578Z - success: protocol app registered
+2018-03-07T14:09:59.578Z - success: protocol theme registered
+2018-03-07T14:09:59.578Z - success: protocol packages registered
+2018-03-07T14:09:59.578Z - success: protocol unpack registerred
+2018-03-07T14:09:59.579Z - success: protocol disable-commonjs registerred
+2018-03-07T14:09:59.848Z - normal: connected!
+2018-03-07T14:09:59.851Z - normal: Check project D:\Workspaces_Chess\symj\client
+2018-03-07T14:09:59.854Z - normal: Initializing Cocos2d
+2018-03-07T14:10:00.174Z - normal: Initializing Asset Database
+2018-03-07T14:10:00.226Z - success: protocol uuid registerred
+2018-03-07T14:10:00.226Z - success: protocol db registerred
+2018-03-07T14:10:00.226Z - success: protocol thumbnail registerred
+2018-03-07T14:10:00.227Z - normal: Loading editor/builtin packages
+2018-03-07T14:10:00.257Z - success: anysdk loaded
+2018-03-07T14:10:00.409Z - success: assets loaded
+2018-03-07T14:10:00.412Z - success: builder loaded
+2018-03-07T14:10:00.415Z - success: cocos-analytics loaded
+2018-03-07T14:10:00.419Z - success: console loaded
+2018-03-07T14:10:00.423Z - success: hierarchy loaded
+2018-03-07T14:10:00.427Z - success: inspector loaded
+2018-03-07T14:10:00.429Z - success: keystore loaded
+2018-03-07T14:10:00.432Z - success: node-library loaded
+2018-03-07T14:10:00.435Z - success: package-asset loaded
+2018-03-07T14:10:00.438Z - success: preferences loaded
+2018-03-07T14:10:00.440Z - success: project-exporter loaded
+2018-03-07T14:10:00.461Z - success: project-importer loaded
+2018-03-07T14:10:00.464Z - success: project-settings loaded
+2018-03-07T14:10:00.466Z - success: ui-kit loaded
+2018-03-07T14:10:00.468Z - success: ui-grid loaded
+2018-03-07T14:10:00.472Z - success: scene loaded
+2018-03-07T14:10:00.473Z - success: sprite-editor loaded
+2018-03-07T14:10:00.477Z - success: store loaded
+2018-03-07T14:10:00.482Z - success: timeline loaded
+2018-03-07T14:10:00.482Z - normal: Loading builtin packages
+2018-03-07T14:10:00.485Z - success: asset-db-debugger loaded
+2018-03-07T14:10:00.486Z - success: code-editor loaded
+2018-03-07T14:10:00.487Z - success: color-picker loaded
+2018-03-07T14:10:00.489Z - success: package-manager loaded
+2018-03-07T14:10:00.494Z - success: sdkbox loaded
+2018-03-07T14:10:00.498Z - success: tester loaded
+2018-03-07T14:10:00.500Z - success: ui-kit-preview-extra loaded
+2018-03-07T14:10:00.501Z - success: ui-kit-preview loaded
+2018-03-07T14:10:00.503Z - success: ui-tree loaded
+2018-03-07T14:10:01.933Z - normal: Initializing project D:\Workspaces_Chess\symj\client
+2018-03-07T14:10:01.936Z - normal: Loading packages
+2018-03-07T14:10:01.941Z - normal: Watching packages
+2018-03-07T14:10:01.956Z - normal: Run Application
+2018-03-07T14:10:03.302Z - success: preview server running at http://localhost:7456
+2018-03-07T14:10:13.091Z - normal: 1.8.1
+2018-03-07T14:10:30.816Z - info: shutdown preview server

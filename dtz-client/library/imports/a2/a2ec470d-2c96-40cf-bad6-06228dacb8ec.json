@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "paomadengbeijing",
+    "texture": "2d6c6136-dbde-4ade-9944-19f22455a386",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      715,
+      36
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      716,
+      36
+    ]
+  }
+}
