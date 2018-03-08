@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "bg_marquee",
-    "texture": "2d6c6136-dbde-4ade-9944-19f22455a386",
+    "name": "join_room",
+    "texture": "dc7d045b-4714-4285-a6b0-668e33aa11f0",
     "atlas": "",
     "rect": [
-      1,
-      0,
-      715,
-      36
+      2,
+      2,
+      954,
+      1123
     ],
     "offset": [
-      0.5,
+      0,
       0
     ],
     "originalSize": [
-      716,
-      36
+      958,
+      1127
     ]
   }
 }

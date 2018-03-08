@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "bg_marquee",
-    "texture": "2d6c6136-dbde-4ade-9944-19f22455a386",
+    "name": "setting",
+    "texture": "222d611e-d6a4-44f5-a3d8-c18d93c6cbfa",
     "atlas": "",
     "rect": [
-      1,
-      0,
-      715,
-      36
+      2,
+      2,
+      944,
+      480
     ],
     "offset": [
-      0.5,
+      0,
       0
     ],
     "originalSize": [
-      716,
-      36
+      948,
+      484
     ]
   }
 }
