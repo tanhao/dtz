@@ -335,13 +335,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>JoinRoom.png</string>
+            <string>join_room.png</string>
             <key>size</key>
             <string>{958,1127}</string>
             <key>smartupdate</key>
             <string>$TexturePacker:SmartUpdate:bf98b9912b8fcb909d74e2ef5b8d94ea:1/1$</string>
             <key>textureFileName</key>
-            <string>JoinRoom.png</string>
+            <string>join_room.png</string>
         </dict>
     </dict>
 </plist>
