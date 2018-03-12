@@ -1,0 +1,353 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "poker.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "newcard-back": {
+      "__uuid__": "ec18d0bd-3ed3-4450-ae0a-b0eadfd33951"
+    },
+    "newcard-clubs_10": {
+      "__uuid__": "806f9e80-0df2-42b0-a1c5-9be0087dcd66"
+    },
+    "newcard-clubs_11": {
+      "__uuid__": "c31a28cb-5192-4751-b597-8a20852fee46"
+    },
+    "newcard-clubs_12": {
+      "__uuid__": "d01a4ad1-d950-4f67-8cbd-d44bc10e5217"
+    },
+    "newcard-clubs_13": {
+      "__uuid__": "441a7eb4-f839-4a71-83b4-cb12e7a69492"
+    },
+    "newcard-clubs_14": {
+      "__uuid__": "8757ad8f-cfd5-4039-b081-1037eebdaac7"
+    },
+    "newcard-clubs_15": {
+      "__uuid__": "1bb6288e-a4d9-47f2-af15-926be9193e94"
+    },
+    "newcard-clubs_3": {
+      "__uuid__": "35a9f39e-d50f-477d-9020-4ed6da267dc9"
+    },
+    "newcard-clubs_4": {
+      "__uuid__": "976e5261-8f5e-499d-b15e-12d66aa7cf13"
+    },
+    "newcard-clubs_5": {
+      "__uuid__": "4bf413e1-3407-4cac-bbbe-fc7eb674fc24"
+    },
+    "newcard-clubs_6": {
+      "__uuid__": "4e432894-150f-45dd-99a1-9453be1b7a27"
+    },
+    "newcard-clubs_7": {
+      "__uuid__": "fac05c50-9126-4a2e-8cc9-68bf79e906ab"
+    },
+    "newcard-clubs_8": {
+      "__uuid__": "294e8c1e-fdfb-402d-a97f-72395202baf5"
+    },
+    "newcard-clubs_9": {
+      "__uuid__": "b48a8d12-a9fa-4ffa-8aeb-d1f0fb9ac611"
+    },
+    "newcard-diamonds_10": {
+      "__uuid__": "df49a137-ff3c-4187-969b-c3f0c091203a"
+    },
+    "newcard-diamonds_11": {
+      "__uuid__": "84f37e9e-8674-4049-98b8-7e0f004024ca"
+    },
+    "newcard-diamonds_12": {
+      "__uuid__": "f830ba17-fbcd-4755-a624-27e49d281f6d"
+    },
+    "newcard-diamonds_13": {
+      "__uuid__": "55040d9f-e8e9-4211-9fee-af535b5590b0"
+    },
+    "newcard-diamonds_14": {
+      "__uuid__": "e75b0be3-4723-49f1-839b-95ec4b30ab6d"
+    },
+    "newcard-diamonds_15": {
+      "__uuid__": "0ff0de0d-0f80-48ba-bc9a-8a7899af67c4"
+    },
+    "newcard-diamonds_3": {
+      "__uuid__": "d29da110-5eba-4f5d-be88-45db15a73a16"
+    },
+    "newcard-diamonds_4": {
+      "__uuid__": "f91ffda0-301c-4688-9055-55250e094ad3"
+    },
+    "newcard-diamonds_5": {
+      "__uuid__": "93873c05-bb35-4982-bc85-68cdbb9a0ba6"
+    },
+    "newcard-diamonds_6": {
+      "__uuid__": "02af545d-a314-454b-9a78-a72625aa1804"
+    },
+    "newcard-diamonds_7": {
+      "__uuid__": "64fbf1fb-5eb4-47e1-8251-591d4c5de2f9"
+    },
+    "newcard-diamonds_8": {
+      "__uuid__": "5637a778-97ec-448d-a4c8-2c138e98a503"
+    },
+    "newcard-diamonds_9": {
+      "__uuid__": "28982495-1097-4b50-80a8-9fda9e996e27"
+    },
+    "newcard-flower": {
+      "__uuid__": "862069a7-5a3a-40e6-8649-3647d190cf7e"
+    },
+    "newcard-hearts_10": {
+      "__uuid__": "5aec9429-1b11-49b2-b98e-296426788696"
+    },
+    "newcard-hearts_11": {
+      "__uuid__": "a9cc6a20-d83c-4070-861c-2c41bb7e22e3"
+    },
+    "newcard-hearts_12": {
+      "__uuid__": "8e5fd2c3-a9f3-4d33-a292-93b77bf29cd2"
+    },
+    "newcard-hearts_13": {
+      "__uuid__": "f9e05ecd-865e-4f9e-a3fc-fe9d43bcbc16"
+    },
+    "newcard-hearts_14": {
+      "__uuid__": "ab0bb890-7e48-4384-8a4a-d038a929f43b"
+    },
+    "newcard-hearts_15": {
+      "__uuid__": "1e3de90d-34f1-4548-834c-a440aae10677"
+    },
+    "newcard-hearts_3": {
+      "__uuid__": "acff157c-46db-49db-ba4a-3baf40bfe9e6"
+    },
+    "newcard-hearts_4": {
+      "__uuid__": "0d993a90-1a1f-4466-bd33-0c811a5ca9ad"
+    },
+    "newcard-hearts_5": {
+      "__uuid__": "02435a07-42d3-493f-9397-a5c82dea7791"
+    },
+    "newcard-hearts_6": {
+      "__uuid__": "19afb417-31b0-41b2-ab20-48021971a5f5"
+    },
+    "newcard-hearts_7": {
+      "__uuid__": "eabe3779-de27-4a6f-b35b-13a9d669d62c"
+    },
+    "newcard-hearts_8": {
+      "__uuid__": "53850485-44a4-4f52-a02a-20e8fbd619dc"
+    },
+    "newcard-hearts_9": {
+      "__uuid__": "ca64ed15-f28e-40bd-95ed-6a32677ce6a3"
+    },
+    "newcard-jx_back": {
+      "__uuid__": "101f6464-c6da-4da8-a2d2-4006224f5cc4"
+    },
+    "newcard-jx_clubs_10": {
+      "__uuid__": "2cc06a74-fc87-4f1f-b338-7bf8566acc19"
+    },
+    "newcard-jx_clubs_11": {
+      "__uuid__": "174ad2dd-1a25-4d5b-a2d9-2db22b529f53"
+    },
+    "newcard-jx_clubs_12": {
+      "__uuid__": "7f51138d-d69f-4cee-b0a7-a0a7beb013a8"
+    },
+    "newcard-jx_clubs_13": {
+      "__uuid__": "5b6e1ee8-7bee-4682-be9a-0ee99d5295a6"
+    },
+    "newcard-jx_clubs_14": {
+      "__uuid__": "a14a8d57-240d-4800-a89d-6a8686ff8627"
+    },
+    "newcard-jx_clubs_15": {
+      "__uuid__": "ba1c1594-67e5-4202-a658-b279b102ce0f"
+    },
+    "newcard-jx_clubs_3": {
+      "__uuid__": "d107296e-4587-4461-abb7-c85a9547b9f1"
+    },
+    "newcard-jx_clubs_4": {
+      "__uuid__": "7f52e983-baea-4928-944e-1b825aae1631"
+    },
+    "newcard-jx_clubs_5": {
+      "__uuid__": "f8d5e5f4-0e34-4c08-ad5f-fe082e11c14b"
+    },
+    "newcard-jx_clubs_6": {
+      "__uuid__": "36dcbd49-7fa0-4aea-8392-e5baf0cf4c0c"
+    },
+    "newcard-jx_clubs_7": {
+      "__uuid__": "233346a2-1067-4c67-ae6d-25d3bf49e4be"
+    },
+    "newcard-jx_clubs_8": {
+      "__uuid__": "628ee59e-0943-4a98-843b-f8f97bd0a9e6"
+    },
+    "newcard-jx_clubs_9": {
+      "__uuid__": "5a26367d-762e-447f-a423-b29f87c23c82"
+    },
+    "newcard-jx_diamonds_10": {
+      "__uuid__": "226e4530-499e-4139-9723-912f4b23dda9"
+    },
+    "newcard-jx_diamonds_11": {
+      "__uuid__": "d776f39b-ca5b-494c-a6f1-dd48aeb3ca10"
+    },
+    "newcard-jx_diamonds_12": {
+      "__uuid__": "2b716597-6014-4d26-8da4-0ecf7f69a5a3"
+    },
+    "newcard-jx_diamonds_13": {
+      "__uuid__": "813e9482-38d2-4116-a454-f104b5e98a4e"
+    },
+    "newcard-jx_diamonds_14": {
+      "__uuid__": "3c33bd8c-5654-469a-9a20-f005641df6d2"
+    },
+    "newcard-jx_diamonds_15": {
+      "__uuid__": "1f59967d-7126-4c55-9d4e-544feb6a8ab3"
+    },
+    "newcard-jx_diamonds_3": {
+      "__uuid__": "abbf3bc5-a6c0-4892-9be5-0793bab29acf"
+    },
+    "newcard-jx_diamonds_4": {
+      "__uuid__": "b679468b-8ee5-486b-89f2-289512c83668"
+    },
+    "newcard-jx_diamonds_5": {
+      "__uuid__": "beb5f8d1-3f94-4e6f-b0e2-e84546012b68"
+    },
+    "newcard-jx_diamonds_6": {
+      "__uuid__": "419ab53c-c19a-4c10-bbb8-00b75cea1cba"
+    },
+    "newcard-jx_diamonds_7": {
+      "__uuid__": "529675d5-577a-414c-a3c2-b8f0353c4b4c"
+    },
+    "newcard-jx_diamonds_8": {
+      "__uuid__": "a1a664d8-09d7-4f1a-a41a-20831568cd9d"
+    },
+    "newcard-jx_diamonds_9": {
+      "__uuid__": "ad40b302-088d-41c3-9ad6-ae3108d36849"
+    },
+    "newcard-jx_flower": {
+      "__uuid__": "6e55e7a3-ff91-401c-a01c-52cc21221abe"
+    },
+    "newcard-jx_hearts_10": {
+      "__uuid__": "b3b45238-814a-4cc2-816f-f2a668e7c0b9"
+    },
+    "newcard-jx_hearts_11": {
+      "__uuid__": "8dbd1ed7-99ad-458e-8905-9c1e8973d0f4"
+    },
+    "newcard-jx_hearts_12": {
+      "__uuid__": "efabaed1-c48d-475a-86bc-e08a151112a7"
+    },
+    "newcard-jx_hearts_13": {
+      "__uuid__": "d38a36c0-e0df-49af-8af7-3e4852637741"
+    },
+    "newcard-jx_hearts_14": {
+      "__uuid__": "97b39107-0b49-48ef-8ced-50c52d922e57"
+    },
+    "newcard-jx_hearts_15": {
+      "__uuid__": "b58f2411-d9b6-40d6-a57f-593081728780"
+    },
+    "newcard-jx_hearts_3": {
+      "__uuid__": "eab319fb-4ec3-4f86-8b1c-4e3d463fa6b1"
+    },
+    "newcard-jx_hearts_4": {
+      "__uuid__": "532bdf1d-b542-4654-b0f2-771c47379565"
+    },
+    "newcard-jx_hearts_5": {
+      "__uuid__": "8a2dec61-f8c1-4231-811c-296c2410346d"
+    },
+    "newcard-jx_hearts_6": {
+      "__uuid__": "cd481e07-8bd2-4ec8-b349-e72a5c9b9351"
+    },
+    "newcard-jx_hearts_7": {
+      "__uuid__": "be6bfb6d-6454-424f-9bcc-fedc389fcadb"
+    },
+    "newcard-jx_hearts_8": {
+      "__uuid__": "5dccb052-5fec-4e02-a8c5-4f47a90a9cd9"
+    },
+    "newcard-jx_hearts_9": {
+      "__uuid__": "2b07c917-9e6b-4e5b-975b-b0f79b681a97"
+    },
+    "newcard-jx_king_1": {
+      "__uuid__": "070d1da9-0a9c-42dc-b250-b423d489dbdd"
+    },
+    "newcard-jx_king_2": {
+      "__uuid__": "851153e5-64ec-4bac-986d-087257e78306"
+    },
+    "newcard-jx_spades_10": {
+      "__uuid__": "d5c2c25c-60c8-4cb2-804e-6949f485a347"
+    },
+    "newcard-jx_spades_11": {
+      "__uuid__": "05a5aebd-b459-4a74-8bf7-3ee31c32ff9f"
+    },
+    "newcard-jx_spades_12": {
+      "__uuid__": "765fa080-1c82-4d8e-96f6-ab64132885b5"
+    },
+    "newcard-jx_spades_13": {
+      "__uuid__": "851f054b-c17a-44ed-9378-bc98f38cfc74"
+    },
+    "newcard-jx_spades_14": {
+      "__uuid__": "1daa9468-2d0c-46b0-bd22-4e6c9185bb24"
+    },
+    "newcard-jx_spades_15": {
+      "__uuid__": "41754e8b-f11d-4f50-b707-f30d853cbc6b"
+    },
+    "newcard-jx_spades_3": {
+      "__uuid__": "fa065d87-4428-4619-8708-0321839412b3"
+    },
+    "newcard-jx_spades_4": {
+      "__uuid__": "cd38b9c0-41c1-467f-9207-1cdf732ed529"
+    },
+    "newcard-jx_spades_5": {
+      "__uuid__": "0d44b22a-df47-4939-8b9f-3c81445406ea"
+    },
+    "newcard-jx_spades_6": {
+      "__uuid__": "1097234e-41eb-4ec3-ba52-9f078f427310"
+    },
+    "newcard-jx_spades_7": {
+      "__uuid__": "bdb124c9-a776-45a3-b116-520192942cd5"
+    },
+    "newcard-jx_spades_8": {
+      "__uuid__": "7738b7ba-e292-4b5c-bb2b-9786976e2b72"
+    },
+    "newcard-jx_spades_9": {
+      "__uuid__": "ec03f750-dcbc-4ceb-a34e-5d1da89cd70a"
+    },
+    "newcard-king_1": {
+      "__uuid__": "87b89c6f-ce24-45cb-9ee8-d7e6349e3a21"
+    },
+    "newcard-king_2": {
+      "__uuid__": "d31fd0ee-486b-46ca-aadf-dcfb55815135"
+    },
+    "newcard-label": {
+      "__uuid__": "0135311d-6570-4e49-b046-2f262c9b6821"
+    },
+    "newcard-spades_10": {
+      "__uuid__": "00a21f59-e91d-4f35-becb-ef3ca3e05706"
+    },
+    "newcard-spades_11": {
+      "__uuid__": "3bfa0aa1-aa1f-443d-ab35-1715f98f6e28"
+    },
+    "newcard-spades_12": {
+      "__uuid__": "99a06ca7-0cbc-497c-902e-0e7ec2ae82e5"
+    },
+    "newcard-spades_13": {
+      "__uuid__": "02bd71e6-30bd-48bd-a8e2-2336fd589d80"
+    },
+    "newcard-spades_14": {
+      "__uuid__": "29630efb-85c8-4931-9db4-1f8c469f4eec"
+    },
+    "newcard-spades_15": {
+      "__uuid__": "8007186d-23dc-497e-adf1-0886f3e31c3b"
+    },
+    "newcard-spades_3": {
+      "__uuid__": "2d52a7b3-5f42-4319-9fd0-93fb526d0fd9"
+    },
+    "newcard-spades_4": {
+      "__uuid__": "de02c5f3-e039-4c16-864d-7bb20695e772"
+    },
+    "newcard-spades_5": {
+      "__uuid__": "3a461e91-af1c-44f2-9c47-a596468cdf53"
+    },
+    "newcard-spades_6": {
+      "__uuid__": "1fea1a42-076d-4d50-bdf9-074e5f7b86b9"
+    },
+    "newcard-spades_7": {
+      "__uuid__": "71d936b4-4fc2-4611-9a9b-135e1f84ceba"
+    },
+    "newcard-spades_8": {
+      "__uuid__": "0a720c09-a0da-40b5-8fb2-9d57563c62ed"
+    },
+    "newcard-spades_9": {
+      "__uuid__": "02555cc6-e9b6-48ae-81af-3afc1296a5a9"
+    },
+    "newcard-label_flower": {
+      "__uuid__": "c8ed44a6-e7e3-4ee2-9060-22fc5dc5cbd2"
+    },
+    "newcard-label_Light": {
+      "__uuid__": "c215dd0b-d644-4993-9c6e-6fadd8e20134"
+    }
+  }
+}
