@@ -1,15 +1,17 @@
 {
   "ver": "1.2.4",
   "uuid": "407fda1e-53fd-40e6-a055-f6f8bf8d6be2",
+  "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
   "size": {
     "width": 1136,
     "height": 2020
   },
   "type": "Texture Packer",
   "subMetas": {
-    "newcard-back.png": {
+    "back.png": {
       "ver": "1.0.3",
-      "uuid": "ec18d0bd-3ed3-4450-ae0a-b0eadfd33951",
+      "uuid": "36669244-265d-4348-83f3-9bcc4ab9bee8",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -28,9 +30,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_10.png": {
+    "clubs_10.png": {
       "ver": "1.0.3",
-      "uuid": "806f9e80-0df2-42b0-a1c5-9be0087dcd66",
+      "uuid": "48b7662d-c0b2-4591-8722-ea99cbc424ae",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -49,9 +52,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_11.png": {
+    "clubs_11.png": {
       "ver": "1.0.3",
-      "uuid": "c31a28cb-5192-4751-b597-8a20852fee46",
+      "uuid": "c274c5c4-2301-49d8-8c23-94bcf93e7f3f",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -70,9 +74,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_12.png": {
+    "clubs_12.png": {
       "ver": "1.0.3",
-      "uuid": "d01a4ad1-d950-4f67-8cbd-d44bc10e5217",
+      "uuid": "0d17f4e2-6882-4692-8d9f-8942270251a3",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -91,9 +96,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_13.png": {
+    "clubs_13.png": {
       "ver": "1.0.3",
-      "uuid": "441a7eb4-f839-4a71-83b4-cb12e7a69492",
+      "uuid": "e0759481-668d-4c49-9784-bf0010c7392e",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -112,9 +118,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_14.png": {
+    "clubs_14.png": {
       "ver": "1.0.3",
-      "uuid": "8757ad8f-cfd5-4039-b081-1037eebdaac7",
+      "uuid": "eeada70b-3427-43b2-947c-f642f8b01864",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -133,9 +140,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_15.png": {
+    "clubs_15.png": {
       "ver": "1.0.3",
-      "uuid": "1bb6288e-a4d9-47f2-af15-926be9193e94",
+      "uuid": "98d7771a-b3d5-48c5-9463-433d339e8a15",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -154,9 +162,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_3.png": {
+    "clubs_3.png": {
       "ver": "1.0.3",
-      "uuid": "35a9f39e-d50f-477d-9020-4ed6da267dc9",
+      "uuid": "43425a28-f3af-4a36-8187-8a75a973551a",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -175,9 +184,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_4.png": {
+    "clubs_4.png": {
       "ver": "1.0.3",
-      "uuid": "976e5261-8f5e-499d-b15e-12d66aa7cf13",
+      "uuid": "486e93a8-1526-4857-875d-19c96d6cf0bc",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -196,9 +206,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_5.png": {
+    "clubs_5.png": {
       "ver": "1.0.3",
-      "uuid": "4bf413e1-3407-4cac-bbbe-fc7eb674fc24",
+      "uuid": "5cedd8cd-eede-4ffe-bc55-bb6500790854",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -217,9 +228,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_6.png": {
+    "clubs_6.png": {
       "ver": "1.0.3",
-      "uuid": "4e432894-150f-45dd-99a1-9453be1b7a27",
+      "uuid": "1edc90ad-dc90-4dcc-8ac9-07df58bf441a",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -238,9 +250,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_7.png": {
+    "clubs_7.png": {
       "ver": "1.0.3",
-      "uuid": "fac05c50-9126-4a2e-8cc9-68bf79e906ab",
+      "uuid": "8f6126a4-6b01-4876-8cb1-c8852e4fd54d",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -259,9 +272,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_8.png": {
+    "clubs_8.png": {
       "ver": "1.0.3",
-      "uuid": "294e8c1e-fdfb-402d-a97f-72395202baf5",
+      "uuid": "fd131ba5-d54d-4eca-a5e1-0e73c9d2cc07",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -280,9 +294,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-clubs_9.png": {
+    "clubs_9.png": {
       "ver": "1.0.3",
-      "uuid": "b48a8d12-a9fa-4ffa-8aeb-d1f0fb9ac611",
+      "uuid": "9115f555-10a3-4887-9fea-fc59a9f17a52",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -301,9 +316,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_10.png": {
+    "diamonds_10.png": {
       "ver": "1.0.3",
-      "uuid": "df49a137-ff3c-4187-969b-c3f0c091203a",
+      "uuid": "13eba993-0409-4008-8ecc-7f2d939e6081",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -322,9 +338,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_11.png": {
+    "diamonds_11.png": {
       "ver": "1.0.3",
-      "uuid": "84f37e9e-8674-4049-98b8-7e0f004024ca",
+      "uuid": "9e5678b2-4be4-45e0-935f-fdcb6dab579b",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -343,9 +360,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_12.png": {
+    "diamonds_12.png": {
       "ver": "1.0.3",
-      "uuid": "f830ba17-fbcd-4755-a624-27e49d281f6d",
+      "uuid": "a7db6d28-06da-4deb-8b43-d7f1caa80ec7",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -364,9 +382,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_13.png": {
+    "diamonds_13.png": {
       "ver": "1.0.3",
-      "uuid": "55040d9f-e8e9-4211-9fee-af535b5590b0",
+      "uuid": "7af699f9-d1e7-4f44-8bc5-dcb66631769d",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -385,9 +404,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_14.png": {
+    "diamonds_14.png": {
       "ver": "1.0.3",
-      "uuid": "e75b0be3-4723-49f1-839b-95ec4b30ab6d",
+      "uuid": "b9c6e404-da7c-4431-9383-59ae213776d8",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -406,9 +426,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_15.png": {
+    "diamonds_15.png": {
       "ver": "1.0.3",
-      "uuid": "0ff0de0d-0f80-48ba-bc9a-8a7899af67c4",
+      "uuid": "3bf6e0b7-7f49-43c0-9f3c-67c97a7079b3",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -427,9 +448,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_3.png": {
+    "diamonds_3.png": {
       "ver": "1.0.3",
-      "uuid": "d29da110-5eba-4f5d-be88-45db15a73a16",
+      "uuid": "3f09c5df-52f0-4a1c-a175-2b70737c8c65",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -448,9 +470,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_4.png": {
+    "diamonds_4.png": {
       "ver": "1.0.3",
-      "uuid": "f91ffda0-301c-4688-9055-55250e094ad3",
+      "uuid": "02517082-3d81-45e7-b3c3-23c21b58b810",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -469,9 +492,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_5.png": {
+    "diamonds_5.png": {
       "ver": "1.0.3",
-      "uuid": "93873c05-bb35-4982-bc85-68cdbb9a0ba6",
+      "uuid": "79683661-8e81-464d-a3c1-94cfee57e108",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -490,9 +514,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_6.png": {
+    "diamonds_6.png": {
       "ver": "1.0.3",
-      "uuid": "02af545d-a314-454b-9a78-a72625aa1804",
+      "uuid": "e67d9f15-42c4-43ab-8995-b5bdf9639c6f",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -511,9 +536,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_7.png": {
+    "diamonds_7.png": {
       "ver": "1.0.3",
-      "uuid": "64fbf1fb-5eb4-47e1-8251-591d4c5de2f9",
+      "uuid": "01f964d6-c8cb-475f-a1e4-b9635ac75ffa",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -532,9 +558,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_8.png": {
+    "diamonds_8.png": {
       "ver": "1.0.3",
-      "uuid": "5637a778-97ec-448d-a4c8-2c138e98a503",
+      "uuid": "b1fbe337-a180-4c85-b8e9-139775538410",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -553,9 +580,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-diamonds_9.png": {
+    "diamonds_9.png": {
       "ver": "1.0.3",
-      "uuid": "28982495-1097-4b50-80a8-9fda9e996e27",
+      "uuid": "6e35ac74-31a4-4f86-8735-d0727cb2c17f",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -574,9 +602,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-flower.png": {
+    "flower.png": {
       "ver": "1.0.3",
-      "uuid": "862069a7-5a3a-40e6-8649-3647d190cf7e",
+      "uuid": "16205a45-b009-4cd9-8b5a-888221021726",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -595,9 +624,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_10.png": {
+    "hearts_10.png": {
       "ver": "1.0.3",
-      "uuid": "5aec9429-1b11-49b2-b98e-296426788696",
+      "uuid": "7162cf47-85ce-4542-8453-0159260fdb86",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -616,9 +646,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_11.png": {
+    "hearts_11.png": {
       "ver": "1.0.3",
-      "uuid": "a9cc6a20-d83c-4070-861c-2c41bb7e22e3",
+      "uuid": "c92f2689-695e-4c74-bf78-52193c541e40",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -637,9 +668,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_12.png": {
+    "hearts_12.png": {
       "ver": "1.0.3",
-      "uuid": "8e5fd2c3-a9f3-4d33-a292-93b77bf29cd2",
+      "uuid": "8b491b5e-253e-4093-b441-6227475cabf8",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -658,9 +690,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_13.png": {
+    "hearts_13.png": {
       "ver": "1.0.3",
-      "uuid": "f9e05ecd-865e-4f9e-a3fc-fe9d43bcbc16",
+      "uuid": "7e3fedaa-578e-40b9-b270-ccc1b317dbd2",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -679,9 +712,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_14.png": {
+    "hearts_14.png": {
       "ver": "1.0.3",
-      "uuid": "ab0bb890-7e48-4384-8a4a-d038a929f43b",
+      "uuid": "bf917981-ce1c-40a6-a47d-c5f5a0505722",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -700,9 +734,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_15.png": {
+    "hearts_15.png": {
       "ver": "1.0.3",
-      "uuid": "1e3de90d-34f1-4548-834c-a440aae10677",
+      "uuid": "4c8594d7-4960-4d00-8926-dbc18a03143a",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -721,9 +756,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_3.png": {
+    "hearts_3.png": {
       "ver": "1.0.3",
-      "uuid": "acff157c-46db-49db-ba4a-3baf40bfe9e6",
+      "uuid": "621ca4c4-c77a-48e4-835b-8654a7ab8df4",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -742,9 +778,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_4.png": {
+    "hearts_4.png": {
       "ver": "1.0.3",
-      "uuid": "0d993a90-1a1f-4466-bd33-0c811a5ca9ad",
+      "uuid": "c83ced26-e3e6-4613-84bb-b661fa5a5a10",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -763,9 +800,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_5.png": {
+    "hearts_5.png": {
       "ver": "1.0.3",
-      "uuid": "02435a07-42d3-493f-9397-a5c82dea7791",
+      "uuid": "073cf6ec-39bb-456e-87c2-133d92d285e5",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -784,9 +822,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_6.png": {
+    "hearts_6.png": {
       "ver": "1.0.3",
-      "uuid": "19afb417-31b0-41b2-ab20-48021971a5f5",
+      "uuid": "bc7b4282-7f26-439e-a206-1c69de6cde23",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -805,9 +844,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_7.png": {
+    "hearts_7.png": {
       "ver": "1.0.3",
-      "uuid": "eabe3779-de27-4a6f-b35b-13a9d669d62c",
+      "uuid": "0e42c6ce-80b1-46ed-9113-006917e32628",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -826,9 +866,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_8.png": {
+    "hearts_8.png": {
       "ver": "1.0.3",
-      "uuid": "53850485-44a4-4f52-a02a-20e8fbd619dc",
+      "uuid": "1f61fccd-f665-40a2-a90b-42ee69ccf978",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -847,9 +888,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-hearts_9.png": {
+    "hearts_9.png": {
       "ver": "1.0.3",
-      "uuid": "ca64ed15-f28e-40bd-95ed-6a32677ce6a3",
+      "uuid": "69477aee-d38e-4acf-a638-7cc537e36e3b",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -868,9 +910,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_back.png": {
+    "jx_back.png": {
       "ver": "1.0.3",
-      "uuid": "101f6464-c6da-4da8-a2d2-4006224f5cc4",
+      "uuid": "880c5f37-45ef-48d3-83a3-c3f4c5de1d8d",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -889,9 +932,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_10.png": {
+    "jx_clubs_10.png": {
       "ver": "1.0.3",
-      "uuid": "2cc06a74-fc87-4f1f-b338-7bf8566acc19",
+      "uuid": "53d1056d-6a74-4852-92a0-b9dbf8f58288",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -910,9 +954,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_11.png": {
+    "jx_clubs_11.png": {
       "ver": "1.0.3",
-      "uuid": "174ad2dd-1a25-4d5b-a2d9-2db22b529f53",
+      "uuid": "c3d648f4-a032-413a-be89-8c5e22c4cfb5",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -931,9 +976,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_12.png": {
+    "jx_clubs_12.png": {
       "ver": "1.0.3",
-      "uuid": "7f51138d-d69f-4cee-b0a7-a0a7beb013a8",
+      "uuid": "d0328bb7-2c89-45a5-89e7-0a2dd1ac5089",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -952,9 +998,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_13.png": {
+    "jx_clubs_13.png": {
       "ver": "1.0.3",
-      "uuid": "5b6e1ee8-7bee-4682-be9a-0ee99d5295a6",
+      "uuid": "09c8ea74-85e4-4e6d-bdcb-656a96f792e4",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -973,9 +1020,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_14.png": {
+    "jx_clubs_14.png": {
       "ver": "1.0.3",
-      "uuid": "a14a8d57-240d-4800-a89d-6a8686ff8627",
+      "uuid": "f16c9b68-2637-4171-87fb-e576cc3aa7db",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -994,9 +1042,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_15.png": {
+    "jx_clubs_15.png": {
       "ver": "1.0.3",
-      "uuid": "ba1c1594-67e5-4202-a658-b279b102ce0f",
+      "uuid": "25683276-18c5-4a11-b01a-87aa24de4d90",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1015,9 +1064,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_3.png": {
+    "jx_clubs_3.png": {
       "ver": "1.0.3",
-      "uuid": "d107296e-4587-4461-abb7-c85a9547b9f1",
+      "uuid": "6eda2517-44f9-451b-be34-05ff043f9f79",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1036,9 +1086,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_4.png": {
+    "jx_clubs_4.png": {
       "ver": "1.0.3",
-      "uuid": "7f52e983-baea-4928-944e-1b825aae1631",
+      "uuid": "4fbf3340-341a-4a7f-a1c4-51680586e551",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1057,9 +1108,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_5.png": {
+    "jx_clubs_5.png": {
       "ver": "1.0.3",
-      "uuid": "f8d5e5f4-0e34-4c08-ad5f-fe082e11c14b",
+      "uuid": "c6b0d93b-76ab-4893-9193-507c798e34cd",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1078,9 +1130,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_6.png": {
+    "jx_clubs_6.png": {
       "ver": "1.0.3",
-      "uuid": "36dcbd49-7fa0-4aea-8392-e5baf0cf4c0c",
+      "uuid": "0828e6e3-186d-46d6-9c89-3d47826d59ea",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1099,9 +1152,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_7.png": {
+    "jx_clubs_7.png": {
       "ver": "1.0.3",
-      "uuid": "233346a2-1067-4c67-ae6d-25d3bf49e4be",
+      "uuid": "547249d7-0f44-4d7c-86e2-25124fb16536",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1120,9 +1174,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_8.png": {
+    "jx_clubs_8.png": {
       "ver": "1.0.3",
-      "uuid": "628ee59e-0943-4a98-843b-f8f97bd0a9e6",
+      "uuid": "40f701f4-c052-4539-a631-fbb255397798",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1141,9 +1196,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_clubs_9.png": {
+    "jx_clubs_9.png": {
       "ver": "1.0.3",
-      "uuid": "5a26367d-762e-447f-a423-b29f87c23c82",
+      "uuid": "65686693-a422-404a-81ad-2231d42ed8f4",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1162,9 +1218,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_10.png": {
+    "jx_diamonds_10.png": {
       "ver": "1.0.3",
-      "uuid": "226e4530-499e-4139-9723-912f4b23dda9",
+      "uuid": "a0bcb625-583f-4d47-8d37-24e8f18b8677",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1183,9 +1240,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_11.png": {
+    "jx_diamonds_11.png": {
       "ver": "1.0.3",
-      "uuid": "d776f39b-ca5b-494c-a6f1-dd48aeb3ca10",
+      "uuid": "2acc0762-1d8a-40be-9f41-fb3290313891",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1204,9 +1262,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_12.png": {
+    "jx_diamonds_12.png": {
       "ver": "1.0.3",
-      "uuid": "2b716597-6014-4d26-8da4-0ecf7f69a5a3",
+      "uuid": "20b48f97-478b-40ea-91cc-8b6304c60788",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1225,9 +1284,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_13.png": {
+    "jx_diamonds_13.png": {
       "ver": "1.0.3",
-      "uuid": "813e9482-38d2-4116-a454-f104b5e98a4e",
+      "uuid": "6f2dd7c9-5687-4ed4-9ff4-0d60016e011c",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1246,9 +1306,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_14.png": {
+    "jx_diamonds_14.png": {
       "ver": "1.0.3",
-      "uuid": "3c33bd8c-5654-469a-9a20-f005641df6d2",
+      "uuid": "1efd764b-dbb2-4e64-80d9-abfa06d8fc60",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1267,9 +1328,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_15.png": {
+    "jx_diamonds_15.png": {
       "ver": "1.0.3",
-      "uuid": "1f59967d-7126-4c55-9d4e-544feb6a8ab3",
+      "uuid": "9cf711db-56a7-40e9-97b1-6355c0a2aec4",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1288,9 +1350,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_3.png": {
+    "jx_diamonds_3.png": {
       "ver": "1.0.3",
-      "uuid": "abbf3bc5-a6c0-4892-9be5-0793bab29acf",
+      "uuid": "64d3c49a-6bcd-4d5e-9406-f3547d6f90e2",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1309,9 +1372,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_4.png": {
+    "jx_diamonds_4.png": {
       "ver": "1.0.3",
-      "uuid": "b679468b-8ee5-486b-89f2-289512c83668",
+      "uuid": "17616851-26a5-4df4-8dea-696b64d624d0",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1330,9 +1394,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_5.png": {
+    "jx_diamonds_5.png": {
       "ver": "1.0.3",
-      "uuid": "beb5f8d1-3f94-4e6f-b0e2-e84546012b68",
+      "uuid": "913a241b-087e-4318-8035-b6462a1cf009",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1351,9 +1416,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_6.png": {
+    "jx_diamonds_6.png": {
       "ver": "1.0.3",
-      "uuid": "419ab53c-c19a-4c10-bbb8-00b75cea1cba",
+      "uuid": "c7fb2900-9c04-4e2a-9472-19e32bd8ef3c",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1372,9 +1438,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_7.png": {
+    "jx_diamonds_7.png": {
       "ver": "1.0.3",
-      "uuid": "529675d5-577a-414c-a3c2-b8f0353c4b4c",
+      "uuid": "28cb5860-f64a-446f-8b6d-b5ab04da922c",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1393,9 +1460,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_8.png": {
+    "jx_diamonds_8.png": {
       "ver": "1.0.3",
-      "uuid": "a1a664d8-09d7-4f1a-a41a-20831568cd9d",
+      "uuid": "348afed3-fb04-4c9d-9f8a-60d966fbfc44",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1414,9 +1482,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_diamonds_9.png": {
+    "jx_diamonds_9.png": {
       "ver": "1.0.3",
-      "uuid": "ad40b302-088d-41c3-9ad6-ae3108d36849",
+      "uuid": "64b55a95-a388-40c6-a51a-8277e019a4c4",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1435,9 +1504,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_flower.png": {
+    "jx_flower.png": {
       "ver": "1.0.3",
-      "uuid": "6e55e7a3-ff91-401c-a01c-52cc21221abe",
+      "uuid": "9c385744-5bf4-4d43-80e3-1da4d7b777df",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1456,9 +1526,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_10.png": {
+    "jx_hearts_10.png": {
       "ver": "1.0.3",
-      "uuid": "b3b45238-814a-4cc2-816f-f2a668e7c0b9",
+      "uuid": "fbc6d0ec-6c36-4752-826a-db890ea7cf4a",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1477,9 +1548,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_11.png": {
+    "jx_hearts_11.png": {
       "ver": "1.0.3",
-      "uuid": "8dbd1ed7-99ad-458e-8905-9c1e8973d0f4",
+      "uuid": "74317703-e8df-4cb0-b9d0-987d087fd8da",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1498,9 +1570,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_12.png": {
+    "jx_hearts_12.png": {
       "ver": "1.0.3",
-      "uuid": "efabaed1-c48d-475a-86bc-e08a151112a7",
+      "uuid": "65e6d5f6-21cd-4658-9e64-013bb3cd6c2c",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1519,9 +1592,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_13.png": {
+    "jx_hearts_13.png": {
       "ver": "1.0.3",
-      "uuid": "d38a36c0-e0df-49af-8af7-3e4852637741",
+      "uuid": "d9c0dbaa-848b-43ae-9928-d3967def7e85",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1540,9 +1614,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_14.png": {
+    "jx_hearts_14.png": {
       "ver": "1.0.3",
-      "uuid": "97b39107-0b49-48ef-8ced-50c52d922e57",
+      "uuid": "cc701ca4-bc76-4d7f-acfd-c30d0a4d66da",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1561,9 +1636,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_15.png": {
+    "jx_hearts_15.png": {
       "ver": "1.0.3",
-      "uuid": "b58f2411-d9b6-40d6-a57f-593081728780",
+      "uuid": "d52a3f91-558f-4f0d-be6a-c12f02b26ea7",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1582,9 +1658,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_3.png": {
+    "jx_hearts_3.png": {
       "ver": "1.0.3",
-      "uuid": "eab319fb-4ec3-4f86-8b1c-4e3d463fa6b1",
+      "uuid": "36305b53-26ed-4fce-9fed-7aa45e126608",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1603,9 +1680,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_4.png": {
+    "jx_hearts_4.png": {
       "ver": "1.0.3",
-      "uuid": "532bdf1d-b542-4654-b0f2-771c47379565",
+      "uuid": "c12dec29-685c-4218-8d08-c0aaae265da9",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1624,9 +1702,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_5.png": {
+    "jx_hearts_5.png": {
       "ver": "1.0.3",
-      "uuid": "8a2dec61-f8c1-4231-811c-296c2410346d",
+      "uuid": "699c7f4f-1dee-4ff8-8d4e-38c44613f419",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1645,9 +1724,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_6.png": {
+    "jx_hearts_6.png": {
       "ver": "1.0.3",
-      "uuid": "cd481e07-8bd2-4ec8-b349-e72a5c9b9351",
+      "uuid": "54207837-4c28-4329-a2e4-cddf155ce654",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1666,9 +1746,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_7.png": {
+    "jx_hearts_7.png": {
       "ver": "1.0.3",
-      "uuid": "be6bfb6d-6454-424f-9bcc-fedc389fcadb",
+      "uuid": "30e2fd36-8e70-40ad-a2f6-4bbb60463b78",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1687,9 +1768,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_8.png": {
+    "jx_hearts_8.png": {
       "ver": "1.0.3",
-      "uuid": "5dccb052-5fec-4e02-a8c5-4f47a90a9cd9",
+      "uuid": "f400f339-2045-4d87-91aa-08f5fe7cc9d6",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1708,9 +1790,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_hearts_9.png": {
+    "jx_hearts_9.png": {
       "ver": "1.0.3",
-      "uuid": "2b07c917-9e6b-4e5b-975b-b0f79b681a97",
+      "uuid": "35ef375f-25a9-4c1d-bf05-bf3f9cc49b25",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1729,9 +1812,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_king_1.png": {
+    "jx_king_1.png": {
       "ver": "1.0.3",
-      "uuid": "070d1da9-0a9c-42dc-b250-b423d489dbdd",
+      "uuid": "4b7924e6-301a-46c6-89da-5bbb32a326b0",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1750,9 +1834,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_king_2.png": {
+    "jx_king_2.png": {
       "ver": "1.0.3",
-      "uuid": "851153e5-64ec-4bac-986d-087257e78306",
+      "uuid": "df94f1ea-c0cc-46a0-8a6b-afb4b5293af5",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1771,9 +1856,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_10.png": {
+    "jx_spades_10.png": {
       "ver": "1.0.3",
-      "uuid": "d5c2c25c-60c8-4cb2-804e-6949f485a347",
+      "uuid": "e80a000b-d0a1-4784-9c8c-4054b893521b",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1792,9 +1878,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_11.png": {
+    "jx_spades_11.png": {
       "ver": "1.0.3",
-      "uuid": "05a5aebd-b459-4a74-8bf7-3ee31c32ff9f",
+      "uuid": "8666affe-be09-4940-9cf9-b9234622fd8c",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1813,9 +1900,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_12.png": {
+    "jx_spades_12.png": {
       "ver": "1.0.3",
-      "uuid": "765fa080-1c82-4d8e-96f6-ab64132885b5",
+      "uuid": "29b69522-ebba-4a17-a43e-e3012d29afe3",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1834,9 +1922,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_13.png": {
+    "jx_spades_13.png": {
       "ver": "1.0.3",
-      "uuid": "851f054b-c17a-44ed-9378-bc98f38cfc74",
+      "uuid": "35e96eee-0234-4f64-8942-ad6f53ba16c0",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1855,9 +1944,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_14.png": {
+    "jx_spades_14.png": {
       "ver": "1.0.3",
-      "uuid": "1daa9468-2d0c-46b0-bd22-4e6c9185bb24",
+      "uuid": "6bfe7916-ee1c-40cb-8d3f-2a921b2f4fed",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1876,9 +1966,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_15.png": {
+    "jx_spades_15.png": {
       "ver": "1.0.3",
-      "uuid": "41754e8b-f11d-4f50-b707-f30d853cbc6b",
+      "uuid": "a3ed6e3c-f47d-4509-b41c-8a53f2288a1c",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1897,9 +1988,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_3.png": {
+    "jx_spades_3.png": {
       "ver": "1.0.3",
-      "uuid": "fa065d87-4428-4619-8708-0321839412b3",
+      "uuid": "7408ec93-d10b-43ec-b661-f25342050663",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1918,9 +2010,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_4.png": {
+    "jx_spades_4.png": {
       "ver": "1.0.3",
-      "uuid": "cd38b9c0-41c1-467f-9207-1cdf732ed529",
+      "uuid": "90aea00c-e06f-4061-948d-262530e3462c",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1939,9 +2032,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_5.png": {
+    "jx_spades_5.png": {
       "ver": "1.0.3",
-      "uuid": "0d44b22a-df47-4939-8b9f-3c81445406ea",
+      "uuid": "d9e23752-2895-4184-881d-d74050a875be",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1960,9 +2054,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_6.png": {
+    "jx_spades_6.png": {
       "ver": "1.0.3",
-      "uuid": "1097234e-41eb-4ec3-ba52-9f078f427310",
+      "uuid": "cac95198-fcf5-426b-b0a0-9d6ffb4c31b0",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -1981,9 +2076,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_7.png": {
+    "jx_spades_7.png": {
       "ver": "1.0.3",
-      "uuid": "bdb124c9-a776-45a3-b116-520192942cd5",
+      "uuid": "0840820d-f107-4824-ac1d-a84c4b392b6f",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2002,9 +2098,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_8.png": {
+    "jx_spades_8.png": {
       "ver": "1.0.3",
-      "uuid": "7738b7ba-e292-4b5c-bb2b-9786976e2b72",
+      "uuid": "f1818ae0-fd1b-480e-90dc-0f82a2ed9d9d",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2023,9 +2120,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-jx_spades_9.png": {
+    "jx_spades_9.png": {
       "ver": "1.0.3",
-      "uuid": "ec03f750-dcbc-4ceb-a34e-5d1da89cd70a",
+      "uuid": "0a175972-e5fd-4f61-98de-1d9129827add",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2044,9 +2142,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-king_1.png": {
+    "king_1.png": {
       "ver": "1.0.3",
-      "uuid": "87b89c6f-ce24-45cb-9ee8-d7e6349e3a21",
+      "uuid": "6f5f6ed5-280b-4505-93fe-bc114a354bff",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2065,9 +2164,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-king_2.png": {
+    "king_2.png": {
       "ver": "1.0.3",
-      "uuid": "d31fd0ee-486b-46ca-aadf-dcfb55815135",
+      "uuid": "c5cc7328-012c-4ccc-a80c-2eee198da6c3",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2086,9 +2186,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-label.png": {
+    "label.png": {
       "ver": "1.0.3",
-      "uuid": "0135311d-6570-4e49-b046-2f262c9b6821",
+      "uuid": "231498a4-175a-4dc8-95da-2ee4987fe07f",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2107,9 +2208,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_10.png": {
+    "spades_10.png": {
       "ver": "1.0.3",
-      "uuid": "00a21f59-e91d-4f35-becb-ef3ca3e05706",
+      "uuid": "6b6afe2d-9088-40df-aeb9-5f3fdff7ed5c",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2128,9 +2230,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_11.png": {
+    "spades_11.png": {
       "ver": "1.0.3",
-      "uuid": "3bfa0aa1-aa1f-443d-ab35-1715f98f6e28",
+      "uuid": "594f69de-5734-4b8d-8d35-76964a1724d3",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2149,9 +2252,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_12.png": {
+    "spades_12.png": {
       "ver": "1.0.3",
-      "uuid": "99a06ca7-0cbc-497c-902e-0e7ec2ae82e5",
+      "uuid": "ef94808c-d1ca-47f4-bf13-b55ec28b1821",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2170,9 +2274,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_13.png": {
+    "spades_13.png": {
       "ver": "1.0.3",
-      "uuid": "02bd71e6-30bd-48bd-a8e2-2336fd589d80",
+      "uuid": "3ce4bd45-c270-4e4c-a562-6ae4668e3da6",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2191,9 +2296,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_14.png": {
+    "spades_14.png": {
       "ver": "1.0.3",
-      "uuid": "29630efb-85c8-4931-9db4-1f8c469f4eec",
+      "uuid": "9e607323-3d5e-43bf-bdfc-bf4d5d27621f",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2212,9 +2318,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_15.png": {
+    "spades_15.png": {
       "ver": "1.0.3",
-      "uuid": "8007186d-23dc-497e-adf1-0886f3e31c3b",
+      "uuid": "ba2de561-2ec2-4504-a2d2-b922fbf51b0d",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2233,9 +2340,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_3.png": {
+    "spades_3.png": {
       "ver": "1.0.3",
-      "uuid": "2d52a7b3-5f42-4319-9fd0-93fb526d0fd9",
+      "uuid": "9d2f3a6e-1dff-4d82-8bbc-1832e54e0129",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2254,9 +2362,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_4.png": {
+    "spades_4.png": {
       "ver": "1.0.3",
-      "uuid": "de02c5f3-e039-4c16-864d-7bb20695e772",
+      "uuid": "df82e65c-25e3-4969-8074-98f1c1c271d8",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2275,9 +2384,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_5.png": {
+    "spades_5.png": {
       "ver": "1.0.3",
-      "uuid": "3a461e91-af1c-44f2-9c47-a596468cdf53",
+      "uuid": "97a38064-63b6-4d4e-9806-fe2b81f015ba",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2296,9 +2406,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_6.png": {
+    "spades_6.png": {
       "ver": "1.0.3",
-      "uuid": "1fea1a42-076d-4d50-bdf9-074e5f7b86b9",
+      "uuid": "2cc6e290-e99c-45dc-b838-ad44889a9496",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2317,9 +2428,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_7.png": {
+    "spades_7.png": {
       "ver": "1.0.3",
-      "uuid": "71d936b4-4fc2-4611-9a9b-135e1f84ceba",
+      "uuid": "8b55b9b0-eb66-41e3-827b-107ca40abade",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2338,9 +2450,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_8.png": {
+    "spades_8.png": {
       "ver": "1.0.3",
-      "uuid": "0a720c09-a0da-40b5-8fb2-9d57563c62ed",
+      "uuid": "278de35c-1c00-476e-9b1b-afe4508f3ae0",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2359,9 +2472,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-spades_9.png": {
+    "spades_9.png": {
       "ver": "1.0.3",
-      "uuid": "02555cc6-e9b6-48ae-81af-3afc1296a5a9",
+      "uuid": "8107f52b-7287-4870-9f3f-956e19b35714",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2380,9 +2494,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-label_flower.png": {
+    "label_flower.png": {
       "ver": "1.0.3",
-      "uuid": "c8ed44a6-e7e3-4ee2-9060-22fc5dc5cbd2",
+      "uuid": "c5a54240-dae1-4db9-84f7-5f7d5a861b6e",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -2401,9 +2516,10 @@
       "spriteType": "normal",
       "subMetas": {}
     },
-    "newcard-label_Light.png": {
+    "label_Light.png": {
       "ver": "1.0.3",
-      "uuid": "c215dd0b-d644-4993-9c6e-6fadd8e20134",
+      "uuid": "7d0cb58e-217f-424e-bb9b-fd6e3f3b1292",
+      "rawTextureUuid": "72d3598b-a615-4fa8-bc35-0cce4547bde5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
