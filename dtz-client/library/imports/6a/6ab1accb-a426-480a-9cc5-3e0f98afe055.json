@@ -248,7 +248,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "87d015f8-551e-4705-8d2f-1b3214b6efbb"
+      "__uuid__": "965e89dc-b8f5-4419-a139-68812c3c60a9"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -393,7 +393,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 29
@@ -426,8 +426,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -426,
-      "y": 286
+      "x": -449,
+      "y": 306
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1260,7 +1260,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 63
@@ -1293,8 +1293,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -427.1,
-      "y": 271.1
+      "x": -448.1,
+      "y": 290.1
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2592,8 +2592,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -107,
-      "y": 286
+      "x": -129,
+      "y": 306
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3676,8 +3676,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 422.4,
-      "y": 321.7
+      "x": 446.6,
+      "y": 340.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3754,8 +3754,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 273.4,
-      "y": 322
+      "x": 297.6,
+      "y": 340.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3828,8 +3828,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 393.9,
-      "y": 322
+      "x": 417.6,
+      "y": 340.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3902,8 +3902,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 447.4,
-      "y": 322
+      "x": 471.6,
+      "y": 340.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3976,8 +3976,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 333.7,
-      "y": 321.3
+      "x": 357.6,
+      "y": 340.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4050,8 +4050,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 420.4,
-      "y": 322
+      "x": 444.6,
+      "y": 340.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4124,8 +4124,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 498.4,
-      "y": 322
+      "x": 522.6,
+      "y": 340.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4205,8 +4205,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 587.9,
-      "y": 322.6
+      "x": 611.6,
+      "y": 341.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4377,8 +4377,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 548.3,
-      "y": 322.2
+      "x": 572.6,
+      "y": 341.2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4484,8 +4484,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 477,
-      "y": 270
+      "x": 494.6,
+      "y": 288.9
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4532,8 +4532,8 @@
     "_target": null,
     "_alignFlags": 33,
     "_left": 0,
-    "_right": 118.5,
-    "_top": 63,
+    "_right": 100.89999999999998,
+    "_top": 44.10000000000002,
     "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
@@ -4594,8 +4594,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 573,
-      "y": 272
+      "x": 590.6,
+      "y": 290.9
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4706,8 +4706,8 @@
     "_target": null,
     "_alignFlags": 33,
     "_left": 0,
-    "_right": 27,
-    "_top": 54.5,
+    "_right": 9.399999999999977,
+    "_top": 35.60000000000002,
     "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
@@ -5435,8 +5435,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -569,
-      "y": -246
+      "x": -584,
+      "y": -262
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -6220,7 +6220,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 156
@@ -6562,9 +6562,9 @@
     "isAlignOnce": true,
     "_target": null,
     "_alignFlags": 9,
-    "_left": 71,
+    "_left": 56,
     "_right": 0,
-    "_top": 606,
+    "_top": 622,
     "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
