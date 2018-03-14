@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "create_room",
+    "name": "bg_create_room",
     "texture": "ee093f09-7b1d-487f-aa46-3b0230571297",
     "atlas": "",
     "rect": [
