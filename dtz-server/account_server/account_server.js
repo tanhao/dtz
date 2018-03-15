@@ -50,7 +50,7 @@ app.get('/server_info',function(req,res){
 
 //游客
 app.get('/guest_auth',function(req,res){
-    let account=req.query.account;
+    let account='yk_'+req.query.account;
     let ip=http.getClientIp(req);
     let sign = crypto.md5(account + ip + config.ACCOUNT_PRIVATE_KEY);
     let ret={
