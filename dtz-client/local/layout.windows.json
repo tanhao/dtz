@@ -73,7 +73,7 @@
                 "width": 1351
               },
               {
-                "active": 1,
+                "active": 0,
                 "children": [
                   "console",
                   "timeline"
@@ -112,6 +112,18 @@
       "x": 591,
       "y": 252,
       "width": 580,
+      "height": 564
+    },
+    "store": {
+      "x": 552,
+      "y": 211,
+      "width": 816,
+      "height": 638
+    },
+    "project-settings": {
+      "x": 662,
+      "y": 261,
+      "width": 600,
       "height": 564
     }
   }
