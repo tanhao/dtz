@@ -51,7 +51,7 @@ db.init(config.mongodb(),function(err,isConnected){
 			headImgUrl:'http://thirdwx.qlogo.cn/mmopen/vi_32/TUMtkaIMdbGOh6x0YiaeD7V7p1FV2RIh488cgQM4mkDXUTp7fEXAvbiaLnOZPq02D1bcmcmdreJSBRPu9Ouc87Uw/132',
 		};
 
-		db.createUser(user2,function(err,isSucceed){
+		db.createUser(user,function(err,isSucceed){
 			if(err){
 				logger.info(err); 
 				return ;

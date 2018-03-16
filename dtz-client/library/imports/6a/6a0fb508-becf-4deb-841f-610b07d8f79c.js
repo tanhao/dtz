@@ -7,7 +7,10 @@ cc._RF.push(module, '6a0fbUIvs9N64QfYQsH2Pec', 'Setting');
 cc.Class({
     extends: cc.Component,
 
-    properties: {},
+    properties: {
+        effectSlider: cc.Slider,
+        musicSlider: cc.Slider
+    },
 
     onLoad: function onLoad() {},
 
@@ -19,10 +22,12 @@ cc.Class({
         var bgm = cc.sys.localStorage.getItem("bgmVolume");
         if (bgm) {
             cc.th.audioManager.setBGMVolume(parseFloat(bgm));
+            this.musicSlider.progress = parseFloat(bgm);
         }
         var sfx = cc.sys.localStorage.getItem("sfxVolume");
         if (sfx) {
             cc.th.audioManager.setSFXVolume(parseFloat(sfx));
+            this.effectSlider.progress = parseFloat(sfx);
         }
 
         cc.log("bgm:", bgm, "sfx:", sfx);

@@ -1,39 +1,39 @@
 {
   "item-states": [
     {
-      "folded": false,
+      "folded": true,
       "id": "04vZbAtEJGlYUrsYQooOrC"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "e5f3Fs7htH2oVrcBsUSfEp"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "611Azn0vhGGKemNbuEw4Mm"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "84n8D0ildOzJ+pnTfchoCF"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "77Vv1UAI1BF6dE8J3660rF"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "d8wh8hrH5JbY9LMtTu0VVG"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "21qGHeDlVD0Jg/CiIRjvaj"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "bbC8v2n0FMwLRpd7Vx9f2P"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "f5emm1rA9F3JfodNqlHLzY"
     },
     {
@@ -45,28 +45,12 @@
       "id": "04s3RnhppFfrTFQNSRkj6b"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "89wenL08ZMYpnRmT68pCRA"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "faZlDeWepLK5v9/j3vUUJz"
-    },
-    {
-      "folded": false,
-      "id": "d8TUmFYS5Mg4brmaJCyTzT"
-    },
-    {
-      "folded": false,
-      "id": "edtN8IT0dCU6kUwiTtt7K4"
-    },
-    {
-      "folded": false,
-      "id": "2bY373bJ5JhJQClQiOYBad"
-    },
-    {
-      "folded": false,
-      "id": "0ba82LkQ5APrsb+VxAGd2M"
     },
     {
       "folded": false,
@@ -77,11 +61,11 @@
       "id": "9aRwOXXFRFJrEoUzrdaPoj"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "9dTiFfDoFBpre8wu4WMbwK"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "16CGvvi9pP6Klgl3LPIMXE"
     },
     {
@@ -89,7 +73,7 @@
       "id": "6c/D5Jb6ZKQJgQcmMWVXFB"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "c6D7C7pwtISqgtl/1uEwQG"
     },
     {
@@ -97,43 +81,43 @@
       "id": "41b1HSgIdFxLyY70e9OFyY"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "a3KbSLHslEtqKMT2yaiCx3"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "deoPu0mFVET7TNw/12jrey"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "0eeJb1g3NJpYFa3lreQwhi"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "49D/1G+xJOLqVkxutWdFDD"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "60vwGOK6JOiKwKJ6qAPCfn"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "712heZ7gZABaN8DVcTBb1O"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "57SvSyxxtJNqogjZk48xam"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "10Co0Z7eZOD71mvETs1F+1"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "d9CyWX2VREWK8BZ0L0j9Bo"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "1aBq97Yw5DT4XMPsetLhhy"
     },
     {
@@ -141,24 +125,12 @@
       "id": "dfy9t41nJJx41OlnfDrbjH"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "c7hmVKAFRNAYAu+MXX/bN8"
     },
     {
-      "folded": false,
+      "folded": true,
       "id": "56CDJIA2lEJ4/CAMnrlIWx"
-    },
-    {
-      "folded": false,
-      "id": "24fYZOfV1MYaXX1/6H8sDG"
-    },
-    {
-      "folded": false,
-      "id": "53p4dNoVZKLpdLQEdNLHpe"
-    },
-    {
-      "folded": false,
-      "id": "cfRMrP88dCeaWI+4EumQnZ"
     },
     {
       "folded": false,
@@ -187,6 +159,34 @@
     {
       "folded": false,
       "id": "c5AQb3fy5EsZbR9kWx0V/x"
+    },
+    {
+      "folded": true,
+      "id": "24fYZOfV1MYaXX1/6H8sDG"
+    },
+    {
+      "folded": true,
+      "id": "53p4dNoVZKLpdLQEdNLHpe"
+    },
+    {
+      "folded": false,
+      "id": "cfRMrP88dCeaWI+4EumQnZ"
+    },
+    {
+      "folded": true,
+      "id": "d8TUmFYS5Mg4brmaJCyTzT"
+    },
+    {
+      "folded": false,
+      "id": "edtN8IT0dCU6kUwiTtt7K4"
+    },
+    {
+      "folded": true,
+      "id": "2bY373bJ5JhJQClQiOYBad"
+    },
+    {
+      "folded": true,
+      "id": "0ba82LkQ5APrsb+VxAGd2M"
     }
   ]
 }

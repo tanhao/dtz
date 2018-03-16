@@ -2,10 +2,12 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        
+        effectSlider:cc.Slider,
+        musicSlider:cc.Slider 
     },
 
     onLoad: function () {
+
     },
 
     // update: function (dt) {
@@ -16,10 +18,12 @@ cc.Class({
         var bgm = cc.sys.localStorage.getItem("bgmVolume");
         if(bgm){
             cc.th.audioManager.setBGMVolume(parseFloat(bgm));    
+            this.musicSlider.progress=parseFloat(bgm);
         }
         var sfx = cc.sys.localStorage.getItem("sfxVolume");
         if(sfx){
             cc.th.audioManager.setSFXVolume(parseFloat(sfx));    
+            this.effectSlider.progress=parseFloat(sfx);
         }
 
         cc.log("bgm:",bgm,"sfx:",sfx);
