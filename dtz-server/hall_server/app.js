@@ -16,7 +16,7 @@ db.init(config.mongodb(),function(err,isConnected){
         /*
         let ownerId=mongoose.Types.ObjectId('5a6ef5aaaacefc3ab8445e33');
         let room={
-            roomNo:888888,
+            roomId:888888,
             ip:'127.0.0.1',
             port:8888,
             config:{name:'test'},
@@ -30,16 +30,16 @@ db.init(config.mongodb(),function(err,isConnected){
             logger.info(isSucceed);
         });
    
-		db.updateUsersRoomNo(['5a6ef5aaaacefc3ab8445e33','5a6f1ba853b4c4176cca19c3'],888888,function(err,isSucceed){
+		db.updateUsersRoomId(['5a6ef5aaaacefc3ab8445e33','5a6f1ba853b4c4176cca19c3'],888888,function(err,isSucceed){
 			logger.info(isSucceed);
         });
 
         db.findUserByAccount('wx_bWzlAgKUqN6R8wQHpzP6Q',function(err,user){
             logger.info(user);
         })
-        db.getRoomNoOfUser('5a6f1ba853b4c4176cca19c3',function(err,roomNo){
-            logger.info(roomNo==null);
-            logger.info(roomNo);
+        db.getRoomIdOfUser('5a6f1ba853b4c4176cca19c3',function(err,roomId){
+            logger.info(roomId==null);
+            logger.info(roomId);
            
         })
         let user={

@@ -11,17 +11,17 @@ var io=null;
 module.exports.start=function(config){
      io = require('socket.io')();
      io.set('authorization', function (handshake, accept) {
-        let {roomNo,token,time,sign}=handshake._query;
-        roomNo=roomNo&&parseInt(roomNo);
+        let {roomId,token,time,sign}=handshake._query;
+        roomId=roomId&&parseInt(roomId);
         time=time&&parseInt(time);
-        //logger.info(token,roomNo,sign,time);
+        //logger.info(token,roomId,sign,time);
         //检查参数合法性
-        if(token == null || roomNo == null || sign == null || time == null){
+        if(token == null || roomId == null || sign == null || time == null){
             accept('invalid parameters', false);
             return;
         }
         //检查参数是否被篡改
-        var socketSign = crypto.md5(roomNo + token + time + config.HALL_PRIVATE_KEY);
+        var socketSign = crypto.md5(roomId + token + time + config.HALL_PRIVATE_KEY);
 		if(socketSign != sign){
             accept('sign failed', false);
 			return;
@@ -33,8 +33,8 @@ module.exports.start=function(config){
         }
         //检查房间合法性
         let userId=tokenManager.getUserID(token);
-        roomNo=roomManager.getUserRoomNo(userId);
-        if(userId == null || roomNo == null){
+        roomId=roomManager.getUserRoomId(userId);
+        if(userId == null || roomId == null){
             accept('enter room failed.', false);
 			return;
         }
@@ -43,18 +43,18 @@ module.exports.start=function(config){
      io.on('connection',function(socket){
         let {token} = socket.handshake.query;
         let userId = tokenManager.getUserID(token);
-        let roomNo = roomManager.getUserRoomNo(userId);
+        let roomId = roomManager.getUserRoomId(userId);
         let ip = socket.handshake.address.replace('::ffff:','');
-        //logger.info('connection=>',token,userId,roomNo);
+        //logger.info('connection=>',token,userId,roomId);
         userManager.bind(userId,socket);
         socket.userId=userId;
         //设置用户IP
         roomManager.setUserIp(userId,ip);
         roomManager.setUserOnline(userId,true);
         //返回房间信息
-        let room = roomManager.getRoom(roomNo);
+        let room = roomManager.getRoom(roomId);
         let initData={
-            roomNo:room.roomNo,
+            roomId:room.roomId,
             config:room.config,
             seats:room.seats
         }

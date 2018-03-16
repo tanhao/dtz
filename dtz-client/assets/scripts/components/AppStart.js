@@ -9,6 +9,10 @@ function initManager(I){
     var AnysdkManager=require("AnysdkManager");
     cc.th.anysdkManager=new AnysdkManager();
 
+    var AudioManager = require("AudioManager");
+    cc.th.audioManager = new AudioManager();
+    cc.th.audioManager.init();
+
 }   
 
 
@@ -30,17 +34,10 @@ cc.Class({
         cc.log("start");
     },
 
-    onBtnGuestClicked:function(){
-        cc.log("isAgree:",this._isAgree);
-        if(this._isAgree){
-            cc.th.userManager.guestAuth();
-        }
-    },
-
     onBtnWeichatClicked:function(){
         if(this._isAgree){
-            cc.log("onBtnGuestClicked");
-            cc.th.wc.show();
+            cc.log("onBtnWeichatClicked");
+            cc.th.userManager.lingshiAuth();
         }
     },
 

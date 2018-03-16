@@ -21,7 +21,7 @@ cc.Class({
         this.node.active = this._isShow;
     },
     update: function update(dt) {
-        cc.log(new Date().getTime());
+        //cc.log(new Date().getTime());
         this.target.rotation = this.target.rotation - dt * 90;
     },
     show: function show(content) {

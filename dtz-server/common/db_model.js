@@ -3,12 +3,13 @@ const mongoose=require('mongoose');
 const Schema=mongoose.Schema;
 
 var UserSchema=new Schema({
+    id: { type:Number, min:100000, max:999999, required:true, unique:true },
     account: {type:String,required:true,unique:true},
     name: {type:String,required:true},
     sex: {type:Number},
     headImgUrl: {type:String},
     balance: {type:Number,min:0,default:0},
-    roomNo: {type:Number}
+    roomId: {type:Number}
 },{
     j: 1, w: 1, wtimeout: 10000
 });
@@ -20,7 +21,7 @@ UserSchema.statics.isExist=function(account,callback){
 }
 
 var RoomSchema=new Schema({
-    roomNo: { type:Number, min:100000, max:999999, required:true, unique:true },
+    id: { type:Number, min:100000, max:999999, required:true, unique:true },
     ip: { type:String, required:true },
     port: { type:Number, required:true },
     config:{ type:Object, required:true },
@@ -43,8 +44,8 @@ var RoomSchema=new Schema({
     //timestamps: { createdAt: 'createdTime',updatedAt: 'updatedTime' } 
 });
 
-RoomSchema.statics.isExist=function(roomNo,callback){
-    this.collection.findOne({roomNo:roomNo},function(err,res){
+RoomSchema.statics.isExist=function(roomId,callback){
+    this.collection.findOne({id:roomId},function(err,res){
         callback(err,res?true:false);
     });
 }

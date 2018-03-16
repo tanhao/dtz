@@ -30,8 +30,8 @@ module.exports.sendMsg = function(userId,event,msg){
 };
 
 
-module.exports.kickAllInRoom = function(roomNo){
-    let room=roomNo && roomManager.getRoom(roomNo) || null;
+module.exports.kickAllInRoom = function(roomId){
+    let room=roomId && roomManager.getRoom(roomId) || null;
     if(!room) return ;
     for(let i = 0; i < room.seats.length; ++i){
         let seat = room.seats[i];
@@ -44,9 +44,9 @@ module.exports.kickAllInRoom = function(roomNo){
 };
 
 module.exports.broacastInRoom=function(event,data,sender,includingSender){
-    let roomNo=roomManager.getUserRoomNo(sender);
-    if(!roomNo) return;
-    let room=roomManager.getRoom(roomNo);
+    let roomId=roomManager.getUserRoomId(sender);
+    if(!roomId) return;
+    let room=roomManager.getRoom(roomId);
     if(!room) return ;
     for(let i=0;i<room.seats.length;++i){
         let seat=room.seats[i];

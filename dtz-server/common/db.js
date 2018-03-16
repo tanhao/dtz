@@ -29,11 +29,11 @@ module.exports.isUserExist=function(account,callback){
 }
 //根据账号取用户
 module.exports.findUserByAccount=function(account,callback){
-    User.findOne({account,account},{__v:0},callback);
+    User.findOne({account,account},{_id:0,__v:0},callback);
 }
 //根据userId取用户
 module.exports.findUserById=function(userId,callback){
-    User.findOne({_id:userId},{__v:0},callback);
+    User.findOne({id:userId},{_id:0,__v:0},callback);
 }
 //创建用户
 module.exports.createUser=function(obj,callback){
@@ -59,9 +59,9 @@ module.exports.updateUser=function(obj,callback){
 }
 
 //根据账号取房间号，没在房间返回null
-module.exports.getRoomNoOfUser=function(userId,callback){
+module.exports.getRoomIdOfUser=function(userId,callback){
     User.findOne({_id:userId},{__v:0},function(err,user){
-        callback(err,user && user.roomNo);
+        callback(err,user && user.roomId);
     });
 }
 //根据用户ID取账号余额
@@ -71,17 +71,17 @@ module.exports.getBalanceOfUser=function(userId,callback){
     });
 }
 //判断房间是否存在
-module.exports.isRoomExist=function(roomNo,callback){
-	Room.isExist(roomNo,callback);
+module.exports.isRoomExist=function(roomId,callback){
+	Room.isExist(roomId,callback);
 }
 //更新用户房间ID
-module.exports.updateUsersRoomNo=function(userIds,roomNo,callback){
+module.exports.updateUsersRoomId=function(userIds,roomId,callback){
     let logic=[];
     userIds.forEach((val,i) => {
         logic[i]={_id:val};
     });
     let where = {$or: logic};
-    let update = {roomNo:roomNo};
+    let update = {id:roomId};
 
     User.updateMany(where,update,function(err,res){
         callback(err,err?false:true)
@@ -97,20 +97,20 @@ module.exports.createRoom=function(obj,callback){
 }
 
 //根据房间号取房间地址
-module.exports.getRoomAddress=function(roomNo,callback){
-	Room.findOne({roomNo:roomNo},{roomNo:1,ip:1,port:1,_id:0},callback);
+module.exports.getRoomAddress=function(roomId,callback){
+	Room.findOne({id:roomId},{id:1,ip:1,port:1,_id:0,__v:0},callback);
 }
 
 //根据房间号取房间INFO
-module.exports.getRoom=function(roomNo,callback){
-    //Room.findOne({roomNo:roomNo}).populate('ownerId').exec(callback);
-    Room.findOne({roomNo:roomNo},{__v:0},callback);
+module.exports.getRoom=function(roomId,callback){
+    //Room.findOne({id:id}).populate('ownerId').exec(callback);
+    Room.findOne({id:roomId},{_id:0,__v:0},callback);
 }
 
 
 //根据房间号取房间并且更新房间IP与端口
-module.exports.getRoomAndModifyIpPort=function(roomNo,ip,port,callback){
-    Room.findAndModify({roomNo:roomNo},[],{$set:{ip:ip,port:port}},{new:true,fields:{__v:0}},function(err,res){
+module.exports.getRoomAndModifyIpPort=function(roomId,ip,port,callback){
+    Room.findAndModify({id:roomId},[],{$set:{ip:ip,port:port}},{new:true,fields:{_id:0,__v:0}},function(err,res){
         callback(err,res.value);
     });
 }

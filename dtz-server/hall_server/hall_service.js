@@ -110,19 +110,19 @@ module.exports.createRoom=function(userId,roomConfig,callback){
 
 }
 
-module.exports.joinRoom=function(userId,name,headImgUrl,roomNo,callback){
-    let sign = crypto.md5(userId + name + headImgUrl + roomNo  + config.HALL_PRIVATE_KEY);
+module.exports.joinRoom=function(userId,name,headImgUrl,roomId,callback){
+    let sign = crypto.md5(userId + name + headImgUrl + roomId  + config.HALL_PRIVATE_KEY);
     let data={
         userId:userId,
         name:name,
         headImgUrl:headImgUrl,
-        roomNo:roomNo,
+        roomId:roomId,
         sign:sign
     };
     waterfall([
         (callback)=>{
             //取房间地址
-            db.getRoomAddress(roomNo,function(err,room){
+            db.getRoomAddress(roomId,function(err,room){
                 if(err) return callback(err,null);
                 if(!room) return callback(new Error('room no exist.'),null);
                 callback(null,room);
@@ -140,8 +140,8 @@ module.exports.joinRoom=function(userId,name,headImgUrl,roomNo,callback){
             }
             if(server){
                 //如果服务器还在，验证房间是否还在运行
-                let sign = crypto.md5(room.roomNo + config.HALL_PRIVATE_KEY);
-                let search=qs.stringify({roomNo:room.roomNo,sign:sign});
+                let sign = crypto.md5(room.roomId + config.HALL_PRIVATE_KEY);
+                let search=qs.stringify({roomId:room.roomId,sign:sign});
                 let url=`http://${server.ip}:${server.nodePort}/is_room_runing?${search}`;
                 http.get(url,function(err,data){
                     if(!err&&!data.errcode&&data.running) return callback(null,server);
@@ -161,19 +161,19 @@ module.exports.joinRoom=function(userId,name,headImgUrl,roomNo,callback){
                 if(data.errcode) return callback(new Error(data.errmsg),null);
                 let now=Date.now();
                 let ret={
-                    roomNo:roomNo,
+                    roomId:roomId,
                     ip:server.clientIp,
                     port:server.clientPort,
                     token:data.token,
                     time:now,
-                    sign:crypto.md5(roomNo + data.token + now + config.HALL_PRIVATE_KEY)
+                    sign:crypto.md5(roomId + data.token + now + config.HALL_PRIVATE_KEY)
                 }
                 callback(null,ret);
             });
         },
         (data,callback)=>{
             //更新用户状态
-            db.updateUsersRoomNo([userId],roomNo,function(err,i){
+            db.updateUsersRoomId([userId],roomId,function(err,i){
                 if(err) return callback(err,null);
                 callback(null,data);
             });

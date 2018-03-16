@@ -74,26 +74,26 @@ app.get('/create_room',function(req,res){
         return;
     }
     let roomJson=JSON.parse(roomConfig);
-    roomManager.createRoom(userId,roomJson,balance,config.CLIENT_IP,config.CLIENT_PORT,function(err,roomNo){
+    roomManager.createRoom(userId,roomJson,balance,config.CLIENT_IP,config.CLIENT_PORT,function(err,roomId){
          if(err) return http.send(res,-2,err.message);
-         http.send(res,0,'ok',{roomNo:roomNo});
+         http.send(res,0,'ok',{roomId:roomId});
     });
 });
 
 //加入房间,与大厅通信
 app.get('/join_room',function(req,res){
-    let {userId, name, headImgUrl, roomNo, sign} = req.query;
-    roomNo = roomNo&&parseInt(roomNo);
-    if(userId == null || sign == null || roomNo ==null){
+    let {userId, name, headImgUrl, roomId, sign} = req.query;
+    roomId = roomId&&parseInt(roomId);
+    if(userId == null || sign == null || roomId ==null){
 		http.send(res,-2,"invalid parameters");
 		return;
     }
-    let nodeSign = crypto.md5(userId + name + headImgUrl + roomNo  + config.HALL_PRIVATE_KEY); 
+    let nodeSign = crypto.md5(userId + name + headImgUrl + roomId  + config.HALL_PRIVATE_KEY); 
     if(nodeSign!=sign){
         http.send(res,-2,'sign failed');
         return;
     }
-    roomManager.joinRoom(userId,name,headImgUrl,roomNo,config.CLIENT_IP,config.CLIENT_PORT,function(err,room){
+    roomManager.joinRoom(userId,name,headImgUrl,roomId,config.CLIENT_IP,config.CLIENT_PORT,function(err,room){
         if(err)return http.send(res,-2,err.message);
         let token=tokenManager.createToken(userId,5000);
         http.send(res,0,'ok',{token:token});
@@ -103,17 +103,17 @@ app.get('/join_room',function(req,res){
 });
 //判断房间是否还在运行,与大厅通信
 app.get('/is_room_runing',function(req,res){
-    let {roomNo, sign} = req.query;
-    roomNo = roomNo&&parseInt(roomNo);
-	if(roomNo == null || sign == null){
+    let {roomId, sign} = req.query;
+    roomId = roomId&&parseInt(roomId);
+	if(roomId == null || sign == null){
 		http.send(res,-2,"invalid parameters");
 		return;
 	}
-	var nodeSign = crypto.md5(roomNo + config.HALL_PRIVATE_KEY);
+	var nodeSign = crypto.md5(roomId + config.HALL_PRIVATE_KEY);
 	if(nodeSign != sign){
 		http.send(res,-2,"sign failed");
 		return;
     }
-    let room=roomManager.getRoom(roomNo);
+    let room=roomManager.getRoom(roomId);
 	http.send(res,0,"ok",{runing:room?true:false});
 });

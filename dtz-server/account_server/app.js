@@ -10,8 +10,8 @@ db.init(config.mongodb(),function(err,isConnected){
 		accountService.start(config.account_server());
 
 		/*
-        db.getRoomNo(function(err,roomNo){
-            logger.info('room:'+roomNo);
+        db.getRoomId(function(err,roomId){
+            logger.info('room:'+roomId);
         })
 		
 		db.isUserExist('wx_asdfasdlf',function(err,isExist){
@@ -20,10 +20,10 @@ db.init(config.mongodb(),function(err,isConnected){
 		*/
 		/*
 		var user={
-			account:'wx_asdfasdlf',
-			name:'tanhao22222',
+			account:'wx_oy4oyvy09TL3NWxfjIZDfol2VyWo',
+			name:'tanhao',
 			sex:1,
-			headImgUrl:'www.baidu2222.com',
+			headImgUrl:'http://thirdwx.qlogo.cn/mmopen/vi_32/TUMtkaIMdbGOh6x0YiaeD7V7p1FV2RIh488cgQM4mkDXUTp7fEXAvbiaLnOZPq02D1bcmcmdreJSBRPu9Ouc87Uw/132',
 		}
 		db.updateUser(user,function(err,isSucceed){
 			if(err){
@@ -36,10 +36,22 @@ db.init(config.mongodb(),function(err,isConnected){
 
 		/*
 		var user={
-			account:'wx_oy4oyv28f9lQvkZfyLL_yj4v9U8w',
+			id:100000,
+			account:'oy4oyv4IBaxtkPjSq9ee4w42QazA',
 			name:'zhiyuan',
-		}
-		db.createUser(user,function(err,isSucceed){
+			sex:1,
+			headImgUrl:'http://thirdwx.qlogo.cn/mmopen/vi_32/yRMlybhILtPMrSOz5Bo7zkF94HEaJqYE6hZvaPpGAqlJnJO0sjSJ2lJqhZiaFcSrLNaicfYzDbbtPySaQCxJxCUg/132'
+		};
+
+		var user2={
+			id:100001,
+			account:'oy4oyvy09TL3NWxfjIZDfol2VyWo',
+			name:'tanhao',
+			sex:1,
+			headImgUrl:'http://thirdwx.qlogo.cn/mmopen/vi_32/TUMtkaIMdbGOh6x0YiaeD7V7p1FV2RIh488cgQM4mkDXUTp7fEXAvbiaLnOZPq02D1bcmcmdreJSBRPu9Ouc87Uw/132',
+		};
+
+		db.createUser(user2,function(err,isSucceed){
 			if(err){
 				logger.info(err); 
 				return ;
@@ -47,6 +59,7 @@ db.init(config.mongodb(),function(err,isConnected){
 			logger.info('isSucceed:'+isSucceed);
 		})
 		*/
+		
 	}
 });
 

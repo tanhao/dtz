@@ -16,7 +16,7 @@ cc.Class({
     },
 
     update (dt) {
-        cc.log(new Date().getTime());
+        //cc.log(new Date().getTime());
         this.target.rotation=this.target.rotation-dt*90;
     },
 

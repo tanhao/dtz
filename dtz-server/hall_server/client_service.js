@@ -56,19 +56,22 @@ app.get('/login',function(req,res){
         (user,callback)=>{
             user=JSON.parse(JSON.stringify(user));
             //如果用户没处于房间中
-            if(!user.roomNo){
-                delete user.roomNo;
+            if(!user){
+                return callback(new Error('User not existed'),null)
+            }
+            if(!user.roomId){
+                delete user.roomId;
                 return  callback(null,false,user);
             };
              //如果用户处于房间中，则需要对其房间进行检查。 如果房间还在，则通知用户进入
-            db.isRoomExist(user.roomNo,function(err,isExist){
+            db.isRoomExist(user.roomId,function(err,isExist){
                 callback(err,isExist,user);
             });
         },
         (isRoomExist,user,callback)=>{
-            if(!isRoomExist&&user.roomNo){
-                delete user.roomNo;
-                db.updateUsersRoomNo([user._id],null,function(err,res){
+            if(!isRoomExist&&user.roomId){
+                delete user.roomId;
+                db.updateUsersRoomId([user._id],null,function(err,res){
                     callback(err,user)
                 })
                 return;
@@ -96,7 +99,7 @@ app.get('/create_private_room',function(req,res){
             db.findUserByAccount(account,callback);
         },
         (user,callback)=>{
-            if(user.roomNo) return callback(new Error('user is playing in room now.'),null);
+            if(user.roomId) return callback(new Error('user is playing in room now.'),null);
             hallService.createRoom(user._id.toString(),config,callback);
         }
     ], function (err, data) {
@@ -109,9 +112,9 @@ app.get('/join_private_room',function(req,res){
     if(!checkAccount(req,res)){
 		return;
     }
-    let roomNo=req.query.roomNo&&parseInt(req.query.roomNo);
+    let roomId=req.query.roomId&&parseInt(req.query.roomId);
     let account=req.query.account;
-    if(roomNo == null){
+    if(roomId == null){
         http.send(res,-1,'invalid parameters');
 		return;
 	}
@@ -120,7 +123,7 @@ app.get('/join_private_room',function(req,res){
             db.findUserByAccount(account,callback);
         },
         (user,callback)=>{
-            hallService.joinRoom(user._id.toString(),user.name,user.headImgUrl,roomNo,callback);
+            hallService.joinRoom(user._id.toString(),user.name,user.headImgUrl,roomId,callback);
         }
     ], function (err, data) {
         if(err) return http.send(res,-1,err.message);

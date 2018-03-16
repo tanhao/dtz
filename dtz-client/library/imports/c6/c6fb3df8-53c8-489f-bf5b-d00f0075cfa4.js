@@ -28,9 +28,9 @@ cc.Class({
 
     // },
 
-    guestAuth: function guestAuth() {
+    lingshiAuth: function lingshiAuth() {
         cc.th.wc.show("正在登录游戏");
-        cc.th.http.get('/guest_auth', { account: Date.now() }, this.onAuth);
+        cc.th.http.get('/lingshi_auth', { account: 'oy4oyv4IBaxtkPjSq9ee4w42QazA' }, this.onAuth);
     },
 
     onAuth: function onAuth(err, data) {
@@ -38,15 +38,36 @@ cc.Class({
             cc.log(err);
             return;
         }
-        cc.log('guest:' + JSON.stringify(data));
         var self = cc.th.userManager;
         self.account = data.account;
         self.sign = data.sign;
-        cc.th.http.baseURL = 'http://' + self.hallAddr;
+        cc.th.http.baseURL = 'http://' + data.hallAddr;
+
+        cc.log(cc.th.http.baseURL);
+        self.login();
     },
 
     login: function login() {
+        var self = this;
+        var callback = function callback(err, data) {
+            if (err || data.errcode) {
+                cc.log(err, data.errmsg);
+                return;
+            }
+            self.sex = data.sex;
+            self.userId = data.id;
+            self.account = data.account;
+            self.balance = data.balance;
+            self.userName = data.name;
+            self.headImgUrl = data.headImgUrl;
+            cc.director.loadScene("hall");
+        };
         cc.th.wc.show("正在登录游戏");
+        cc.th.http.get('/login', { account: self.account, sign: self.sign }, callback);
+    },
+
+    enterRoom: function enterRoom(roomId, callback) {
+        var self = this;
     }
 
 });

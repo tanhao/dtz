@@ -48,9 +48,9 @@ app.get('/server_info',function(req,res){
 	http.send(res,0,'ok',ret);
 });
 
-//游客
-app.get('/guest_auth',function(req,res){
-    let account='yk_'+req.query.account;
+//测试用登陆
+app.get('/lingshi_auth',function(req,res){
+    let account=req.query.account;
     let ip=http.getClientIp(req);
     let sign = crypto.md5(account + ip + config.ACCOUNT_PRIVATE_KEY);
     let ret={
@@ -93,7 +93,7 @@ app.get('/wechat_auth',function(req,res){
     
     function createOrUpdateUser(obj,callback){
         var user={
-            account: 'wx_'+obj.openid,
+            account: obj.openid,
             name: obj.nickname,
             sex: obj.sex,
             headImgUrl:obj.headimgurl,
