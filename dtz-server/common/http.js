@@ -1,7 +1,6 @@
 const logger=require('../common/log.js').getLogger('http');
 const http=require('http');
 const https=require('https');
-const qs = require('querystring');
 const { URL } =require('url');
 
 module.exports.send = function(res,errcode,errmsg,data){
@@ -44,6 +43,7 @@ module.exports.get=function(url,callback){
                 let json = JSON.parse(rawData);
                 callback(null,json);
             } catch (e) {
+                logger.error(e);
                 callback(new Error(e.message),null);
             }
 		});

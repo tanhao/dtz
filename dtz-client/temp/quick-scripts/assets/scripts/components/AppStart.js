@@ -5,19 +5,20 @@ cc._RF.push(module, '5414cTJwbRHg5YZplKYF1DZ', 'AppStart', __filename);
 "use strict";
 
 function initManager(I) {
-    cc.th = {};
-    cc.th.http = require("Http");
-    cc.th.http.baseURL = "http://127.0.0.1:9001";
+    window.th = window.th || {};
+
+    th.http = require("Http");
+    th.http.baseURL = "http://127.0.0.1:9001";
 
     var UserManager = require("UserManager");
-    cc.th.userManager = new UserManager();
+    th.userManager = new UserManager();
 
     var AnysdkManager = require("AnysdkManager");
-    cc.th.anysdkManager = new AnysdkManager();
+    th.anysdkManager = new AnysdkManager();
 
     var AudioManager = require("AudioManager");
-    cc.th.audioManager = new AudioManager();
-    cc.th.audioManager.init();
+    th.audioManager = new AudioManager();
+    th.audioManager.init();
 }
 
 cc.Class({
@@ -31,17 +32,17 @@ cc.Class({
 
     onLoad: function onLoad() {
         initManager();
-        console.log('onLoad');
+        //console.log('onLoad'); 
     },
     start: function start() {
-        cc.log("start");
+        //cc.log("start");
     },
 
 
     onBtnWeichatClicked: function onBtnWeichatClicked() {
         if (this._isAgree) {
             cc.log("onBtnWeichatClicked");
-            cc.th.userManager.lingshiAuth();
+            th.userManager.lingshiAuth();
         }
     },
 

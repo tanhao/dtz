@@ -21,12 +21,13 @@ UserSchema.statics.isExist=function(account,callback){
 }
 
 var RoomSchema=new Schema({
-    id: { type:Number, min:100000, max:999999, required:true, unique:true },
+    id: { type:Number, min:100000, max:999999, required:true, unique:true},  //,sparse:true
     ip: { type:String, required:true },
     port: { type:Number, required:true },
     config:{ type:Object, required:true },
     seats: { type:Array },
-    creator:{ type:Schema.Types.ObjectId, required:true,ref:'User'},
+    //creator:{ type:Schema.Types.ObjectId, required:true,ref:'User'},
+    creator:{ type:Number, required:true },
     createdTime:{ type:Number,required:true}
     /*
     ownerId: {type:ObjectID},

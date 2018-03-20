@@ -20,6 +20,21 @@ db.init(config.mongodb(),function(err,isConnected){
             }
             logger.info(room)
         })
+        
+
+        var room={"id":531962,"ip":"127.0.0.1","port":8888,
+                "config":{"peoples":4,"score":1000,"fee":1,"gift":100,"liudipai":false,"jipaiqi":false},
+                "seats":[{"userId":null,"name":null,"headImgUrl":null,"score":0,"ready":false,"online":false,"index":0},
+                         {"userId":null,"name":null,"headImgUrl":null,"score":0,"ready":false,"online":false,"index":1},
+                         {"userId":null,"name":null,"headImgUrl":null,"score":0,"ready":false,"online":false,"index":2},
+                         {"userId":null,"name":null,"headImgUrl":null,"score":0,"ready":false,"online":false,"index":3}],
+                "creator":11,"createdTime":1521566213
+        };
+        db.createRoom(room,function(err,data){
+            console.log(err);
+            logger.info("FUCK:"+err)
+            logger.info(data);
+        })
         */
     }
 });

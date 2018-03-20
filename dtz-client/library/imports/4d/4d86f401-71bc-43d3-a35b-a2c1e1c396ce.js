@@ -71,12 +71,23 @@ cc.Class({
     },
 
     onCreateClicked: function onCreateClicked(target) {
-        cc.log("peoples", this.peoples);
-        cc.log("score", this.score);
-        cc.log("fee", this.fee);
-        cc.log("gift", this.gift);
-        cc.log("liudipai", this.liudipai);
-        cc.log("jipaiqi", this.jipaiqi);
+        /*
+        cc.log("peoples",this.peoples);
+        cc.log("score",this.score);
+        cc.log("fee",this.fee);
+        cc.log("gift",this.gift);
+        cc.log("liudipai",this.liudipai);
+        cc.log("jipaiqi",this.jipaiqi);
+        */
+        var config = {
+            peoples: this.peoples,
+            score: this.score,
+            fee: this.fee,
+            gift: this.gift,
+            liudipai: this.liudipai,
+            jipaiqi: this.jipaiqi
+        };
+        th.userManager.createRoom(config);
     }
 
 });

@@ -25,11 +25,15 @@ cc.Class({
         var bgm = cc.sys.localStorage.getItem("bgmVolume");
         if (bgm) {
             this.bgmVolume = parseFloat(bgm);
+        } else {
+            cc.sys.localStorage.setItem("bgmVolume", this.bgmVolume);
         }
 
         var sfx = cc.sys.localStorage.getItem("sfxVolume");
         if (sfx) {
             this.sfxVolume = parseFloat(sfx);
+        } else {
+            cc.sys.localStorage.setItem("sfxVolume", this.sfxVolume);
         }
 
         cc.game.on(cc.game.EVENT_HIDE, function () {

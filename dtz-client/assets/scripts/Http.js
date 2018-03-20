@@ -1,6 +1,4 @@
 
-var qs=require("npm/qs");
-
 var Http=cc.Class({
     extends: cc.Component,
 
@@ -8,18 +6,28 @@ var Http=cc.Class({
         baseURL:null,
         get:function(path,params,callback){
             var xhr = cc.loader.getXMLHttpRequest();
-            var requestUrl=Http.baseURL+path+'?'+encodeURI(qs.stringify(params));
+
+            var paramsStr = "?";
+            for(var k in params){
+                if(paramsStr != "?"){
+                    paramsStr += "&";
+                }
+                paramsStr += k + "=" + params[k];
+            }
+
+            var requestUrl=Http.baseURL+path+encodeURI(paramsStr);
             xhr.open("GET",requestUrl,true);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && (xhr.status >= 200 && xhr.status < 400)) {
                     try{
+                        console.log("http response:"+xhr.responseText);
                         var json = JSON.parse(xhr.responseText);
                         callback(null,json);
                     }catch(e){
                         callback(e,null);
                     }finally{
-                        if(cc.th && cc.th.wc){
-                            cc.th.wc.hide();
+                        if(th && th.wc){
+                            th.wc.hide();
                         }
                     }
                 }
@@ -38,8 +46,8 @@ var Http=cc.Class({
                     }catch(e){
                         callback(e,null);
                     }finally{
-                        if(cc.th && cc.th.wc){
-                            cc.th.wc.hide();
+                        if(th && th.wc){
+                            th.wc.hide();
                         }
                     }
                 }

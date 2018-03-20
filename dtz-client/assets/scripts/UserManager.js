@@ -24,8 +24,8 @@ cc.Class({
     // },
 
     lingshiAuth:function(){
-        cc.th.wc.show("正在登录游戏");
-        cc.th.http.get('/lingshi_auth',{account:'oy4oyv4IBaxtkPjSq9ee4w42QazA'},this.onAuth);
+        th.wc.show("正在登录游戏");
+        th.http.get('/lingshi_auth',{account:'oy4oyv4IBaxtkPjSq9ee4w42QazA'},this.onAuth);
     },
 
     onAuth:function(err,data){
@@ -33,12 +33,12 @@ cc.Class({
             cc.log(err);
             return ;
         }
-        var self = cc.th.userManager;
+        var self = th.userManager;
         self.account = data.account;
         self.sign = data.sign;
-        cc.th.http.baseURL = 'http://'+data.hallAddr;
+        th.http.baseURL = 'http://'+data.hallAddr;
 
-        cc.log(cc.th.http.baseURL);
+        cc.log(th.http.baseURL);
         self.login();
     },
 
@@ -57,8 +57,26 @@ cc.Class({
              self.headImgUrl = data.headImgUrl;
              cc.director.loadScene("hall");
         };
-        cc.th.wc.show("正在登录游戏");
-        cc.th.http.get('/login',{account:self.account,sign:self.sign},callback)
+        th.wc.show("正在登录游戏");
+        th.http.get('/login',{account:self.account,sign:self.sign},callback)
+    },
+
+    createRoom : function(config){
+        var data={
+            account:th.userManager.account,
+            sign:th.userManager.sign,
+            config:JSON.stringify(config)
+        }
+        var callback = function(err,data) {
+            if(err||data.errcode){
+                cc.log(err,data.errmsg);
+                return;
+            }
+            cc.log("createRoom==>"+JSON.stringify(data));
+            
+        };
+        th.wc.show("正在创建房间");
+        th.http.get('/create_private_room',data,callback);
     },
 
     enterRoom : function(roomId,callback){

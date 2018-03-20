@@ -20,16 +20,16 @@ cc.Class({
 
     onLoad: function onLoad() {
         this.initUserInfo();
-        cc.th.audioManager.playBGM("bg_hall.mp3");
+        th.audioManager.playBGM("bg_hall.mp3");
     },
 
     initUserInfo: function initUserInfo() {
         var self = this;
-        this.lblId.string = "ID:" + cc.th.userManager.userId;
-        this.lblName.string = cc.th.userManager.userName;
-        this.lblBalance.string = cc.th.userManager.balance;
-        cc.log(cc.th.userManager.headImgUrl);
-        cc.loader.load({ url: cc.th.userManager.headImgUrl, type: 'jpg' }, function (err, texture) {
+        this.lblId.string = "ID:" + th.userManager.userId;
+        this.lblName.string = th.userManager.userName;
+        this.lblBalance.string = th.userManager.balance;
+        cc.log(th.userManager.headImgUrl);
+        cc.loader.load({ url: th.userManager.headImgUrl, type: 'jpg' }, function (err, texture) {
             if (!err) {
                 var headSpriteFrame = new cc.SpriteFrame(texture, cc.Rect(0, 0, texture.width, texture.height));
                 self.spriteHead.spriteFrame = headSpriteFrame;

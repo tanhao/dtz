@@ -14,10 +14,10 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
-        if (cc.th == null) {
+        if (th == null) {
             return null;
         }
-        cc.th.wc = this;
+        th.wc = this;
         this.node.active = this._isShow;
     },
     update: function update(dt) {

@@ -2,6 +2,7 @@ const logger=require('../common/log.js').getLogger('room_manager.js');
 const crypto=require('../common/crypto.js');
 const mongoose=require('mongoose');
 const db=require('../common/db.js');
+const  manager = require("./game_manager_dtz.js");
 
 var rooms = {};
 //存放用户在那个房间那个座位
@@ -21,14 +22,8 @@ function generateRoomId(){
 }
 
 module.exports.createRoom=function(creator,config,balance,ip,port,callback){
-    if(!config.type) return callback(new Error('invalid parameters'),null);
-    let manager=null;
-    if(config.type==='symj'){
-        manager = require("./game_manager_symj.js");
-    }
-    if(!manager) return callback(new Error('game type error'),null);
     let success=manager.checkConfig(config);
-    if(!success) return  callback(new Error('invalid parameters'),null);
+    if(!success) return  callback(new Error('config invalid parameters'),null);
     //验证房间配置
     let fnCreate=function(){
         let roomId=generateRoomId();
@@ -41,10 +36,12 @@ module.exports.createRoom=function(creator,config,balance,ip,port,callback){
                 port: port,
                 config:config,
                 seats: manager.initSeats(),
-                creator:mongoose.Types.ObjectId(creator),
+                //creator:mongoose.Types.ObjectId(creator),
+                creator:creator,
                 createdTime: Math.ceil(Date.now()/1000)
             };
             db.createRoom(room,function(err,data){
+                logger.info("FUCK:"+err)
                 if(err) return callback(err,null);
                 rooms[roomId]=data;
                 rooms[roomId].manager=manager;

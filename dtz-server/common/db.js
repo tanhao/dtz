@@ -60,13 +60,13 @@ module.exports.updateUser=function(obj,callback){
 
 //根据账号取房间号，没在房间返回null
 module.exports.getRoomIdOfUser=function(userId,callback){
-    User.findOne({_id:userId},{__v:0},function(err,user){
+    User.findOne({id:userId},{__v:0},function(err,user){
         callback(err,user && user.roomId);
     });
 }
 //根据用户ID取账号余额
 module.exports.getBalanceOfUser=function(userId,callback){
-    User.findOne({_id:userId},{__v:0},function(err,user){
+    User.findOne({id:userId},{__v:0},function(err,user){
         callback(err,user && user.balance || 0);
     });
 }
@@ -78,7 +78,7 @@ module.exports.isRoomExist=function(roomId,callback){
 module.exports.updateUsersRoomId=function(userIds,roomId,callback){
     let logic=[];
     userIds.forEach((val,i) => {
-        logic[i]={_id:val};
+        logic[i]={id:val};
     });
     let where = {$or: logic};
     let update = {id:roomId};

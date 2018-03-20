@@ -71,7 +71,7 @@ app.get('/login',function(req,res){
         (isRoomExist,user,callback)=>{
             if(!isRoomExist&&user.roomId){
                 delete user.roomId;
-                db.updateUsersRoomId([user._id],null,function(err,res){
+                db.updateUsersRoomId([user.id],null,function(err,res){
                     callback(err,user)
                 })
                 return;
@@ -99,11 +99,13 @@ app.get('/create_private_room',function(req,res){
             db.findUserByAccount(account,callback);
         },
         (user,callback)=>{
+            if(!user)return callback(new Error("user not existed "),null) ;
             if(user.roomId) return callback(new Error('user is playing in room now.'),null);
-            hallService.createRoom(user._id.toString(),config,callback);
+            hallService.createRoom(user.id.toString(),config,callback);
         }
     ], function (err, data) {
         if(err) return http.send(res,-1,err.message);
+        logger.info(data);
         http.send(res,0,'ok',data);
     });
 });
@@ -123,7 +125,7 @@ app.get('/join_private_room',function(req,res){
             db.findUserByAccount(account,callback);
         },
         (user,callback)=>{
-            hallService.joinRoom(user._id.toString(),user.name,user.headImgUrl,roomId,callback);
+            hallService.joinRoom(user.id.toString(),user.name,user.headImgUrl,roomId,callback);
         }
     ], function (err, data) {
         if(err) return http.send(res,-1,err.message);

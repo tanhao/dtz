@@ -19,10 +19,10 @@
   "group-list": [
     "default"
   ],
-  "simulator-orientation": false,
+  "simulator-orientation": true,
   "simulator-resolution": {
-    "height": 640,
-    "width": 960
+    "height": 750,
+    "width": 1334
   },
   "start-scene": "2a9e95f3-be12-4b93-9415-c316e1ed5de5",
   "use-customize-simulator": false,

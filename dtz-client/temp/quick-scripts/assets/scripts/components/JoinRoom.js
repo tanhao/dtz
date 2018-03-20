@@ -64,7 +64,7 @@ cc.Class({
     },
 
     onInputFinished: function onInputFinished(roomId) {
-        cc.th.userManager.enterRoom(roomId, function (ret) {
+        th.userManager.enterRoom(roomId, function (ret) {
             if (ret.errcode == 0) {
                 this.node.active = false;
             } else {
@@ -72,7 +72,7 @@ cc.Class({
                 if (ret.errcode == 4) {
                     content = "房间[" + roomId + "]已满!";
                 }
-                cc.th.alert.show("提示", content);
+                th.alert.show("提示", content);
                 this.onResetClicked();
             }
         }.bind(this));
