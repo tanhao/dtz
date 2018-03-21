@@ -105,7 +105,6 @@ app.get('/create_private_room',function(req,res){
         }
     ], function (err, data) {
         if(err) return http.send(res,-1,err.message);
-        logger.info(data);
         http.send(res,0,'ok',data);
     });
 });

@@ -3,16 +3,16 @@ cc.Class({
 
     properties: {
         target:cc.Node,
-        _isShow:false,
 	    lblContent:cc.Label
     },
 
     onLoad () {
+        cc.log("WaitingConnection====>onload");
         if(th==null){
             return null;
         }
         th.wc=this;
-        this.node.active=this._isShow;
+        this.node.active=false;
     },
 
     update (dt) {
@@ -21,9 +21,8 @@ cc.Class({
     },
 
     show (content) {
-        this._isShow=true;
         if(this.node){
-            this.node.active=this._isShow;
+            this.node.active=true;
         }
         if(this.lblContent){
             this.lblContent.string=content||""; 
@@ -31,9 +30,14 @@ cc.Class({
     },
 
     hide () {
-        this._isShow=false;
         if(this.node){
-            this.node.active=this._isShow;
+            this.node.active=false;
+        }
+    },
+
+    onDestory:function(){
+        if(th){
+            th.wc = null;    
         }
     }
 });

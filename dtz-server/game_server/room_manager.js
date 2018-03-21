@@ -24,6 +24,11 @@ function generateRoomId(){
 module.exports.createRoom=function(creator,config,balance,ip,port,callback){
     let success=manager.checkConfig(config);
     if(!success) return  callback(new Error('config invalid parameters'),null);
+
+    if((config.fee==1&&balance<40)||(config.fee==2&&balance<10)){
+        return callback(new Error("钻石不足，创建房间失败!"),null);
+    }
+    
     //验证房间配置
     let fnCreate=function(){
         let roomId=generateRoomId();

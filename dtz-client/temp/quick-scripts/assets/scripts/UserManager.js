@@ -67,20 +67,22 @@ cc.Class({
     },
 
     createRoom: function createRoom(config) {
-        var data = {
+        var params = {
             account: th.userManager.account,
             sign: th.userManager.sign,
             config: JSON.stringify(config)
         };
         var callback = function callback(err, data) {
+            //cc.log("FFFFFF:",JSON.stringify(data));
             if (err || data.errcode) {
-                cc.log(err, data.errmsg);
-                return;
+                th.wc.show();
+                th.alert.show('提示', data.errmsg, null, false); //
+            } else {
+                cc.log("create room success, roomid:" + data.roomId);
             }
-            cc.log("createRoom==>" + JSON.stringify(data));
         };
         th.wc.show("正在创建房间");
-        th.http.get('/create_private_room', data, callback);
+        th.http.get('/create_private_room', params, callback);
     },
 
     enterRoom: function enterRoom(roomId, callback) {
