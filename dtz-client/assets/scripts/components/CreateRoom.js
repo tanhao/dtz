@@ -66,6 +66,7 @@ cc.Class({
     },
 
     onCreateClicked:function(target){
+        var self=this;
         /*
         cc.log("peoples",this.peoples);
         cc.log("score",this.score);
@@ -82,7 +83,20 @@ cc.Class({
             liudipai:this.liudipai,
             jipaiqi:this.jipaiqi
         }
-        th.userManager.createRoom(config);
+        var fnCreate = function(err,data) {
+            self.node.active=false;
+            if(err||data.errcode){
+                th.wc.hide();
+                th.alert.show('提示',data.errmsg,null,false); //
+            }else{
+                cc.log("connect server data:"+JSON.stringify(data));
+                th.wc.show("正在进入房间");
+                th.socketIOManager.connectServer(data);
+            }
+            
+        };
+        th.wc.show("正在创建房间");
+        th.userManager.createRoom(config,fnCreate);
     }
 
 

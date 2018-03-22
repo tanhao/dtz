@@ -9,6 +9,7 @@ function initManager(I) {
 
     th.http = require("Http");
     th.http.baseURL = "http://127.0.0.1:9001";
+    th.sio = require("SocketIO");
 
     var UserManager = require("UserManager");
     th.userManager = new UserManager();
@@ -19,6 +20,10 @@ function initManager(I) {
     var AudioManager = require("AudioManager");
     th.audioManager = new AudioManager();
     th.audioManager.init();
+
+    var SocketIOManager = require("SocketIOManager");
+    th.socketIOManager = new SocketIOManager();
+    th.socketIOManager.initHandlers();
 }
 
 cc.Class({
@@ -42,6 +47,7 @@ cc.Class({
     onBtnWeichatClicked: function onBtnWeichatClicked() {
         if (this._isAgree) {
             cc.log("onBtnWeichatClicked");
+            th.wc.show("正在登录游戏");
             th.userManager.lingshiAuth();
         }
     },

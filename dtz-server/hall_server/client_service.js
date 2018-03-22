@@ -101,8 +101,20 @@ app.get('/create_private_room',function(req,res){
         (user,callback)=>{
             if(!user)return callback(new Error("user not existed "),null) ;
             if(user.roomId) return callback(new Error('user is playing in room now.'),null);
-            hallService.createRoom(user.id.toString(),config,callback);
+            hallService.createRoom(user.id.toString(),config,function(err,data){
+                if(err) return callback(err,null);
+                if(data.errcode) return callback(new Error(data.errmsg),null);
+                return callback(null,user,data.roomId);
+                
+            });
+        },
+        (user,roomId,callback)=>{
+            console.log("user:"+JSON.stringify(user));
+            console.log("roomId:"+roomId);
+            console.log(user.id,user.name,user.headImgUrl,user.sex,roomId);
+            hallService.joinRoom(user.id,user.name,user.headImgUrl,user.sex,roomId,callback);
         }
+
     ], function (err, data) {
         if(err) return http.send(res,-1,err.message);
         http.send(res,0,'ok',data);
@@ -124,7 +136,8 @@ app.get('/join_private_room',function(req,res){
             db.findUserByAccount(account,callback);
         },
         (user,callback)=>{
-            hallService.joinRoom(user.id.toString(),user.name,user.headImgUrl,roomId,callback);
+            if(!user)return callback(new Error("user not existed "),null) ;
+            hallService.joinRoom(user.id,user.name,user.headImgUrl,user.sex,roomId,callback);
         }
     ], function (err, data) {
         if(err) return http.send(res,-1,err.message);

@@ -81,7 +81,7 @@ module.exports.updateUsersRoomId=function(userIds,roomId,callback){
         logic[i]={id:val};
     });
     let where = {$or: logic};
-    let update = {id:roomId};
+    let update = {roomId:roomId};
 
     User.updateMany(where,update,function(err,res){
         callback(err,err?false:true)
@@ -98,7 +98,7 @@ module.exports.createRoom=function(obj,callback){
 
 //根据房间号取房间地址
 module.exports.getRoomAddress=function(roomId,callback){
-	Room.findOne({id:roomId},{id:1,ip:1,port:1,_id:0,__v:0},callback);
+	Room.findOne({id:roomId},{id:1,ip:1,port:1,_id:0},callback);
 }
 
 //根据房间号取房间INFO

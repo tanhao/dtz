@@ -29,7 +29,6 @@ cc.Class({
     // },
 
     lingshiAuth: function lingshiAuth() {
-        th.wc.show("正在登录游戏");
         th.http.get('/lingshi_auth', { account: 'oy4oyv4IBaxtkPjSq9ee4w42QazA' }, this.onAuth);
     },
 
@@ -60,28 +59,19 @@ cc.Class({
             self.balance = data.balance;
             self.userName = data.name;
             self.headImgUrl = data.headImgUrl;
-            cc.director.loadScene("hall");
+            cc.director.loadScene("hall", function () {
+                th.wc.hide();
+            });
         };
-        th.wc.show("正在登录游戏");
         th.http.get('/login', { account: self.account, sign: self.sign }, callback);
     },
 
-    createRoom: function createRoom(config) {
+    createRoom: function createRoom(config, callback) {
         var params = {
             account: th.userManager.account,
             sign: th.userManager.sign,
             config: JSON.stringify(config)
         };
-        var callback = function callback(err, data) {
-            //cc.log("FFFFFF:",JSON.stringify(data));
-            if (err || data.errcode) {
-                th.wc.show();
-                th.alert.show('提示', data.errmsg, null, false); //
-            } else {
-                cc.log("create room success, roomid:" + data.roomId);
-            }
-        };
-        th.wc.show("正在创建房间");
         th.http.get('/create_private_room', params, callback);
     },
 

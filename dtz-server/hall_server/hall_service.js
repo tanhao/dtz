@@ -110,12 +110,13 @@ module.exports.createRoom=function(userId,roomConfig,callback){
 
 }
 
-module.exports.joinRoom=function(userId,name,headImgUrl,roomId,callback){
-    let sign = crypto.md5(userId + name + headImgUrl + roomId  + config.HALL_PRIVATE_KEY);
+module.exports.joinRoom=function(userId,name,headImgUrl,sex,roomId,callback){
+    let sign = crypto.md5(userId + name + headImgUrl +sex+ roomId  + config.HALL_PRIVATE_KEY);
     let data={
         userId:userId,
         name:name,
         headImgUrl:headImgUrl,
+        sex:sex,
         roomId:roomId,
         sign:sign
     };

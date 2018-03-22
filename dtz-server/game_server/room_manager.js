@@ -46,7 +46,6 @@ module.exports.createRoom=function(creator,config,balance,ip,port,callback){
                 createdTime: Math.ceil(Date.now()/1000)
             };
             db.createRoom(room,function(err,data){
-                logger.info("FUCK:"+err)
                 if(err) return callback(err,null);
                 rooms[roomId]=data;
                 rooms[roomId].manager=manager;
@@ -57,7 +56,7 @@ module.exports.createRoom=function(creator,config,balance,ip,port,callback){
     fnCreate();
 }
 
-module.exports.joinRoom = function(userId,name,headImgUrl,roomId,ip,port,callback){
+module.exports.joinRoom = function(userId,name,headImgUrl,sex,roomId,ip,port,callback){
     let fnTakeSeat=function(room){
         if(module.exports.getUserRoomId(userId) == roomId){
 			return true;
@@ -73,9 +72,11 @@ module.exports.joinRoom = function(userId,name,headImgUrl,roomId,ip,port,callbac
         }
         let index=Math.floor(Math.random()*idleSeats.length);
         let seat=room.seats[index];
-        seat.userId=mongoose.Types.ObjectId(userId);
+        //seat.userId=mongoose.Types.ObjectId(userId);
+        seat.userId=userId;
         seat.name=name;
         seat.headImgUrl=headImgUrl;
+        seat.sex=sex;
         locations[userId]={
             roomId:roomId,
             seatIndex:index

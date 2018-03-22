@@ -35,6 +35,7 @@ module.exports.initSeats=function(config){
             userId:null,
             name:null,
             headImgUrl:null,
+            sex:null,
             score:0,
             ready:false,
             online:false,

@@ -12,6 +12,7 @@ module.exports.start=function(config){
      io = require('socket.io')();
      io.set('authorization', function (handshake, accept) {
         let {roomId,token,time,sign}=handshake._query;
+        logger.info(roomId,token,time,sign);
         roomId=roomId&&parseInt(roomId);
         time=time&&parseInt(time);
         //logger.info(token,roomId,sign,time);
@@ -77,6 +78,14 @@ module.exports.start=function(config){
         });
         //心跳
         socket.on('heartbeat',function(data){
+        });
+        //ping
+        socket.on('ping',function(data){
+            var userId = socket.userId;
+			if(!userId){
+				return;
+            }
+            socket.emit('ping');
 		});
 
         

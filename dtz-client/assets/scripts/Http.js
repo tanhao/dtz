@@ -20,15 +20,11 @@ var Http=cc.Class({
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && (xhr.status >= 200 && xhr.status < 400)) {
                     try{
-                        console.log("http response:"+xhr.responseText);
+                        console.log("try => http response:"+xhr.responseText);
                         var json = JSON.parse(xhr.responseText);
                         callback(null,json);
                     }catch(e){
                         callback(e,null);
-                    }finally{
-                        if(th && th.wc){
-                            th.wc.hide();
-                        }
                     }
                 }
             };
@@ -45,10 +41,6 @@ var Http=cc.Class({
                         callback(null,json);
                     }catch(e){
                         callback(e,null);
-                    }finally{
-                        if(th && th.wc){
-                            th.wc.hide();
-                        }
                     }
                 }
             }
