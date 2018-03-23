@@ -15,7 +15,9 @@ cc.Class({
         headImgUrl: null,
         balance: 0,
         ip: null,
-        sign: null
+        sign: null,
+
+        roomId: null //登陆时如果不为null,代表用户在房间里，直接加入房间
     },
 
     onLoad: function onLoad() {},
@@ -59,6 +61,7 @@ cc.Class({
             self.balance = data.balance;
             self.userName = data.name;
             self.headImgUrl = data.headImgUrl;
+            self.roomId = data.roomId;
             cc.director.loadScene("hall", function () {
                 th.wc.hide();
             });
@@ -66,17 +69,46 @@ cc.Class({
         th.http.get('/login', { account: self.account, sign: self.sign }, callback);
     },
 
-    createRoom: function createRoom(config, callback) {
+    createRoom: function createRoom(config) {
+        var fnCreate = function fnCreate(err, data) {
+            if (err || data.errcode) {
+                th.wc.hide();
+                th.alert.show('提示', data.errmsg, null, false); //
+            } else {
+                cc.log("create room data:" + JSON.stringify(data));
+                th.wc.show("正在进入房间");
+                th.socketIOManager.connectServer(data);
+            }
+        };
+
         var params = {
             account: th.userManager.account,
             sign: th.userManager.sign,
             config: JSON.stringify(config)
         };
-        th.http.get('/create_private_room', params, callback);
+        th.wc.show("正在创建房间");
+        th.http.get('/create_private_room', params, fnCreate);
     },
 
-    enterRoom: function enterRoom(roomId, callback) {
+    joinRoom: function joinRoom(roomId) {
         var self = this;
+        var fnJoin = function fnJoin(err, data) {
+            if (err || data.errcode) {
+                th.wc.hide();
+                th.alert.show('提示', data.errmsg, null, false); //
+            } else {
+                cc.log("join room data:" + JSON.stringify(data));
+                th.socketIOManager.connectServer(data);
+            }
+        };
+
+        var params = {
+            account: th.userManager.account,
+            sign: th.userManager.sign,
+            roomId: roomId
+        };
+        th.wc.show("正在加入房间");
+        th.http.get('/join_private_room', params, fnJoin);
     }
 
 });

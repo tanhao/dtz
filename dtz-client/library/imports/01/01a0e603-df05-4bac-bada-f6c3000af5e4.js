@@ -43,7 +43,7 @@ cc.Class({
         if (this.content) {
             this.content.string = content || "";
         }
-        this.fnConfirm = fnConfirm;
+        this._fnConfirm = fnConfirm;
         if (showBtnCancel) {
             this.btnCancel.node.active = true;
             this.btnCancel.node.x = 160;

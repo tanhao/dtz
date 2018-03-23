@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "score3ren",
+    "texture": "5b83ZusmtGapsUfckSftnD",
+    "rect": [
+      0,
+      0,
+      377,
+      133
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      377,
+      133
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "jx_spades_13",
+    "texture": "7201mLphVPqLw1DM5FR73l",
+    "rect": [
+      968,
+      1697,
+      51,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      51,
+      70
+    ]
+  }
+}

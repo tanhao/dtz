@@ -109,9 +109,6 @@ app.get('/create_private_room',function(req,res){
             });
         },
         (user,roomId,callback)=>{
-            console.log("user:"+JSON.stringify(user));
-            console.log("roomId:"+roomId);
-            console.log(user.id,user.name,user.headImgUrl,user.sex,roomId);
             hallService.joinRoom(user.id,user.name,user.headImgUrl,user.sex,roomId,callback);
         }
 

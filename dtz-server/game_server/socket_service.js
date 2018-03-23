@@ -12,7 +12,7 @@ module.exports.start=function(config){
      io = require('socket.io')();
      io.set('authorization', function (handshake, accept) {
         let {roomId,token,time,sign}=handshake._query;
-        logger.info(roomId,token,time,sign);
+        //logger.info(roomId,token,time,sign);
         roomId=roomId&&parseInt(roomId);
         time=time&&parseInt(time);
         //logger.info(token,roomId,sign,time);
@@ -76,18 +76,16 @@ module.exports.start=function(config){
         //断开链接
 		socket.on('disconnect',function(data){
         });
-        //心跳
-        socket.on('heartbeat',function(data){
-        });
         //ping
-        socket.on('ping',function(data){
+
+        socket.on('th-ping',function(data){
             var userId = socket.userId;
 			if(!userId){
 				return;
             }
-            socket.emit('ping');
+            socket.emit('th-pong');
 		});
-
+        
         
      });
      io.listen(config.CLIENT_PORT);

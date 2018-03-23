@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "jx_diamonds_5",
+    "texture": "7201mLphVPqLw1DM5FR73l",
+    "rect": [
+      607,
+      1856,
+      51,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      51,
+      70
+    ]
+  }
+}

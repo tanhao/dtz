@@ -15,7 +15,10 @@ cc.Class({
         joinRoomWin: cc.Node,
         createRoomWin: cc.Node,
         settingWin: cc.Node,
-        spriteHead: cc.Sprite
+        spriteHead: cc.Sprite,
+        btnCreateRoom: cc.Button,
+        btnReturnRoom: cc.Button,
+        btnJoinRoom: cc.Button
     },
 
     onLoad: function onLoad() {
@@ -23,11 +26,24 @@ cc.Class({
         th.audioManager.playBGM("bg_hall.mp3");
     },
 
+    start: function start() {
+        if (th.userManager.roomId) {
+            th.alert.show("提示", "你已在房间中，是否返回游戏房间？", this.onReturnRoomClicked, true);
+        }
+    },
+
     initUserInfo: function initUserInfo() {
         var self = this;
         this.lblId.string = "ID:" + th.userManager.userId;
         this.lblName.string = th.userManager.userName;
         this.lblBalance.string = th.userManager.balance;
+        if (th.userManager.roomId) {
+            this.btnJoinRoom.node.active = false;
+            this.btnReturnRoom.node.active = true;
+        } else {
+            this.btnJoinRoom.node.active = true;
+            this.btnReturnRoom.node.active = false;
+        }
         cc.log(th.userManager.headImgUrl);
         cc.loader.load({ url: th.userManager.headImgUrl, type: 'jpg' }, function (err, texture) {
             if (!err) {
@@ -57,6 +73,10 @@ cc.Class({
 
     onJoinRoomClicked: function onJoinRoomClicked() {
         this.joinRoomWin.active = true;
+    },
+
+    onReturnRoomClicked: function onReturnRoomClicked() {
+        th.userManager.joinRoom(th.userManager.roomId);
     },
 
     onSettingClicked: function onSettingClicked() {

@@ -78,10 +78,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 41
+        "__id__": 42
       },
       {
-        "__id__": 42
+        "__id__": 43
       }
     ],
     "_prefab": null,
@@ -893,18 +893,21 @@
     "_components": [
       {
         "__id__": 39
+      },
+      {
+        "__id__": 40
       }
     ],
     "_prefab": {
-      "__id__": 40
+      "__id__": 41
     },
     "_id": "98TVrqaIVP2Yin+HOnIv63",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -956,12 +959,12 @@
       "__id__": 26
     },
     "_id": "4dju4HNONJfaT9FnTd7XZZ",
-    "_opacity": 49.215,
+    "_opacity": 200,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 0,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -1432,6 +1435,58 @@
     },
     "lblContent": {
       "__id__": 31
+    }
+  },
+  {
+    "__type__": "cc.Button",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 22
+    },
+    "_enabled": true,
+    "transition": 0,
+    "pressedColor": {
+      "__type__": "cc.Color",
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "hoverColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "duration": 0.1,
+    "zoomScale": 1.2,
+    "clickEvents": [],
+    "_N$interactable": false,
+    "_N$enableAutoGrayEffect": false,
+    "_N$normalColor": {
+      "__type__": "cc.Color",
+      "r": 214,
+      "g": 214,
+      "b": 214,
+      "a": 255
+    },
+    "_N$disabledColor": {
+      "__type__": "cc.Color",
+      "r": 124,
+      "g": 124,
+      "b": 124,
+      "a": 255
+    },
+    "_N$normalSprite": null,
+    "_N$pressedSprite": null,
+    "pressedSprite": null,
+    "_N$hoverSprite": null,
+    "hoverSprite": null,
+    "_N$disabledSprite": null,
+    "_N$target": {
+      "__id__": 22
     }
   },
   {

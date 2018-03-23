@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "spades_12",
+    "texture": "7201mLphVPqLw1DM5FR73l",
+    "rect": [
+      646,
+      1238,
+      157,
+      202
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      157,
+      202
+    ]
+  }
+}

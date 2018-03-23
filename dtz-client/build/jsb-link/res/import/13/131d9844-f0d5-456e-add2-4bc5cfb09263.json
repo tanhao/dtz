@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "score_choice",
+    "texture": "fcDC6tu8NHMYawNx/iqkc1",
+    "rect": [
+      0,
+      0,
+      116,
+      30
+    ],
+    "offset": [
+      -1,
+      0.5
+    ],
+    "originalSize": [
+      118,
+      31
+    ]
+  }
+}

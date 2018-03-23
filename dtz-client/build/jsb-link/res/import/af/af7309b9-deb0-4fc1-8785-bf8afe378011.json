@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "grayBg",
+    "texture": "2dFT1XmMhEGZmfrUXCxwWX",
+    "rect": [
+      0,
+      0,
+      132,
+      30
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      132,
+      30
+    ],
+    "capInsets": [
+      13,
+      0,
+      14,
+      0
+    ]
+  }
+}

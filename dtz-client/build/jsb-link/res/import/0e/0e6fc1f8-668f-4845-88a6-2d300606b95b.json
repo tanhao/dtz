@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "end_gift",
+    "texture": "8c4MTZE7pElZ8C8ou407OP",
+    "rect": [
+      2,
+      1,
+      114,
+      30
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      118,
+      31
+    ]
+  }
+}

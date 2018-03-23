@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "clubs_13",
+    "texture": "7201mLphVPqLw1DM5FR73l",
+    "rect": [
+      2,
+      844,
+      157,
+      202
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      157,
+      202
+    ]
+  }
+}
