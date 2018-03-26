@@ -1,69 +1,55 @@
-2018-03-26T01:27:23.446Z - normal: Load ~/.CocosCreator/settings.json
-2018-03-26T01:27:23.451Z - normal: checking language setting...
-2018-03-26T01:27:23.451Z - normal: Language: zh
-2018-03-26T01:27:25.629Z - success: protocol editor-framework registered
-2018-03-26T01:27:25.629Z - success: protocol app registered
-2018-03-26T01:27:25.629Z - success: protocol theme registered
-2018-03-26T01:27:25.629Z - success: protocol packages registered
-2018-03-26T01:27:25.630Z - success: protocol unpack registerred
-2018-03-26T01:27:25.630Z - success: protocol disable-commonjs registerred
-2018-03-26T01:27:25.909Z - normal: connected!
-2018-03-26T01:27:25.916Z - normal: Check project D:\Workspaces_Chess\dtz\dtz-client
-2018-03-26T01:27:25.921Z - normal: Initializing Cocos2d
-2018-03-26T01:27:26.296Z - normal: Initializing Asset Database
-2018-03-26T01:27:26.353Z - success: protocol uuid registerred
-2018-03-26T01:27:26.354Z - success: protocol db registerred
-2018-03-26T01:27:26.354Z - success: protocol thumbnail registerred
-2018-03-26T01:27:26.354Z - normal: Loading editor/builtin packages
-2018-03-26T01:27:26.382Z - success: anysdk loaded
-2018-03-26T01:27:26.543Z - success: assets loaded
-2018-03-26T01:27:26.546Z - success: builder loaded
-2018-03-26T01:27:26.549Z - success: cocos-analytics loaded
-2018-03-26T01:27:26.553Z - success: console loaded
-2018-03-26T01:27:26.602Z - success: fb-instant-games loaded
-2018-03-26T01:27:26.606Z - success: hierarchy loaded
-2018-03-26T01:27:26.610Z - success: inspector loaded
-2018-03-26T01:27:26.612Z - success: keystore loaded
-2018-03-26T01:27:26.615Z - success: node-library loaded
-2018-03-26T01:27:26.617Z - success: package-asset loaded
-2018-03-26T01:27:26.619Z - success: preferences loaded
-2018-03-26T01:27:26.621Z - success: project-exporter loaded
-2018-03-26T01:27:26.643Z - success: project-importer loaded
-2018-03-26T01:27:26.645Z - success: project-settings loaded
-2018-03-26T01:27:26.648Z - success: ui-kit loaded
-2018-03-26T01:27:26.650Z - success: ui-grid loaded
-2018-03-26T01:27:26.654Z - success: scene loaded
-2018-03-26T01:27:26.655Z - success: sprite-editor loaded
-2018-03-26T01:27:26.659Z - success: store loaded
-2018-03-26T01:27:26.665Z - success: timeline loaded
-2018-03-26T01:27:26.665Z - normal: Loading builtin packages
-2018-03-26T01:27:26.668Z - success: asset-db-debugger loaded
-2018-03-26T01:27:26.670Z - success: code-editor loaded
-2018-03-26T01:27:26.670Z - success: color-picker loaded
-2018-03-26T01:27:26.673Z - success: package-manager loaded
-2018-03-26T01:27:26.679Z - success: sdkbox loaded
-2018-03-26T01:27:26.682Z - success: tester loaded
-2018-03-26T01:27:26.684Z - success: ui-kit-preview-extra loaded
-2018-03-26T01:27:26.685Z - success: ui-kit-preview loaded
-2018-03-26T01:27:26.687Z - success: ui-tree loaded
-2018-03-26T01:27:28.364Z - normal: Initializing project D:\Workspaces_Chess\dtz\dtz-client
-2018-03-26T01:27:28.367Z - normal: Loading packages
-2018-03-26T01:27:28.373Z - normal: Watching packages
-2018-03-26T01:27:28.389Z - normal: Run Application
-2018-03-26T01:27:29.802Z - success: preview server running at http://localhost:7456
-2018-03-26T01:27:35.613Z - normal: 1.9.0
-2018-03-26T01:33:58.601Z - error: TypeError: Cannot read property 'offsetTop' of null
-    at HTMLElement._getShiftSelects (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:12314)
-    at HTMLElement._onItemSelecting (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:5073)
-    at HTMLElement.handler (app://bower_components/polymer/polymer.html:471:17)
-    at HTMLElement.fire (app://bower_components/polymer/polymer.html:1306:6)
-    at HTMLElement._onMouseDown (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-item.js:1:1299)
-    at HTMLElement.handler (app://bower_components/polymer/polymer.html:471:17)
-2018-03-26T01:34:11.036Z - error: TypeError: Cannot read property 'offsetTop' of null
-    at HTMLElement._getShiftSelects (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:12314)
-    at HTMLElement._onItemSelecting (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:5073)
-    at HTMLElement.handler (app://bower_components/polymer/polymer.html:471:17)
-    at HTMLElement.fire (app://bower_components/polymer/polymer.html:1306:6)
-    at HTMLElement._onMouseDown (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-item.js:1:1299)
-    at HTMLElement.handler (app://bower_components/polymer/polymer.html:471:17)
-2018-03-26T02:44:47.573Z - info: shutdown preview server
+2018-03-26T15:41:35.703Z - normal: Load ~/.CocosCreator/settings.json
+2018-03-26T15:41:35.707Z - normal: checking language setting...
+2018-03-26T15:41:35.707Z - normal: Language: zh
+2018-03-26T15:41:37.480Z - success: protocol editor-framework registered
+2018-03-26T15:41:37.480Z - success: protocol app registered
+2018-03-26T15:41:37.480Z - success: protocol theme registered
+2018-03-26T15:41:37.480Z - success: protocol packages registered
+2018-03-26T15:41:37.481Z - success: protocol unpack registerred
+2018-03-26T15:41:37.481Z - success: protocol disable-commonjs registerred
+2018-03-26T15:41:37.730Z - normal: connected!
+2018-03-26T15:41:37.738Z - normal: Check project D:\Workspace_Chess\dtz\dtz-client
+2018-03-26T15:41:37.744Z - normal: Initializing Cocos2d
+2018-03-26T15:41:37.988Z - normal: Initializing Asset Database
+2018-03-26T15:41:38.025Z - success: protocol uuid registerred
+2018-03-26T15:41:38.025Z - success: protocol db registerred
+2018-03-26T15:41:38.026Z - success: protocol thumbnail registerred
+2018-03-26T15:41:38.026Z - normal: Loading editor/builtin packages
+2018-03-26T15:41:38.044Z - success: anysdk loaded
+2018-03-26T15:41:38.156Z - success: assets loaded
+2018-03-26T15:41:38.158Z - success: builder loaded
+2018-03-26T15:41:38.160Z - success: cocos-analytics loaded
+2018-03-26T15:41:38.165Z - success: console loaded
+2018-03-26T15:41:38.206Z - success: fb-instant-games loaded
+2018-03-26T15:41:38.209Z - success: hierarchy loaded
+2018-03-26T15:41:38.211Z - success: inspector loaded
+2018-03-26T15:41:38.213Z - success: keystore loaded
+2018-03-26T15:41:38.215Z - success: node-library loaded
+2018-03-26T15:41:38.216Z - success: package-asset loaded
+2018-03-26T15:41:38.217Z - success: preferences loaded
+2018-03-26T15:41:38.218Z - success: project-exporter loaded
+2018-03-26T15:41:38.233Z - success: project-importer loaded
+2018-03-26T15:41:38.234Z - success: project-settings loaded
+2018-03-26T15:41:38.236Z - success: ui-kit loaded
+2018-03-26T15:41:38.237Z - success: ui-grid loaded
+2018-03-26T15:41:38.239Z - success: scene loaded
+2018-03-26T15:41:38.240Z - success: sprite-editor loaded
+2018-03-26T15:41:38.243Z - success: store loaded
+2018-03-26T15:41:38.246Z - success: timeline loaded
+2018-03-26T15:41:38.246Z - normal: Loading builtin packages
+2018-03-26T15:41:38.247Z - success: asset-db-debugger loaded
+2018-03-26T15:41:38.248Z - success: code-editor loaded
+2018-03-26T15:41:38.249Z - success: color-picker loaded
+2018-03-26T15:41:38.250Z - success: package-manager loaded
+2018-03-26T15:41:38.254Z - success: sdkbox loaded
+2018-03-26T15:41:38.256Z - success: tester loaded
+2018-03-26T15:41:38.257Z - success: ui-kit-preview-extra loaded
+2018-03-26T15:41:38.258Z - success: ui-kit-preview loaded
+2018-03-26T15:41:38.259Z - success: ui-tree loaded
+2018-03-26T15:41:39.260Z - normal: Initializing project D:\Workspace_Chess\dtz\dtz-client
+2018-03-26T15:41:39.268Z - normal: Loading packages
+2018-03-26T15:41:39.273Z - normal: Watching packages
+2018-03-26T15:41:39.283Z - normal: Run Application
+2018-03-26T15:41:40.963Z - success: preview server running at http://localhost:7456
+2018-03-26T15:41:45.348Z - normal: 1.9.0
+2018-03-26T15:43:32.571Z - info: shutdown preview server

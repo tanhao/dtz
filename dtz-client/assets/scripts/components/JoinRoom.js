@@ -61,11 +61,11 @@ cc.Class({
     },
 
     onInputFinished:function(roomId){
-        th.userManager.enterRoom(roomId,function(ret){
+        /*
+        th.userManager.joinRoom(roomId,function(ret){
             if(ret.errcode == 0){
                 this.node.active = false;
-            }
-            else{
+            }else{
                 var content = "房间["+ roomId +"]不存在，请重新输入!";
                 if(ret.errcode == 4){
                     content = "房间["+ roomId + "]已满!";
@@ -74,6 +74,9 @@ cc.Class({
                 this.onResetClicked();
             }
         }.bind(this)); 
+        */
+       this.node.active = false;
+       th.userManager.joinRoom(roomId);
     },
 
 });

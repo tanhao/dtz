@@ -2,7 +2,7 @@ function initManager(I){
     window.th=window.th || {};
     
     th.http=require("Http");
-    th.http.baseURL="http://192.168.88.156:9001"
+    th.http.baseURL="http://127.0.0.1:9001"
     th.sio=require("SocketIO");
 
     var UserManager=require("UserManager");

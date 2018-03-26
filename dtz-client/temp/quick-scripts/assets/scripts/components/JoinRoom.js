@@ -64,18 +64,22 @@ cc.Class({
     },
 
     onInputFinished: function onInputFinished(roomId) {
-        th.userManager.enterRoom(roomId, function (ret) {
-            if (ret.errcode == 0) {
+        /*
+        th.userManager.joinRoom(roomId,function(ret){
+            if(ret.errcode == 0){
                 this.node.active = false;
-            } else {
-                var content = "房间[" + roomId + "]不存在，请重新输入!";
-                if (ret.errcode == 4) {
-                    content = "房间[" + roomId + "]已满!";
+            }else{
+                var content = "房间["+ roomId +"]不存在，请重新输入!";
+                if(ret.errcode == 4){
+                    content = "房间["+ roomId + "]已满!";
                 }
-                th.alert.show("提示", content);
+                th.alert.show("提示",content);
                 this.onResetClicked();
             }
-        }.bind(this));
+        }.bind(this)); 
+        */
+        this.node.active = false;
+        th.userManager.joinRoom(roomId);
     }
 
 });

@@ -2,6 +2,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        dataEventHandler:null, //处理socket.io发过来的数据的节点
         roomId:null,
     },
 
@@ -13,9 +14,16 @@ cc.Class({
     update (dt) {
     },
     */
-   initHandlers:function(){
 
-   },
+    dispatchEvent(event,data){
+        if(this.dataEventHandler){
+            this.dataEventHandler.emit(event,data);
+        }    
+    },
+
+    initHandlers:function(){
+
+    },
 
    connectServer:function(data){
         var onConnectSuccess=function(){

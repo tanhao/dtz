@@ -1511,7 +1511,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 111,
+      "width": 110.75,
       "height": 24
     },
     "_rotationX": 0,
@@ -7938,7 +7938,9 @@
     "_N$hoverSprite": null,
     "hoverSprite": null,
     "_N$disabledSprite": null,
-    "_N$target": null
+    "_N$target": {
+      "__id__": 116
+    }
   },
   {
     "__type__": "cc.Node",
@@ -17849,7 +17851,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 163,
+      "width": 163.22,
       "height": 26
     },
     "_rotationX": 0,
