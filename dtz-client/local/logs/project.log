@@ -1,500 +1,69 @@
-2018-03-23T15:35:55.899Z - normal: Load ~/.CocosCreator/settings.json
-2018-03-23T15:35:55.903Z - normal: checking language setting...
-2018-03-23T15:35:55.904Z - normal: Language: zh
-2018-03-23T15:35:57.981Z - success: protocol editor-framework registered
-2018-03-23T15:35:57.982Z - success: protocol app registered
-2018-03-23T15:35:57.982Z - success: protocol theme registered
-2018-03-23T15:35:57.982Z - success: protocol packages registered
-2018-03-23T15:35:57.982Z - success: protocol unpack registerred
-2018-03-23T15:35:57.982Z - success: protocol disable-commonjs registerred
-2018-03-23T15:35:58.270Z - normal: connected!
-2018-03-23T15:35:58.274Z - normal: Check project D:\Workspaces_Chess\dtz\dtz-client
-2018-03-23T15:35:58.285Z - normal: Initializing Cocos2d
-2018-03-23T15:35:58.591Z - normal: Initializing Asset Database
-2018-03-23T15:35:58.662Z - success: protocol uuid registerred
-2018-03-23T15:35:58.663Z - success: protocol db registerred
-2018-03-23T15:35:58.663Z - success: protocol thumbnail registerred
-2018-03-23T15:35:58.663Z - normal: Loading editor/builtin packages
-2018-03-23T15:35:58.719Z - success: anysdk loaded
-2018-03-23T15:35:58.932Z - success: assets loaded
-2018-03-23T15:35:58.934Z - success: builder loaded
-2018-03-23T15:35:58.937Z - success: cocos-analytics loaded
-2018-03-23T15:35:58.941Z - success: console loaded
-2018-03-23T15:35:58.993Z - success: fb-instant-games loaded
-2018-03-23T15:35:58.997Z - success: hierarchy loaded
-2018-03-23T15:35:59.002Z - success: inspector loaded
-2018-03-23T15:35:59.004Z - success: keystore loaded
-2018-03-23T15:35:59.007Z - success: node-library loaded
-2018-03-23T15:35:59.009Z - success: package-asset loaded
-2018-03-23T15:35:59.012Z - success: preferences loaded
-2018-03-23T15:35:59.014Z - success: project-exporter loaded
-2018-03-23T15:35:59.037Z - success: project-importer loaded
-2018-03-23T15:35:59.040Z - success: project-settings loaded
-2018-03-23T15:35:59.042Z - success: ui-kit loaded
-2018-03-23T15:35:59.044Z - success: ui-grid loaded
-2018-03-23T15:35:59.049Z - success: scene loaded
-2018-03-23T15:35:59.050Z - success: sprite-editor loaded
-2018-03-23T15:35:59.054Z - success: store loaded
-2018-03-23T15:35:59.059Z - success: timeline loaded
-2018-03-23T15:35:59.060Z - normal: Loading builtin packages
-2018-03-23T15:35:59.063Z - success: asset-db-debugger loaded
-2018-03-23T15:35:59.065Z - success: code-editor loaded
-2018-03-23T15:35:59.066Z - success: color-picker loaded
-2018-03-23T15:35:59.069Z - success: package-manager loaded
-2018-03-23T15:35:59.077Z - success: sdkbox loaded
-2018-03-23T15:35:59.080Z - success: tester loaded
-2018-03-23T15:35:59.082Z - success: ui-kit-preview-extra loaded
-2018-03-23T15:35:59.084Z - success: ui-kit-preview loaded
-2018-03-23T15:35:59.093Z - success: ui-tree loaded
-2018-03-23T15:36:00.772Z - normal: Initializing project D:\Workspaces_Chess\dtz\dtz-client
-2018-03-23T15:36:00.775Z - normal: Loading packages
-2018-03-23T15:36:00.781Z - normal: Watching packages
-2018-03-23T15:36:00.796Z - normal: Run Application
-2018-03-23T15:36:02.405Z - success: preview server running at http://localhost:7456
-2018-03-23T15:36:08.508Z - normal: 1.9.0
-2018-03-23T15:37:29.856Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
-2018-03-23T15:37:29.858Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 990.00
-2018-03-23T15:37:29.858Z - normal: Simulator: FRAME SCALE = 1.00
-2018-03-23T15:37:30.030Z - normal: Simulator: Ready for GLSL
-2018-03-23T15:37:30.031Z - normal: Simulator: Ready for OpenGL 2.0
-2018-03-23T15:37:30.038Z - normal: Simulator: 
-2018-03-23T15:37:30.039Z - normal: Simulator: {
-2018-03-23T15:37:30.039Z - normal: Simulator: 	gl.version: 3.0.0 - Build 8.15.10.2353
-2018-03-23T15:37:30.039Z - normal: Simulator: 	gl.supports_NPOT: true
-2018-03-23T15:37:30.039Z - normal: Simulator: 	cocos2d.x.version: Cocos2d-x-lite v1.8.2
-2018-03-23T15:37:30.040Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2018-03-23T15:37:30.040Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2018-03-23T15:37:30.040Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2018-03-23T15:37:30.040Z - normal: Simulator: 	gl.max_texture_size: 4096
-2018-03-23T15:37:30.040Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2018-03-23T15:37:30.041Z - normal: Simulator: 	gl.vendor: Intel
-2018-03-23T15:37:30.043Z - normal: Simulator: 	gl.renderer: Intel(R) HD Graphics Family
-2018-03-23T15:37:30.043Z - normal: Simulator: 	gl.max_texture_units: 16
-2018-03-23T15:37:30.044Z - normal: Simulator: 	gl.supports_ETC1: false
-2018-03-23T15:37:30.044Z - normal: Simulator: 	gl.supports_PVRTC: false
-2018-03-23T15:37:30.044Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2018-03-23T15:37:30.044Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2018-03-23T15:37:30.044Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2018-03-23T15:37:30.045Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2018-03-23T15:37:30.045Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2018-03-23T15:37:30.045Z - normal: Simulator: }
-2018-03-23T15:37:30.045Z - normal: Simulator: 
-2018-03-23T15:37:30.046Z - normal: Simulator: 
-2018-03-23T15:37:30.046Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2018-03-23T15:37:30.056Z - normal: Simulator: Project Config:
-2018-03-23T15:37:30.056Z - normal: Simulator:     project dir: D:\CocosCreator\resources\cocos2d-x\simulator\win32\
-2018-03-23T15:37:30.057Z - normal: Simulator:     writable path: $(PROJDIR)\
-2018-03-23T15:37:30.057Z - normal: Simulator:     script file: $(PROJDIR)\main.js
-2018-03-23T15:37:30.057Z - normal: Simulator:     frame size: 1334 x 750
-2018-03-23T15:37:30.057Z - normal: Simulator:     frame scale: 1.00
-2018-03-23T15:37:30.057Z - normal: Simulator:     show console: NO
-2018-03-23T15:37:30.058Z - normal: Simulator:     write debug log: NO ()
-2018-03-23T15:37:30.058Z - normal: Simulator:     listen: 
-2018-03-23T15:37:30.058Z - normal: Simulator:     debugger: none
-2018-03-23T15:37:30.059Z - normal: Simulator:     add searching path:
-2018-03-23T15:37:30.059Z - normal: Simulator: 
-2018-03-23T15:37:30.059Z - normal: Simulator: 
-2018-03-23T15:37:30.061Z - normal: Simulator: 
-2018-03-23T15:37:30.061Z - normal: Simulator: ------------------------------------------------
-2018-03-23T15:37:30.062Z - normal: Simulator: LOAD Js FILE: main.js
-2018-03-23T15:37:30.062Z - normal: Simulator: ------------------------------------------------
-2018-03-23T15:37:30.062Z - normal: Simulator: D/jswrapper (364): Initializing V8, version: 6.0.286.52
-2018-03-23T15:37:30.463Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
-2018-03-23T15:37:30.465Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
-2018-03-23T15:37:30.465Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
-2018-03-23T15:37:30.691Z - normal: Simulator: D/jswrapper (125): JS: Cocos2d-x-lite v1.8.2
-2018-03-23T15:37:30.974Z - normal: Simulator: iShow!
-2018-03-23T15:37:31.549Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 4.115000000000009ms
-2018-03-23T15:37:31.549Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.19600000000014006ms
-2018-03-23T15:37:31.549Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 0.1150000000000091ms
-2018-03-23T15:37:31.550Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.013000000000147338ms
-2018-03-23T15:37:31.617Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T15:37:31.621Z - normal: Simulator: D/jswrapper (125): JS: WaitingConnection====>onload
-2018-03-23T15:37:31.625Z - normal: Simulator: D/jswrapper (125): JS: Activate: 75.34799999999996ms
-2018-03-23T15:37:32.567Z - normal: Simulator: D/jswrapper (125): JS: onBtnWeichatClicked
-2018-03-23T15:37:32.584Z - normal: Simulator: In the constructor of HttpClient!
-2018-03-23T15:37:32.597Z - normal: Simulator: D/jswrapper (125): JS: try => http response:{"errcode":0,"errmsg":"ok","account":"oy4oyv4IBaxtkPjSq9ee4w42QazA","sign":"b3c1554e30c7c62fa8b9af853e8d3741","hallAddr":"127.0.0.1:9002"}
-2018-03-23T15:37:32.598Z - normal: Simulator: D/jswrapper (125): JS: http://127.0.0.1:9002
-2018-03-23T15:37:32.628Z - normal: Simulator: D/jswrapper (125): JS: try => http response:{"errcode":0,"errmsg":"ok","balance":800,"id":100000,"account":"oy4oyv4IBaxtkPjSq9ee4w42QazA","name":"zhiyuan","sex":1,"headImgUrl":"http://thirdwx.qlogo.cn/mmopen/vi_32/yRMlybhILtPMrSOz5Bo7zkF94HEaJqYE6hZvaPpGAqlJnJO0sjSJ2lJqhZiaFcSrLNaicfYzDbbtPySaQCxJxCUg/132","roomId":499032}
-2018-03-23T15:37:32.672Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 096AA548 ... 
-2018-03-23T15:37:32.672Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 097DE1E8 ... 
-2018-03-23T15:37:33.074Z - normal: Simulator: D/jswrapper (125): JS: LoadScene d2c04a79-2cb0-40bf-ad0d-8c8224a7e190: 435.9050000000002ms
-2018-03-23T15:37:33.104Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 40.33600000000024ms
-2018-03-23T15:37:33.104Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.11799999999993815ms
-2018-03-23T15:37:33.123Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 17.378999999999905ms
-2018-03-23T15:37:33.123Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.011999999999716238ms
-2018-03-23T15:37:33.142Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T15:37:33.142Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T15:37:33.178Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T15:37:33.193Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T15:37:33.193Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T15:37:33.197Z - normal: Simulator: D/jswrapper (125): JS: http://thirdwx.qlogo.cn/mmopen/vi_32/yRMlybhILtPMrSOz5Bo7zkF94HEaJqYE6hZvaPpGAqlJnJO0sjSJ2lJqhZiaFcSrLNaicfYzDbbtPySaQCxJxCUg/132
-2018-03-23T15:37:33.233Z - normal: Simulator: D/jswrapper (125): JS: WaitingConnection====>onload
-2018-03-23T15:37:33.233Z - normal: Simulator: D/jswrapper (125): JS: Alert====>onload
-2018-03-23T15:37:33.247Z - normal: Simulator: D/jswrapper (125): JS: Activate: 117.61900000000014ms
-2018-03-23T15:37:33.248Z - normal: Simulator: D/jswrapper (125): JS: showBtnCancel:true
-2018-03-23T15:37:33.297Z - normal: Simulator: cocos2d: QuadCommand: resizing index size from [-1] to [2560]
-2018-03-23T15:37:33.829Z - normal: Simulator: D/jswrapper (125): JS: try => http response:{"errcode":0,"errmsg":"ok","roomId":499032,"ip":"127.0.0.1","port":8888,"token":"969586a69b4dc85ce56cc17fac115b74","time":1521819453805,"sign":"4743496dd979619808b172cbf3ee7680"}
-2018-03-23T15:37:33.829Z - normal: Simulator: D/jswrapper (125): JS: join room data:{"errcode":0,"errmsg":"ok","roomId":499032,"ip":"127.0.0.1","port":8888,"token":"969586a69b4dc85ce56cc17fac115b74","time":1521819453805,"sign":"4743496dd979619808b172cbf3ee7680"}
-2018-03-23T15:37:33.829Z - normal: Simulator: D/jswrapper (125): JS: connect to : ws://127.0.0.1:8888?roomId=499032&token=969586a69b4dc85ce56cc17fac115b74&sign=4743496dd979619808b172cbf3ee7680&time=1521819453805
-2018-03-23T15:37:34.022Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 0993EF28 ... 
-2018-03-23T15:37:34.022Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 0434F078 ... 
-2018-03-23T15:37:34.331Z - normal: Simulator: D/jswrapper (125): JS: LoadScene 6ab1accb-a426-480a-9cc5-3e0f98afe055: 444.06399999999985ms
-2018-03-23T15:37:34.399Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 71.62099999999964ms
-2018-03-23T15:37:34.399Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.06700000000000728ms
-2018-03-23T15:37:34.448Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 42.2199999999998ms
-2018-03-23T15:37:34.450Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.016000000000076398ms
-2018-03-23T15:37:34.571Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T15:37:34.611Z - normal: Simulator: D/jswrapper (125): JS: Activate: 168.6220000000003ms
-2018-03-23T15:37:36.450Z - normal: Simulator: D/jswrapper (447): ScriptEngine::cleanup begin ...
-2018-03-23T15:37:36.450Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 1549, all objects: 1832
-2018-03-23T15:37:36.476Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 099277F0 ... 
-2018-03-23T15:37:36.510Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 1186, all objects: 1469
-2018-03-23T15:37:36.536Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 1186, all objects: 1467
-2018-03-23T15:37:36.586Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 1186, all objects: 1467
-2018-03-23T15:37:36.587Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 0, all objects: 0
-2018-03-23T15:37:36.643Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 0, all objects: 0
-2018-03-23T15:37:36.679Z - normal: Simulator: D/jswrapper (480): Starting to cleanup dragonbones object, count: 0
-2018-03-23T15:37:36.679Z - normal: Simulator: D/jswrapper (499): After first cleanup, dragonbones object remained count: 0
-2018-03-23T15:37:36.680Z - normal: Simulator: D/jswrapper (515): After second cleanup, dragonbones object remained count: 0
-2018-03-23T15:37:36.680Z - normal: Simulator: D/jswrapper (510): ScriptEngine::cleanup end ...
-2018-03-23T15:40:19.551Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "android-11",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "D:\\Workspaces_Chess\\dtz\\dtz-client\\build",
-  "debug": true,
-  "dest": "D:\\Workspaces_Chess\\dtz\\dtz-client\\build\\jsb-link",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": false,
-  "inlineSpriteFrames_native": false,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "com.th.dtz",
-  "platform": "android",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "orientation": "portrait"
-  },
-  "renderMode": "0",
-  "scenes": [
-    "2a9e95f3-be12-4b93-9415-c316e1ed5de5",
-    "d2c04a79-2cb0-40bf-ad0d-8c8224a7e190",
-    "6ab1accb-a426-480a-9cc5-3e0f98afe055"
-  ],
-  "sourceMaps": false,
-  "startScene": "2a9e95f3-be12-4b93-9415-c316e1ed5de5",
-  "template": "link",
-  "title": "dtz",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "landscape",
-  "wechatgame": {
-    "appid": "wx6ac3f5090a6b99c5",
-    "orientation": "portrait"
-  },
-  "xxteaKey": "b3be7839-4b9a-42",
-  "zipCompressJs": true,
-  "project": "D:\\Workspaces_Chess\\dtz\\dtz-client",
-  "projectName": "dtz",
-  "debugBuildWorker": false
-}
-2018-03-23T15:40:19.555Z - normal: Building D:\Workspaces_Chess\dtz\dtz-client
-2018-03-23T15:40:19.555Z - normal: Destination D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link
-2018-03-23T15:40:19.994Z - normal: Delete D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link\res/**/*,D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link\src/*/
-2018-03-23T15:40:21.702Z - normal: Creating native cocos project to  D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link
-2018-03-23T15:40:40.639Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:6699
-2018-03-23T15:40:43.737Z - normal: Compiled project javascript file successfully
-2018-03-23T15:40:43.737Z - normal: Start building assets
-2018-03-23T15:40:43.738Z - normal: Start spawn build-worker
-2018-03-23T15:40:44.833Z - normal: Finish spawn build-worker
-2018-03-23T15:40:44.833Z - normal: Start init build-worker
-2018-03-23T15:40:48.020Z - normal: 1.9.0
-2018-03-23T15:40:48.128Z - normal: Finish init build-worker
-2018-03-23T15:40:48.128Z - normal: Start build-assets in worker
-2018-03-23T15:40:49.191Z - normal: Finish build-assets in worker
-2018-03-23T15:40:49.196Z - normal: Finish building assets
-2018-03-23T15:40:49.328Z - normal: Start building raw assets
-2018-03-23T15:40:49.335Z - normal: Start building plugin scripts
-2018-03-23T15:40:49.387Z - normal: Finish building plugin scripts
-2018-03-23T15:40:49.620Z - normal: Finish building raw assets
-2018-03-23T15:40:49.628Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
-2018-03-23T15:40:49.669Z - normal: Built to "D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link" successfully
-2018-03-23T15:41:00.889Z - normal: Start to compile native project. Please wait...
-2018-03-23T15:41:00.889Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2018-03-23T15:46:28.666Z - normal: Compile native project successfully.
-2018-03-23T15:49:33.674Z - normal: Start to run project
-2018-03-23T15:49:34.962Z - normal: Start to run project. Please wait...
-2018-03-23T15:49:34.963Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2018-03-23T15:50:50.242Z - failed: Error: Failed to run project. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-    at ChildProcess.handleChildProcess (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:21645)
-    at ChildProcess.e.on (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:7685)
-    at emitTwo (events.js:106:13)
-    at ChildProcess.emit (events.js:194:7)
-    at maybeClose (internal/child_process.js:899:16)
-    at Socket.<anonymous> (internal/child_process.js:342:11)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:191:7)
-    at Pipe._handle.close [as _onclose] (net.js:510:12)
-2018-03-23T15:51:12.178Z - normal: Start to run project
-2018-03-23T15:51:13.365Z - normal: Start to run project. Please wait...
-2018-03-23T15:51:13.365Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2018-03-23T15:51:35.294Z - failed: Error: Failed to run project. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-    at ChildProcess.handleChildProcess (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:21645)
-    at ChildProcess.e.on (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:7685)
-    at emitTwo (events.js:106:13)
-    at ChildProcess.emit (events.js:194:7)
-    at maybeClose (internal/child_process.js:899:16)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
-2018-03-23T15:51:51.312Z - normal: Start to run project
-2018-03-23T15:51:52.491Z - normal: Start to run project. Please wait...
-2018-03-23T15:51:52.492Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2018-03-23T15:52:09.952Z - failed: Error: Failed to run project. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-    at ChildProcess.handleChildProcess (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:21645)
-    at ChildProcess.e.on (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:7685)
-    at emitTwo (events.js:106:13)
-    at ChildProcess.emit (events.js:194:7)
-    at maybeClose (internal/child_process.js:899:16)
-    at Socket.<anonymous> (internal/child_process.js:342:11)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:191:7)
-    at Pipe._handle.close [as _onclose] (net.js:510:12)
-2018-03-23T15:52:19.635Z - normal: Start to run project
-2018-03-23T15:52:20.826Z - normal: Start to run project. Please wait...
-2018-03-23T15:52:20.827Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2018-03-23T15:52:51.842Z - failed: Error: Failed to run project. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-    at ChildProcess.handleChildProcess (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:21645)
-    at ChildProcess.e.on (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:7685)
-    at emitTwo (events.js:106:13)
-    at ChildProcess.emit (events.js:194:7)
-    at maybeClose (internal/child_process.js:899:16)
-    at Socket.<anonymous> (internal/child_process.js:342:11)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:191:7)
-    at Pipe._handle.close [as _onclose] (net.js:510:12)
-2018-03-23T15:58:59.313Z - normal: Start to run project
-2018-03-23T15:59:00.496Z - normal: Start to run project. Please wait...
-2018-03-23T15:59:00.497Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2018-03-23T15:59:24.228Z - failed: Error: Failed to run project. The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-    at ChildProcess.handleChildProcess (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:21645)
-    at ChildProcess.e.on (D:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:7685)
-    at emitTwo (events.js:106:13)
-    at ChildProcess.emit (events.js:194:7)
-    at maybeClose (internal/child_process.js:899:16)
-    at Socket.<anonymous> (internal/child_process.js:342:11)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:191:7)
-    at Pipe._handle.close [as _onclose] (net.js:510:12)
-2018-03-23T15:59:56.104Z - normal: Start to run project
-2018-03-23T15:59:57.283Z - normal: Start to run project. Please wait...
-2018-03-23T15:59:57.284Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2018-03-23T16:17:08.679Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
-2018-03-23T16:17:08.681Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 990.00
-2018-03-23T16:17:08.682Z - normal: Simulator: FRAME SCALE = 1.00
-2018-03-23T16:17:09.200Z - normal: Simulator: Ready for GLSL
-2018-03-23T16:17:09.201Z - normal: Simulator: Ready for OpenGL 2.0
-2018-03-23T16:17:09.201Z - normal: Simulator: 
-2018-03-23T16:17:09.202Z - normal: Simulator: {
-2018-03-23T16:17:09.202Z - normal: Simulator: 	gl.version: 3.0.0 - Build 8.15.10.2353
-2018-03-23T16:17:09.204Z - normal: Simulator: 	gl.supports_NPOT: true
-2018-03-23T16:17:09.204Z - normal: Simulator: 	cocos2d.x.version: Cocos2d-x-lite v1.8.2
-2018-03-23T16:17:09.204Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2018-03-23T16:17:09.204Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2018-03-23T16:17:09.204Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2018-03-23T16:17:09.204Z - normal: Simulator: 	gl.max_texture_size: 4096
-2018-03-23T16:17:09.205Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2018-03-23T16:17:09.205Z - normal: Simulator: 	gl.vendor: Intel
-2018-03-23T16:17:09.206Z - normal: Simulator: 	gl.renderer: Intel(R) HD Graphics Family
-2018-03-23T16:17:09.206Z - normal: Simulator: 	gl.max_texture_units: 16
-2018-03-23T16:17:09.206Z - normal: Simulator: 	gl.supports_ETC1: false
-2018-03-23T16:17:09.206Z - normal: Simulator: 	gl.supports_PVRTC: false
-2018-03-23T16:17:09.206Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2018-03-23T16:17:09.206Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2018-03-23T16:17:09.207Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2018-03-23T16:17:09.207Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2018-03-23T16:17:09.207Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2018-03-23T16:17:09.207Z - normal: Simulator: }
-2018-03-23T16:17:09.207Z - normal: Simulator: 
-2018-03-23T16:17:09.207Z - normal: Simulator: 
-2018-03-23T16:17:09.208Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2018-03-23T16:17:09.208Z - normal: Simulator: Project Config:
-2018-03-23T16:17:09.208Z - normal: Simulator:     project dir: D:\CocosCreator\resources\cocos2d-x\simulator\win32\
-2018-03-23T16:17:09.208Z - normal: Simulator:     writable path: $(PROJDIR)\
-2018-03-23T16:17:09.208Z - normal: Simulator:     script file: $(PROJDIR)\main.js
-2018-03-23T16:17:09.208Z - normal: Simulator:     frame size: 1334 x 750
-2018-03-23T16:17:09.208Z - normal: Simulator:     frame scale: 1.00
-2018-03-23T16:17:09.209Z - normal: Simulator:     show console: NO
-2018-03-23T16:17:09.209Z - normal: Simulator:     write debug log: NO ()
-2018-03-23T16:17:09.209Z - normal: Simulator:     listen: 
-2018-03-23T16:17:09.209Z - normal: Simulator:     debugger: none
-2018-03-23T16:17:09.209Z - normal: Simulator:     add searching path:
-2018-03-23T16:17:09.209Z - normal: Simulator: 
-2018-03-23T16:17:09.209Z - normal: Simulator: 
-2018-03-23T16:17:09.210Z - normal: Simulator: 
-2018-03-23T16:17:09.210Z - normal: Simulator: ------------------------------------------------
-2018-03-23T16:17:09.210Z - normal: Simulator: LOAD Js FILE: main.js
-2018-03-23T16:17:09.210Z - normal: Simulator: ------------------------------------------------
-2018-03-23T16:17:09.210Z - normal: Simulator: D/jswrapper (364): Initializing V8, version: 6.0.286.52
-2018-03-23T16:17:09.607Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
-2018-03-23T16:17:09.617Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
-2018-03-23T16:17:09.617Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
-2018-03-23T16:17:09.910Z - normal: Simulator: D/jswrapper (125): JS: Cocos2d-x-lite v1.8.2
-2018-03-23T16:17:10.217Z - normal: Simulator: iShow!
-2018-03-23T16:17:10.400Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 5.586000000000013ms
-2018-03-23T16:17:10.400Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.26700000000005275ms
-2018-03-23T16:17:10.400Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 0.16400000000010095ms
-2018-03-23T16:17:10.401Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.020000000000095497ms
-2018-03-23T16:17:10.447Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T16:17:10.452Z - normal: Simulator: D/jswrapper (125): JS: WaitingConnection====>onload
-2018-03-23T16:17:10.456Z - normal: Simulator: D/jswrapper (125): JS: Activate: 55.78899999999999ms
-2018-03-23T16:17:15.203Z - normal: Simulator: D/jswrapper (125): JS: onBtnWeichatClicked
-2018-03-23T16:17:15.225Z - normal: Simulator: In the constructor of HttpClient!
-2018-03-23T16:17:15.256Z - normal: Simulator: D/jswrapper (125): JS: try => http response:{"errcode":0,"errmsg":"ok","account":"oy4oyv4IBaxtkPjSq9ee4w42QazA","sign":"dc964633b754b0722bd2ec5cbfdf4c42","hallAddr":"192.168.88.156:9002"}
-2018-03-23T16:17:15.258Z - normal: Simulator: D/jswrapper (125): JS: http://192.168.88.156:9002
-2018-03-23T16:17:15.288Z - normal: Simulator: D/jswrapper (125): JS: try => http response:{"errcode":0,"errmsg":"ok","balance":800,"id":100000,"account":"oy4oyv4IBaxtkPjSq9ee4w42QazA","name":"zhiyuan","sex":1,"headImgUrl":"http://thirdwx.qlogo.cn/mmopen/vi_32/yRMlybhILtPMrSOz5Bo7zkF94HEaJqYE6hZvaPpGAqlJnJO0sjSJ2lJqhZiaFcSrLNaicfYzDbbtPySaQCxJxCUg/132","roomId":499032}
-2018-03-23T16:17:15.328Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 09953958 ... 
-2018-03-23T16:17:15.329Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 08CCC208 ... 
-2018-03-23T16:17:15.732Z - normal: Simulator: D/jswrapper (125): JS: LoadScene d2c04a79-2cb0-40bf-ad0d-8c8224a7e190: 445.09500000000025ms
-2018-03-23T16:17:15.771Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 38.50500000000011ms
-2018-03-23T16:17:15.771Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.14000000000032742ms
-2018-03-23T16:17:15.800Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 27.972999999999956ms
-2018-03-23T16:17:15.801Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.012000000000625732ms
-2018-03-23T16:17:15.819Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T16:17:15.819Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T16:17:15.840Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T16:17:15.841Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T16:17:15.852Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T16:17:15.856Z - normal: Simulator: D/jswrapper (125): JS: http://thirdwx.qlogo.cn/mmopen/vi_32/yRMlybhILtPMrSOz5Bo7zkF94HEaJqYE6hZvaPpGAqlJnJO0sjSJ2lJqhZiaFcSrLNaicfYzDbbtPySaQCxJxCUg/132
-2018-03-23T16:17:15.884Z - normal: Simulator: D/jswrapper (125): JS: WaitingConnection====>onload
-2018-03-23T16:17:15.884Z - normal: Simulator: D/jswrapper (125): JS: Alert====>onload
-2018-03-23T16:17:15.902Z - normal: Simulator: D/jswrapper (125): JS: Activate: 97.28000000000065ms
-2018-03-23T16:17:15.902Z - normal: Simulator: D/jswrapper (125): JS: showBtnCancel:true
-2018-03-23T16:17:15.943Z - normal: Simulator: cocos2d: QuadCommand: resizing index size from [-1] to [2560]
-2018-03-23T16:17:17.485Z - normal: Simulator: D/jswrapper (125): JS: try => http response:{"errcode":0,"errmsg":"ok","roomId":499032,"ip":"192.168.88.156","port":8888,"token":"81cb68b39ff6d8f90d6bd13bfc1823f3","time":1521821837479,"sign":"50985a2f6f6c40d49db47bd53e102226"}
-2018-03-23T16:17:17.485Z - normal: Simulator: D/jswrapper (125): JS: join room data:{"errcode":0,"errmsg":"ok","roomId":499032,"ip":"192.168.88.156","port":8888,"token":"81cb68b39ff6d8f90d6bd13bfc1823f3","time":1521821837479,"sign":"50985a2f6f6c40d49db47bd53e102226"}
-2018-03-23T16:17:17.486Z - normal: Simulator: D/jswrapper (125): JS: connect to : ws://192.168.88.156:8888?roomId=499032&token=81cb68b39ff6d8f90d6bd13bfc1823f3&sign=50985a2f6f6c40d49db47bd53e102226&time=1521821837479
-2018-03-23T16:17:17.685Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 09F8A508 ... 
-2018-03-23T16:17:17.685Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 0A001DD8 ... 
-2018-03-23T16:17:18.009Z - normal: Simulator: D/jswrapper (125): JS: LoadScene 6ab1accb-a426-480a-9cc5-3e0f98afe055: 452.28599999999915ms
-2018-03-23T16:17:18.076Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 67.17900000000009ms
-2018-03-23T16:17:18.076Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.06199999999989814ms
-2018-03-23T16:17:18.120Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 39.01599999999962ms
-2018-03-23T16:17:18.121Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.007999999999810825ms
-2018-03-23T16:17:18.196Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-03-23T16:17:18.239Z - normal: Simulator: D/jswrapper (125): JS: Activate: 122.79099999999926ms
-2018-03-23T16:17:19.254Z - normal: Simulator: D/jswrapper (447): ScriptEngine::cleanup begin ...
-2018-03-23T16:17:19.254Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 1557, all objects: 1841
-2018-03-23T16:17:19.283Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 09FF6300 ... 
-2018-03-23T16:17:19.316Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 1187, all objects: 1471
-2018-03-23T16:17:19.325Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 1187, all objects: 1468
-2018-03-23T16:17:19.369Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 1187, all objects: 1468
-2018-03-23T16:17:19.374Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 0, all objects: 0
-2018-03-23T16:17:19.420Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 0, all objects: 0
-2018-03-23T16:17:19.450Z - normal: Simulator: D/jswrapper (480): Starting to cleanup dragonbones object, count: 0
-2018-03-23T16:17:19.451Z - normal: Simulator: D/jswrapper (499): After first cleanup, dragonbones object remained count: 0
-2018-03-23T16:17:19.451Z - normal: Simulator: D/jswrapper (515): After second cleanup, dragonbones object remained count: 0
-2018-03-23T16:17:19.451Z - normal: Simulator: D/jswrapper (510): ScriptEngine::cleanup end ...
-2018-03-23T16:17:26.935Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "android-11",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "D:\\Workspaces_Chess\\dtz\\dtz-client\\build",
-  "debug": true,
-  "dest": "D:\\Workspaces_Chess\\dtz\\dtz-client\\build\\jsb-link",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": false,
-  "inlineSpriteFrames_native": false,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "com.th.dtz",
-  "platform": "android",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "orientation": "portrait"
-  },
-  "renderMode": "0",
-  "scenes": [
-    "2a9e95f3-be12-4b93-9415-c316e1ed5de5",
-    "d2c04a79-2cb0-40bf-ad0d-8c8224a7e190",
-    "6ab1accb-a426-480a-9cc5-3e0f98afe055"
-  ],
-  "sourceMaps": false,
-  "startScene": "2a9e95f3-be12-4b93-9415-c316e1ed5de5",
-  "template": "link",
-  "title": "dtz",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "landscape",
-  "wechatgame": {
-    "appid": "wx6ac3f5090a6b99c5",
-    "orientation": "portrait"
-  },
-  "xxteaKey": "b3be7839-4b9a-42",
-  "zipCompressJs": true,
-  "project": "D:\\Workspaces_Chess\\dtz\\dtz-client",
-  "projectName": "dtz",
-  "debugBuildWorker": false
-}
-2018-03-23T16:17:26.939Z - normal: Building D:\Workspaces_Chess\dtz\dtz-client
-2018-03-23T16:17:26.939Z - normal: Destination D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link
-2018-03-23T16:17:26.941Z - normal: Delete D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link\res/**/*,D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link\src/*/
-2018-03-23T16:17:30.988Z - normal: Compiled project javascript file successfully
-2018-03-23T16:17:30.988Z - normal: Start building assets
-2018-03-23T16:17:30.988Z - normal: Start spawn build-worker
-2018-03-23T16:17:31.887Z - normal: Finish spawn build-worker
-2018-03-23T16:17:31.887Z - normal: Start init build-worker
-2018-03-23T16:17:34.929Z - normal: 1.9.0
-2018-03-23T16:17:35.017Z - normal: Finish init build-worker
-2018-03-23T16:17:35.017Z - normal: Start build-assets in worker
-2018-03-23T16:17:35.970Z - normal: Finish build-assets in worker
-2018-03-23T16:17:35.975Z - normal: Finish building assets
-2018-03-23T16:17:36.077Z - normal: Start building raw assets
-2018-03-23T16:17:36.079Z - normal: Start building plugin scripts
-2018-03-23T16:17:36.100Z - normal: Finish building plugin scripts
-2018-03-23T16:17:36.267Z - normal: Finish building raw assets
-2018-03-23T16:17:36.273Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
-2018-03-23T16:17:36.309Z - normal: Built to "D:\Workspaces_Chess\dtz\dtz-client\build\jsb-link" successfully
-2018-03-23T16:17:39.436Z - normal: Start to compile native project. Please wait...
-2018-03-23T16:17:39.437Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
-2018-03-23T16:18:04.585Z - normal: Compile native project successfully.
-2018-03-23T16:18:21.945Z - normal: Start to run project
-2018-03-23T16:18:23.141Z - normal: Start to run project. Please wait...
-2018-03-23T16:18:23.142Z - normal: The log file path [ C:\Users\Administrator\.CocosCreator\logs\native.log ]
+2018-03-26T01:27:23.446Z - normal: Load ~/.CocosCreator/settings.json
+2018-03-26T01:27:23.451Z - normal: checking language setting...
+2018-03-26T01:27:23.451Z - normal: Language: zh
+2018-03-26T01:27:25.629Z - success: protocol editor-framework registered
+2018-03-26T01:27:25.629Z - success: protocol app registered
+2018-03-26T01:27:25.629Z - success: protocol theme registered
+2018-03-26T01:27:25.629Z - success: protocol packages registered
+2018-03-26T01:27:25.630Z - success: protocol unpack registerred
+2018-03-26T01:27:25.630Z - success: protocol disable-commonjs registerred
+2018-03-26T01:27:25.909Z - normal: connected!
+2018-03-26T01:27:25.916Z - normal: Check project D:\Workspaces_Chess\dtz\dtz-client
+2018-03-26T01:27:25.921Z - normal: Initializing Cocos2d
+2018-03-26T01:27:26.296Z - normal: Initializing Asset Database
+2018-03-26T01:27:26.353Z - success: protocol uuid registerred
+2018-03-26T01:27:26.354Z - success: protocol db registerred
+2018-03-26T01:27:26.354Z - success: protocol thumbnail registerred
+2018-03-26T01:27:26.354Z - normal: Loading editor/builtin packages
+2018-03-26T01:27:26.382Z - success: anysdk loaded
+2018-03-26T01:27:26.543Z - success: assets loaded
+2018-03-26T01:27:26.546Z - success: builder loaded
+2018-03-26T01:27:26.549Z - success: cocos-analytics loaded
+2018-03-26T01:27:26.553Z - success: console loaded
+2018-03-26T01:27:26.602Z - success: fb-instant-games loaded
+2018-03-26T01:27:26.606Z - success: hierarchy loaded
+2018-03-26T01:27:26.610Z - success: inspector loaded
+2018-03-26T01:27:26.612Z - success: keystore loaded
+2018-03-26T01:27:26.615Z - success: node-library loaded
+2018-03-26T01:27:26.617Z - success: package-asset loaded
+2018-03-26T01:27:26.619Z - success: preferences loaded
+2018-03-26T01:27:26.621Z - success: project-exporter loaded
+2018-03-26T01:27:26.643Z - success: project-importer loaded
+2018-03-26T01:27:26.645Z - success: project-settings loaded
+2018-03-26T01:27:26.648Z - success: ui-kit loaded
+2018-03-26T01:27:26.650Z - success: ui-grid loaded
+2018-03-26T01:27:26.654Z - success: scene loaded
+2018-03-26T01:27:26.655Z - success: sprite-editor loaded
+2018-03-26T01:27:26.659Z - success: store loaded
+2018-03-26T01:27:26.665Z - success: timeline loaded
+2018-03-26T01:27:26.665Z - normal: Loading builtin packages
+2018-03-26T01:27:26.668Z - success: asset-db-debugger loaded
+2018-03-26T01:27:26.670Z - success: code-editor loaded
+2018-03-26T01:27:26.670Z - success: color-picker loaded
+2018-03-26T01:27:26.673Z - success: package-manager loaded
+2018-03-26T01:27:26.679Z - success: sdkbox loaded
+2018-03-26T01:27:26.682Z - success: tester loaded
+2018-03-26T01:27:26.684Z - success: ui-kit-preview-extra loaded
+2018-03-26T01:27:26.685Z - success: ui-kit-preview loaded
+2018-03-26T01:27:26.687Z - success: ui-tree loaded
+2018-03-26T01:27:28.364Z - normal: Initializing project D:\Workspaces_Chess\dtz\dtz-client
+2018-03-26T01:27:28.367Z - normal: Loading packages
+2018-03-26T01:27:28.373Z - normal: Watching packages
+2018-03-26T01:27:28.389Z - normal: Run Application
+2018-03-26T01:27:29.802Z - success: preview server running at http://localhost:7456
+2018-03-26T01:27:35.613Z - normal: 1.9.0
+2018-03-26T01:33:58.601Z - error: TypeError: Cannot read property 'offsetTop' of null
+    at HTMLElement._getShiftSelects (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:12314)
+    at HTMLElement._onItemSelecting (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:5073)
+    at HTMLElement.handler (app://bower_components/polymer/polymer.html:471:17)
+    at HTMLElement.fire (app://bower_components/polymer/polymer.html:1306:6)
+    at HTMLElement._onMouseDown (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-item.js:1:1299)
+    at HTMLElement.handler (app://bower_components/polymer/polymer.html:471:17)
+2018-03-26T01:34:11.036Z - error: TypeError: Cannot read property 'offsetTop' of null
+    at HTMLElement._getShiftSelects (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:12314)
+    at HTMLElement._onItemSelecting (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:5073)
+    at HTMLElement.handler (app://bower_components/polymer/polymer.html:471:17)
+    at HTMLElement.fire (app://bower_components/polymer/polymer.html:1306:6)
+    at HTMLElement._onMouseDown (file:///D:/CocosCreator/resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-item.js:1:1299)
+    at HTMLElement.handler (app://bower_components/polymer/polymer.html:471:17)
+2018-03-26T02:44:47.573Z - info: shutdown preview server
