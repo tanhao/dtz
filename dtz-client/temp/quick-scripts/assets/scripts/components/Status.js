@@ -7,17 +7,17 @@ cc._RF.push(module, 'ebf91v970xOZ6EDH8DBtT/j', 'Status', __filename);
 cc.Class({
     extends: cc.Component,
 
-    properties: {},
+    properties: {
+        roomId: cc.Label,
+        round: cc.Label,
+        time: cc.Label,
+        delay: cc.Label,
+        battery: cc.ProgressBar
+    },
 
-    onLoad: function onLoad() {}
-}
-
-/*
-update (dt) {
-},
-*/
-
-);
+    onLoad: function onLoad() {},
+    update: function update(dt) {}
+});
 
 cc._RF.pop();
         }

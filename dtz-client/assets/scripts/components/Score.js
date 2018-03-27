@@ -2,11 +2,11 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-       roomId:cc.Label,
-       round:cc.Label,
-       time:cc.Label,
-       delay:cc.Label,
-       battery:cc.ProgressBar
+        score5:cc.Label,
+        score10:cc.Label,
+        scoreK:cc.Label,
+        scoreTotal:cc.Label,
+
     },
 
     onLoad () {

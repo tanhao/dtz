@@ -1,0 +1,299 @@
+2018-03-27T01:51:17.355Z - normal: Load ~/.CocosCreator/settings.json
+2018-03-27T01:51:17.363Z - normal: checking language setting...
+2018-03-27T01:51:17.364Z - normal: Language: zh
+2018-03-27T01:51:19.707Z - success: protocol editor-framework registered
+2018-03-27T01:51:19.708Z - success: protocol app registered
+2018-03-27T01:51:19.708Z - success: protocol theme registered
+2018-03-27T01:51:19.708Z - success: protocol packages registered
+2018-03-27T01:51:19.708Z - success: protocol unpack registerred
+2018-03-27T01:51:19.708Z - success: protocol disable-commonjs registerred
+2018-03-27T01:51:20.019Z - normal: connected!
+2018-03-27T01:51:20.023Z - normal: Check project D:\Workspaces_Chess\dtz\dtz-client
+2018-03-27T01:51:20.044Z - normal: Initializing Cocos2d
+2018-03-27T01:51:20.449Z - normal: Initializing Asset Database
+2018-03-27T01:51:20.506Z - success: protocol uuid registerred
+2018-03-27T01:51:20.506Z - success: protocol db registerred
+2018-03-27T01:51:20.507Z - success: protocol thumbnail registerred
+2018-03-27T01:51:20.507Z - normal: Loading editor/builtin packages
+2018-03-27T01:51:20.538Z - success: anysdk loaded
+2018-03-27T01:51:20.708Z - success: assets loaded
+2018-03-27T01:51:20.711Z - success: builder loaded
+2018-03-27T01:51:20.715Z - success: cocos-analytics loaded
+2018-03-27T01:51:20.719Z - success: console loaded
+2018-03-27T01:51:20.768Z - success: fb-instant-games loaded
+2018-03-27T01:51:20.773Z - success: hierarchy loaded
+2018-03-27T01:51:20.777Z - success: inspector loaded
+2018-03-27T01:51:20.779Z - success: keystore loaded
+2018-03-27T01:51:20.782Z - success: node-library loaded
+2018-03-27T01:51:20.784Z - success: package-asset loaded
+2018-03-27T01:51:20.787Z - success: preferences loaded
+2018-03-27T01:51:20.789Z - success: project-exporter loaded
+2018-03-27T01:51:20.811Z - success: project-importer loaded
+2018-03-27T01:51:20.814Z - success: project-settings loaded
+2018-03-27T01:51:20.816Z - success: ui-kit loaded
+2018-03-27T01:51:20.818Z - success: ui-grid loaded
+2018-03-27T01:51:20.822Z - success: scene loaded
+2018-03-27T01:51:20.824Z - success: sprite-editor loaded
+2018-03-27T01:51:20.828Z - success: store loaded
+2018-03-27T01:51:20.834Z - success: timeline loaded
+2018-03-27T01:51:20.835Z - normal: Loading builtin packages
+2018-03-27T01:51:20.838Z - success: asset-db-debugger loaded
+2018-03-27T01:51:20.839Z - success: code-editor loaded
+2018-03-27T01:51:20.840Z - success: color-picker loaded
+2018-03-27T01:51:20.843Z - success: package-manager loaded
+2018-03-27T01:51:20.850Z - success: sdkbox loaded
+2018-03-27T01:51:20.860Z - success: tester loaded
+2018-03-27T01:51:20.862Z - success: ui-kit-preview-extra loaded
+2018-03-27T01:51:20.863Z - success: ui-kit-preview loaded
+2018-03-27T01:51:20.865Z - success: ui-tree loaded
+2018-03-27T01:51:22.429Z - normal: Initializing project D:\Workspaces_Chess\dtz\dtz-client
+2018-03-27T01:51:22.432Z - normal: Loading packages
+2018-03-27T01:51:22.438Z - normal: Watching packages
+2018-03-27T01:51:22.454Z - normal: Run Application
+2018-03-27T01:51:23.325Z - warn: [db-task][init] Backup unused meta file: db://assets/anims.meta
+2018-03-27T01:51:47.375Z - success: preview server running at http://localhost:7456
+2018-03-27T01:51:53.465Z - normal: 1.9.0
+2018-03-27T03:48:24.447Z - failed: load script [D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js] failed : ReferenceError: head is not defined
+    at __define (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:11:15)
+    at D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:27:13
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:34:11)
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:37:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2018-03-27T03:50:17.720Z - warn: 'Seat.name' hides inherited property 'cc.Component.name'. To make the current property overwrite that implementation, add the `override: true` attribute please.
+2018-03-27T03:50:17.722Z - error: Can not declare Seat.name, it is already defined in the prototype of Seat
+    at Object.errorID (D:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at defineProp (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:136:16)
+    at declareProperties (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:7:4)
+    at D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:31:13
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:38:11)
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:41:3)
+    at Module._compile (module.js:571:32)
+2018-03-27T03:50:45.861Z - warn: 'Seat.name' hides inherited property 'cc.Component.name'. To make the current property overwrite that implementation, add the `override: true` attribute please.
+2018-03-27T03:50:45.861Z - error: Can not declare Seat.name, it is already defined in the prototype of Seat
+    at Object.errorID (D:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at defineProp (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:136:16)
+    at declareProperties (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:7:4)
+    at D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:32:13
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:39:11)
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:42:3)
+    at Module._compile (module.js:571:32)
+2018-03-27T03:51:05.118Z - warn: 'Seat.name' hides inherited property 'cc.Component.name'. To make the current property overwrite that implementation, add the `override: true` attribute please.
+2018-03-27T03:51:05.119Z - error: Can not declare Seat.name, it is already defined in the prototype of Seat
+    at Object.errorID (D:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at defineProp (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:136:16)
+    at declareProperties (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:7:4)
+    at D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:33:13
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:40:11)
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:43:3)
+    at Module._compile (module.js:571:32)
+2018-03-27T03:51:18.312Z - warn: 'Seat.name' hides inherited property 'cc.Component.name'. To make the current property overwrite that implementation, add the `override: true` attribute please.
+2018-03-27T03:51:18.313Z - error: Can not declare Seat.name, it is already defined in the prototype of Seat
+    at Object.errorID (D:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at defineProp (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:136:16)
+    at declareProperties (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:7:4)
+    at D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:33:13
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:40:11)
+    at Object.<anonymous> (D:\Workspaces_Chess\dtz\dtz-client\temp\quick-scripts\assets\scripts\components\Seat.js:43:3)
+    at Module._compile (module.js:571:32)
+2018-03-27T05:24:21.889Z - warn: The Prefab used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:24:22.436Z - warn: The Prefab used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:24:33.606Z - warn: The Prefab used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.734Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.737Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.737Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.737Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.737Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.737Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.738Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.738Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.738Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.738Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.738Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.738Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.739Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.739Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.739Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.750Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.751Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.751Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.751Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.751Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.752Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.752Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.752Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.753Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.753Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.753Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.754Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.754Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.754Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.754Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.765Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.765Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.766Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.766Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.766Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.766Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.766Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.767Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.767Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.767Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.768Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.768Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.768Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.768Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.768Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.781Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.782Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.782Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.782Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.783Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.783Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.784Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.784Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.784Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.785Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.785Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.785Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.786Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.786Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
+2018-03-27T05:27:13.786Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "bd432920-1ce5-4c53-9bbe-618c43adeae6"
+
