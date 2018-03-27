@@ -16,7 +16,12 @@ cc.Class({
     },
 
     initEventHandlers:function(){
+        var self=this;
+        th.socketIOManager.dataEventHandler=this.node;
 
+        this.node.on('init_info', function (data) {
+            console.log('==>Gmae init_info:',JSON.stringify(data));
+        });
     }
     /*
     update (dt) {

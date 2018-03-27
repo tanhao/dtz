@@ -2,7 +2,7 @@
 cc._RF.push(module, '72ccaeRy8xD25rQrBwS/039', 'Game', __filename);
 // scripts/components/Game.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
@@ -18,7 +18,14 @@ cc.Class({
 
     initView: function initView() {},
 
-    initEventHandlers: function initEventHandlers() {}
+    initEventHandlers: function initEventHandlers() {
+        var self = this;
+        th.socketIOManager.dataEventHandler = this.node;
+
+        this.node.on('init_info', function (data) {
+            console.log('==>Gmae init_info:', JSON.stringify(data));
+        });
+    }
     /*
     update (dt) {
     },

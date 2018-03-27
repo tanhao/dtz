@@ -9,7 +9,11 @@ cc.Class({
 
     properties: {
         dataEventHandler: null, //处理socket.io发过来的数据的节点
-        roomId: null
+        roomId: null,
+        config: null,
+        seats: null,
+        round: 0,
+        seatIndex: -1
     },
 
     onLoad: function onLoad() {},
@@ -27,7 +31,27 @@ cc.Class({
     },
 
 
-    initHandlers: function initHandlers() {},
+    initHandlers: function initHandlers() {
+        var self = this;
+        th.sio.addHandler("init_info", function (data) {
+            cc.log("==>init_info:", JSON.stringify(data));
+            self.roomId = data.roomId;
+            self.config = data.config;
+            self.seats = data.seats;
+            self.round = data.round;
+            self.seatIndex = getSeatIndexById(th.userManager.userId);
+            self.dispatchEvent("init_info", data);
+        });
+    },
+
+    getSeatIndexById: function getSeatIndexById(userId) {
+        for (var i = 0; i < this.seats.length; i++) {
+            if (this.seats[i].userId == userId) {
+                return i;
+            }
+        }
+        return -1;
+    },
 
     connectServer: function connectServer(data) {
         var onConnectSuccess = function onConnectSuccess() {
