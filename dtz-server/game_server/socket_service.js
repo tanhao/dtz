@@ -54,7 +54,7 @@ module.exports.start=function(config){
         roomManager.setUserOnline(userId,true);
         //返回房间信息
         let room = roomManager.getRoom(roomId);
-        let initData={s
+        let initData={
             roomId:room.roomId,
             config:room.config,
             round:room.round,

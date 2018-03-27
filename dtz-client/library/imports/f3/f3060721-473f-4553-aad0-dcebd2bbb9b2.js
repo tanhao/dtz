@@ -12,7 +12,7 @@ cc.Class({
         roomId: null,
         config: null,
         seats: null,
-        round: 0,
+        round: null,
         seatIndex: -1
     },
 
@@ -56,6 +56,7 @@ cc.Class({
     connectServer: function connectServer(data) {
         var onConnectSuccess = function onConnectSuccess() {
             cc.director.loadScene("game", function () {
+                th.sio.ping();
                 th.wc.hide();
             });
         };

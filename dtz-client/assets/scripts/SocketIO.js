@@ -6,14 +6,6 @@ if(window.io == null){
 var SIO=cc.Class({
     extends: cc.Component,
 
-    /*
-    properties: {
-        lastSendTime:0,
-        lastRecieveTime:0,
-        delayMS:0,
-    },
-    */
-
     statics:{
         addr:null,
         sio:null,
@@ -22,7 +14,7 @@ var SIO=cc.Class({
         isPinging:false,
         lastSendTime:0,
         lastRecieveTime:0,
-        delayMS:0,
+        delay:0,
         //fnDisconnect:null,
         addHandler:function(event,fn){
             if(this.handlers[event]){
@@ -97,8 +89,8 @@ var SIO=cc.Class({
             var self=this;
             this.sio.on('th-pong',function(){
                 self.lastRecieveTime = Date.now();
-                self.delayMS = self.lastRecieveTime - self.lastSendTime;
-                console.log('th-pong:',self.delayMS,self==th.sio);
+                self.delay = self.lastRecieveTime - self.lastSendTime;
+                console.log('th-pong:',self.delay,self==th.sio);
             });
             if(!self.isPinging){
                 cc.game.on(cc.game.EVENT_HIDE,function(){
