@@ -55,12 +55,12 @@ module.exports.start=function(config){
         //返回房间信息
         let room = roomManager.getRoom(roomId);
         let initData={
-            roomId:room.roomId,
+            roomId:room.id,
             config:room.config,
             round:room.round,
             seats:room.seats
         }
-        socket.emit('init',initData);
+        socket.emit('init_room',initData);
         //通知其它客户端
         let newUserData=room.seats.find(seat=>seat.userId==userId);
         userManager.broacastInRoom('new_user_join',newUserData,userId);

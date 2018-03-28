@@ -71,14 +71,16 @@ var SIO=cc.Class({
                 fnError(error);
             });
 
+            cc.log("==============>>size:"+Object.keys(this.handlers).length+" is connect:"+(!!this.sio));
             for(var key in this.handlers){
                 var handler = this.handlers[key];
-                if(typeof(value) == "function"){
+                cc.log(key+":"+typeof(handler))
+                if(typeof(handler) == "function"){
                     if(key == 'disconnect'){
-                        this.fnDisconnect = value;
+                        this.fnDisconnect = handler;
                     }else{
                         console.log("register event: " + key);
-                        this.sio.on(key,value);         
+                        this.sio.on(key,handler);         
                     }
                 }
             }

@@ -33,14 +33,14 @@ cc.Class({
 
     initHandlers: function initHandlers() {
         var self = this;
-        th.sio.addHandler("init_info", function (data) {
-            cc.log("==>init_info:", JSON.stringify(data));
+        th.sio.addHandler("init_room", function (data) {
+            cc.log("==>init:", JSON.stringify(data));
             self.roomId = data.roomId;
             self.config = data.config;
             self.seats = data.seats;
             self.round = data.round;
-            self.seatIndex = getSeatIndexById(th.userManager.userId);
-            self.dispatchEvent("init_info", data);
+            self.seatIndex = this.getSeatIndexById(th.userManager.userId);
+            //self.dispatchEvent("init",data);
         });
     },
 
@@ -51,6 +51,27 @@ cc.Class({
             }
         }
         return -1;
+    },
+
+    getWanfa: function getWanfa() {
+        /*
+        {"roomId":293935,"config":{"peoples":4,"score":1000,"fee":1,"gift":100,"liudipai":false,"jipaiqi":false},"round":1,
+        "seats":[{"userId":null,"name":null,"headImgUrl":null,"sex":null,"score":0,"ready":false,"online":false,"index":0},
+          {"userId":"100000","name":"zhiyuan","headImgUrl":"http://thirdwx.qlogo.cn/mmopen/vi_32/yRMlybhILtPMrSOz5Bo7zkF94HEaJqYE6hZvaPpGAqlJnJO0sjSJ2lJqhZiaFcSrLNaicfYzDbbtPySaQCxJxCUg/132","sex":"1","score":0,"ready":false,"online":true,"index":1,"ip":"127.0.0.1"},
+          {"userId":null,"name":null,"headImgUrl":null,"sex":null,"score":0,"ready":false,"online":false,"index":2},
+          {"userId":null,"name":null,"headImgUrl":null,"sex":null,"score":0,"ready":false,"online":false,"index":3}]}
+        */
+        var str = [];
+        str.push(this.config.peoples);
+        str.push("人");
+        str.push(" 结算");
+        str.push(this.config.score);
+        str.push(" 奖励");
+        str.push(this.config.gift);
+        return str.join("");
+    },
+    getDipai: function getDipai() {
+        return this.config.liudipai ? peoples == 4 ? 8 : peoples == 3 ? 9 : 0 : 0;
     },
 
     connectServer: function connectServer(data) {

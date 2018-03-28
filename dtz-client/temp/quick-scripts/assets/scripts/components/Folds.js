@@ -2,7 +2,7 @@
 cc._RF.push(module, 'de9d3K4PRxAB497YFYzZtA5', 'Folds', __filename);
 // scripts/components/Folds.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
@@ -19,15 +19,36 @@ cc.Class({
 
 
     initView: function initView() {
-        var seatNames = ["myself", "right", "up", "left"];
-        for (var i = 0; i < seatNames.length; i++) {
-            var foldRoot = this.node.getChildByName(seatNames[i]).getChildByName('folds');
-            var folds = [];
-            for (var j = 0; j < foldRoot.children.length; j++) {}
+        this._folds = {};
+        this._folds.left = [];
+        this._folds.myself = [];
+        this._folds.right = [];
+        this._folds.up = [];
+        var names = ['left', 'myself', 'right', 'up'];
+        var path = ["Canvas/myself/Folds1", "Canvas/myself/Folds2", "Canvas/right/Folds1/Folds", "Canvas/right/Folds2/Folds", "Canvas/up/Folds1", "Canvas/up/Folds2", "Canvas/left/Folds1", "Canvas/left/Folds2"];
+        for (var i = 0; i < path.length; i++) {
+            var pokers = cc.find(path[i]).children;
+            var name = names[parseInt(i / 2)];
+            for (var j = 0; j < pokers.length; j++) {
+                var poker = pokers[j];
+                poker.active = false;
+                var sprite = poker.getComponent(cc.Sprite);
+                sprite.spriteFrame = null;
+                this._folds[name].push(sprite);
+            }
         }
     },
 
-    initEventHandler: function initEventHandler() {}
+    initEventHandler: function initEventHandler() {
+        var self = this;
+        this.node.on('game_begin', function (data) {
+            self.initAllFolds();
+        });
+    },
+
+    refreshAllSeat: function refreshAllSeat() {},
+
+    refreshOneSeat: function refreshOneSeat() {}
 
 });
 

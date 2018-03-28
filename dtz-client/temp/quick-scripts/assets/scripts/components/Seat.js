@@ -16,6 +16,7 @@ cc.Class({
         emoji: cc.Sprite,
         countdown: cc.Sprite,
         ready: cc.Sprite,
+        buchu: cc.Sprite,
         chat: cc.Label,
         restCard: cc.Node,
 
@@ -27,6 +28,7 @@ cc.Class({
         _restCard: 0,
         _isOffline: false,
         _isReady: false,
+        _isBuchu: false,
         _isFangzhu: false,
         _lastChatTime: -1
     },
@@ -61,6 +63,9 @@ cc.Class({
 
         if (this.ready) {
             this.ready.node.active = this._isReady;
+        }
+        if (this.buchu) {
+            this.buchu.node.active = this._isBuchu;
         }
 
         if (this.fangzhu) {
@@ -118,6 +123,13 @@ cc.Class({
         this._isReady = isReady;
         if (this.ready) {
             this.ready.node.active = this._isReady;
+        }
+    },
+
+    setBuchu: function setBuchu(isBuchu) {
+        this._isBuchu = isBuchu;
+        if (this.buchu) {
+            this.buchu.node.active = this._isBuchu;
         }
     },
 

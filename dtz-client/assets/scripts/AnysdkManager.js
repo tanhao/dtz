@@ -24,7 +24,7 @@ cc.Class({
                 return jsb.reflection.callStaticMethod(this.IOS_API, "getBatteryPercent");
             }            
         }
-        return 0.8;
+        return 0.9;
     },
 
 });
