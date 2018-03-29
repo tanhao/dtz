@@ -16,9 +16,9 @@ cc.Class({
         wangfa: cc.Label,
         dipai8: cc.Sprite,
         dipai9: cc.Sprite,
-        btnMenu: cc.Button,
-        btnChat: cc.Button,
-        btnVoice: cc.Button,
+
+        settingWin: cc.Node,
+        menuWin: cc.Node,
 
         _myHoldPokers: [],
         _myFoldPokers: []
@@ -91,7 +91,33 @@ cc.Class({
             var child = this.options.children[i];
             child.active = false;
         }
+    },
+
+    onMenuClicked: function onMenuClicked() {
+        this.menuWin.active = !this.menuWin.active;
+    },
+    onDissolveClicked: function onDissolveClicked() {
+        this.menuWin.active = false;
+        cc.log('onChatClicked==>');
+    },
+    onLeaveClicked: function onLeaveClicked() {
+        this.menuWin.active = false;
+        th.alert.show("返回大厅", "返回大厅房间仍会保留，快去邀请大伙来玩吧！", function () {
+            th.wc.show('正在返回游戏大厅');
+            cc.director.loadScene("hall");
+        }, true);
+    },
+    onSettingClicked: function onSettingClicked() {
+        this.menuWin.active = false;
+        this.settingWin.active = true;
+    },
+    onChatClicked: function onChatClicked() {
+        cc.log('onChatClicked==>');
+    },
+    onVoiceClicked: function onVoiceClicked() {
+        cc.log('onVoiceClicked==>');
     }
+
 });
 
 cc._RF.pop();

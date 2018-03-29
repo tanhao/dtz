@@ -10,9 +10,9 @@ cc.Class({
         wangfa:cc.Label,
         dipai8:cc.Sprite,
         dipai9:cc.Sprite,
-        btnMenu:cc.Button,
-        btnChat:cc.Button,
-        btnVoice:cc.Button,
+
+        settingWin:cc.Node,
+        menuWin:cc.Node,
 
         _myHoldPokers:[],
         _myFoldPokers:[]
@@ -84,6 +84,32 @@ cc.Class({
             var child = this.options.children[i]; 
             child.active=false;
         }
-        
-    }
+    },
+
+    onMenuClicked:function(){
+        this.menuWin.active=!this.menuWin.active;
+    },
+    onDissolveClicked:function(){
+        this.menuWin.active=false;
+        cc.log('onChatClicked==>');
+    },
+    onLeaveClicked:function(){
+        this.menuWin.active=false;
+        th.alert.show("返回大厅","返回大厅房间仍会保留，快去邀请大伙来玩吧！",function(){
+            th.wc.show('正在返回游戏大厅');
+            cc.director.loadScene("hall");    
+        },true)
+    },
+    onSettingClicked:function(){
+        this.menuWin.active=false;
+        this.settingWin.active=true;
+    },
+    onChatClicked:function(){
+        cc.log('onChatClicked==>');
+    },
+    onVoiceClicked:function(){
+        cc.log('onVoiceClicked==>');
+    },
+
+
 });

@@ -29,12 +29,12 @@ cc.Class({
     initHandlers:function(){
         var self = this;
         th.sio.addHandler("init_room",function(data){
-            cc.log("==>init:",JSON.stringify(data));
+            cc.log("==>init_room:",JSON.stringify(data));
             self.roomId=data.roomId;
             self.config=data.config;
             self.seats=data.seats;
             self.round=data.round;
-            self.seatIndex=this.getSeatIndexById(th.userManager.userId);
+            self.seatIndex=self.getSeatIndexById(th.userManager.userId);
             //self.dispatchEvent("init",data);
         })
        
