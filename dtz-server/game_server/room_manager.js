@@ -131,3 +131,54 @@ module.exports.setUserOnline = function(userId,isOnline){
 module.exports.getTotalRooms = function(){
 	return Object.keys(rooms).length+2;
 }
+
+module.exports.isCreator = function(roomId,userId){
+    var room = rooms[roomId];
+    if(!room) return false;
+	return room.config.creator == userId;
+};
+
+module.exports.destroyRoom = function(roomId){
+    var room=rooms[roomId];
+    if(!room) return;
+    var userIds=[];
+    for(var i=0;i<room.seats.length;i++){
+        var userId=room.seats[i].userId;
+        if(userId){
+            userIds.push(userId);
+            delete locations[userId];
+        }
+    }
+    db.updateUsersRoomId(userIds,null,function(err,res){});
+    delete rooms[roomId];
+    db.deleteRoom(roomId,function(err,res){});
+};
+
+module.exports.leaveRoom = function(userId){
+    var location=locations[userId];
+    if(!location) return;
+    var roomId=location.roomId;
+    var seatIndex=location.seatIndex;
+    var room=rooms[roomId];
+    delete locations[userId];
+    if(!room||!seatIndex) return;
+    var seat=room.seats[seatIndex];
+    seat.userId=null;
+    seat.name=null;
+    seat.headImgUrl=null;
+    seat.sex=null;
+    seat.score=0,
+    seat.ready=false;
+    seat.online=false;
+    var peoples=0;
+    room.seats.forEach(seat => {
+        peoples+=seat.userId?1:0;
+    });
+    db.updateUsersRoomId([userId],null,function(err,res){
+         log.info(userId+" leave room "+roomId)
+    })
+
+    if(peoples==0){
+        module.exports.destroyRoom (roomId);
+    }
+}

@@ -58,8 +58,20 @@ cc.Class({
         var self = this;
         th.socketIOManager.dataEventHandler = this.node;
 
-        this.node.on('init_info', function (data) {
-            console.log('==>Gmae init_info:', JSON.stringify(data));
+        this.node.on('init_room', function (data) {
+            console.log('==>Gmae init_room:', JSON.stringify(data));
+        });
+
+        this.node.on('join_push', function (data) {
+            console.log('==>Gmae join_push:', JSON.stringify(data));
+        });
+
+        this.node.on('leave_push', function (data) {
+            console.log('==>Gmae leave_push:', JSON.stringify(data));
+        });
+
+        this.node.on('dissolve_push', function (data) {
+            console.log('==>Gmae dissolve_push:', JSON.stringify(data));
         });
     },
 

@@ -2,6 +2,9 @@ const logger=require('../common/log.js').getLogger('game_dtz.js');
 const roomManager=require('./room_manager.js');
 const userManager=require('./user_manager.js');
 
+
+var games = {};
+
 //开房间时验证配置
 module.exports.checkConfig=function(config){
     if(config.peoples == null
@@ -45,3 +48,15 @@ module.exports.initSeats=function(config){
     return seats;
 }
 
+
+module.exports.isBegin=function(roomId){
+    var game=games[roomId];
+    if(game) return true;
+    var room=roomManager.getRoom(roomId);
+    if(room) return room.round>0;
+    return false;
+}
+
+module.exports.setReady=function(userId){
+
+}

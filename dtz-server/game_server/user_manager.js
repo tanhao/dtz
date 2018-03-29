@@ -6,8 +6,8 @@ module.exports.bind = function(userId,socket){
     users[userId] = socket;
 }
 
-module.exports.del=function(userId,socket){
-    logger.info('del:'+userId);
+module.exports.deleteUser=function(userId){
+    logger.info('deleteUser:'+userId);
     delete users[userId];
 }
 
@@ -37,7 +37,7 @@ module.exports.kickAllInRoom = function(roomId){
         let seat = room.seats[i];
         let socket = users[seat.userId];
         if(socket){
-            module.exports.del(seat.userId);
+            module.exports.deleteUser(seat.userId);
             socket.disconnect();
         }
     }

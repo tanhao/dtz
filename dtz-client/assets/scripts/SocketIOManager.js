@@ -28,14 +28,32 @@ cc.Class({
 
     initHandlers:function(){
         var self = this;
+        //连接成功初始化信息
         th.sio.addHandler("init_room",function(data){
-            cc.log("==>init_room:",JSON.stringify(data));
+            cc.log("==>SocketIOManager init_room:",JSON.stringify(data));
             self.roomId=data.roomId;
             self.config=data.config;
             self.seats=data.seats;
             self.round=data.round;
             self.seatIndex=self.getSeatIndexById(th.userManager.userId);
-            //self.dispatchEvent("init",data);
+            self.dispatchEvent("init_room",data);
+        })
+        //其他玩家加入房间
+        th.sio.addHandler("join_push",function(data){
+            cc.log("==>SocketIOManager init_room:",JSON.stringify(data));
+            self.dispatchEvent("join_push",data);
+        })
+
+        //其他玩家离开房间
+        th.sio.addHandler("leave_push",function(data){
+            cc.log("==>SocketIOManager leave_push:",JSON.stringify(data));
+            self.dispatchEvent("leave_push",data);
+        })
+
+        //解散房间，所有玩家退出房间，收到此消息返回大厅
+        th.sio.addHandler("dissolve_push",function(data){
+            cc.log("==>SocketIOManager dissolve_push:",JSON.stringify(data));
+            self.dispatchEvent("dissolve_push",data);
         })
        
     },

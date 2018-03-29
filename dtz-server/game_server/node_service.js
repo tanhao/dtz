@@ -31,7 +31,7 @@ function heartbeat(){
 		let format = function(bytes) {  
               return (bytes/1024/1024).toFixed(2)+'MB';  
         }; 
-		logger.info('Process: heapTotal '+format(mem.heapTotal) + ' heapUsed ' + format(mem.heapUsed) + ' rss ' + format(mem.rss));
+		//logger.info('Process: heapTotal '+format(mem.heapTotal) + ' heapUsed ' + format(mem.heapUsed) + ' rss ' + format(mem.rss));
 
     }
 }

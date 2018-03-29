@@ -47278,7 +47278,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "btn_disband",
+    "_name": "btn_dissolve",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1018

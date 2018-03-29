@@ -90,11 +90,17 @@ module.exports.updateUsersRoomId=function(userIds,roomId,callback){
 //创建房间
 module.exports.createRoom=function(obj,callback){
     let room=new Room(obj);
-    room.save(function(err,res){
-        if(err) return callback(err,null);
-        callback(null,res)
-    });
+    room.save(callback);
 }
+
+//删除房间
+module.exports.deleteRoom=function(roomId,callback){
+    Room.deleteOne({id:roomId},function(err,res){
+        //res={ ok: 1, n: 1 }
+        callback(err,err?false:true)
+    })
+}
+
 
 //根据房间号取房间地址
 module.exports.getRoomAddress=function(roomId,callback){
