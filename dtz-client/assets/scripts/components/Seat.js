@@ -85,7 +85,7 @@ cc.Class({
         this._sex=sex;
     },
 
-    setHeadImg:function(headImgUrl){
+    setHeadImgUrl:function(headImgUrl){
         var self=this;
         if(headImgUrl){
             this._headImgUrl = headImgUrl;
@@ -157,6 +157,13 @@ cc.Class({
             this.emoji.node.active=true;
             this._lastChatTime = 3;
         }
+    },
+
+    setInfo:function(id,name,score,headImgUrl){
+        this.setUserID(id);
+        this.setUserName(name);
+        this.setScore(score);
+        this.setHeadImgUrl(headImgUrl);  
     },
 
     update: function (dt) {

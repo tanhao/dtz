@@ -76,7 +76,9 @@ cc.Class({
     },
 
     onReturnRoomClicked: function onReturnRoomClicked() {
-        th.userManager.joinRoom(th.userManager.roomId);
+        th.wc.show('正在返回游戏房间');
+        cc.director.loadScene("game");
+        //th.userManager.joinRoom(th.userManager.roomId);
     },
 
     onSettingClicked: function onSettingClicked() {

@@ -13,7 +13,9 @@ cc.Class({
         config: null,
         seats: null,
         round: null,
-        seatIndex: -1
+        creator: null,
+        seatIndex: -1,
+        needCheckIp: false
     },
 
     onLoad: function onLoad() {},
@@ -40,25 +42,75 @@ cc.Class({
             self.config = data.config;
             self.seats = data.seats;
             self.round = data.round;
+            self.creator = data.creator;
             self.seatIndex = self.getSeatIndexById(th.userManager.userId);
             self.dispatchEvent("init_room", data);
         });
         //其他玩家加入房间
         th.sio.addHandler("join_push", function (data) {
             cc.log("==>SocketIOManager init_room:", JSON.stringify(data));
-            self.dispatchEvent("join_push", data);
+            var index = data.index;
+            if (self.seats[index].userId) {
+                self.seats[index].online = true;
+                if (self.seats[index].ip != data.ip) {
+                    self.seats[index].ip = data.ip;
+                    self.needCheckIp = true;
+                }
+            } else {
+                self.seats[index] = data;
+                self.needCheckIp = true;
+            }
+            self.dispatchEvent("join_push", self.seats[index]);
+            if (needCheckIp) {
+                self.dispatchEvent('check_ip', self.seats[seatIndex]);
+            }
         });
 
         //其他玩家离开房间
         th.sio.addHandler("leave_push", function (data) {
             cc.log("==>SocketIOManager leave_push:", JSON.stringify(data));
-            self.dispatchEvent("leave_push", data);
+            var userId = data.usereId;
+            var seat = self.getSeatByUserId(userId);
+            if (seat) {
+                seat.userId = null;
+                seat.name = null;
+                seat.headImgUrl = null;
+                seat.sex = null;
+                seat.sex = null;
+                seat.score = 0;
+                seat.ready = false;
+                seat.online = false;
+            }
+            self.dispatchEvent("leave_push", seat);
         });
 
         //解散房间，所有玩家退出房间，收到此消息返回大厅
         th.sio.addHandler("dissolve_push", function (data) {
+            self.roomId = null;
+            self.config = null;
+            self.seats = null;
+            self.round = null;
+            self.seatIndex = -1;
             cc.log("==>SocketIOManager dissolve_push:", JSON.stringify(data));
             self.dispatchEvent("dissolve_push", data);
+        });
+        //断线
+        th.sio.addHandler("disconnect", function (data) {
+            if (self.roomId == null) {
+                cc.vv.wc.show('正在返回游戏大厅');
+                cc.director.loadScene("hall");
+            } else {
+                if (self.isOver == false) {
+                    th.userManager.roomId = self.roomId;
+                    self.dispatchEvent("disconnect");
+                } else {
+                    self.roomId = null;
+                    self.config = null;
+                    self.seats = null;
+                    self.round = null;
+                    self.seatIndex = -1;
+                }
+            }
         });
     },
 
@@ -71,14 +123,19 @@ cc.Class({
         return -1;
     },
 
+    getLocalIndex: function getLocalIndex(index) {
+        var total = this.seats.length;
+        var ret = (index - this.seatIndex + total) % total;
+        return ret;
+    },
+
+    getSeatByUserId: function getSeatByUserId(userId) {
+        var index = this.getSeatIndexByID(userId);
+        var seat = this.seats[index];
+        return seat;
+    },
+
     getWanfa: function getWanfa() {
-        /*
-        {"roomId":293935,"config":{"peoples":4,"score":1000,"fee":1,"gift":100,"liudipai":false,"jipaiqi":false},"round":1,
-        "seats":[{"userId":null,"name":null,"headImgUrl":null,"sex":null,"score":0,"ready":false,"online":false,"index":0},
-          {"userId":"100000","name":"zhiyuan","headImgUrl":"http://thirdwx.qlogo.cn/mmopen/vi_32/yRMlybhILtPMrSOz5Bo7zkF94HEaJqYE6hZvaPpGAqlJnJO0sjSJ2lJqhZiaFcSrLNaicfYzDbbtPySaQCxJxCUg/132","sex":"1","score":0,"ready":false,"online":true,"index":1,"ip":"127.0.0.1"},
-          {"userId":null,"name":null,"headImgUrl":null,"sex":null,"score":0,"ready":false,"online":false,"index":2},
-          {"userId":null,"name":null,"headImgUrl":null,"sex":null,"score":0,"ready":false,"online":false,"index":3}]}
-        */
         var str = [];
         str.push(this.config.peoples);
         str.push("人");

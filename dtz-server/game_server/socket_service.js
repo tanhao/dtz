@@ -57,7 +57,8 @@ module.exports.start=function(config){
             roomId:room.id,
             config:room.config,
             round:room.round,
-            seats:room.seats
+            seats:room.seats,
+            creator:room.creator
         }
         socket.userId=userId;
         socket.manager=room.manager;
@@ -66,7 +67,7 @@ module.exports.start=function(config){
         let newUserData=room.seats.find(seat=>seat.userId==userId);
         userManager.broacastInRoom('join_push',newUserData,userId);
         
-        //离开房价
+        //离开房间
         socket.on('leave',function(data){
             var userId = socket.userId;
             if(!userId) return;

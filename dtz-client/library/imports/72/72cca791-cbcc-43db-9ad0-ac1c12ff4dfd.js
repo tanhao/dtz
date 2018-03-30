@@ -8,6 +8,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+
         seatLeft: cc.Node,
         seatMyself: cc.Node,
         seatRight: cc.Node,
@@ -20,6 +21,7 @@ cc.Class({
         settingWin: cc.Node,
         menuWin: cc.Node,
 
+        _seatNodes: [],
         _myHoldPokers: [],
         _myFoldPokers: []
     },
@@ -29,6 +31,7 @@ cc.Class({
         this.addComponent("Folds");
 
         this.initView();
+        this.initSeats();
         this.initEventHandlers();
         this.initWanfaLabel();
         this.initDipai();
@@ -37,6 +40,13 @@ cc.Class({
 
 
     initView: function initView() {
+        this._seatNodes.push(this.seatMyself);
+        this._seatNodes.push(this.seatRight);
+        if (th.socketIOManager.seats.length == 4) {
+            this._seatNodes.push(this.seatUp);
+        }
+        this._seatNodes.push(this.seatLeft);
+
         var myholds = ['Holds1', 'Holds2'];
         for (var i = 0; i < myholds.length; i++) {
             var holds = this.seatMyself.getChildByName(myholds[i]);
@@ -54,6 +64,21 @@ cc.Class({
         this.hideOptions();
     },
 
+    initSeats: function initSeats() {
+        var seats = th.socketIOManager.seats;
+        for (var i = 0; i < seats.length; ++i) {
+            this.initSingleSeat(seats[i]);
+        }
+    },
+
+    initSingleSeat: function initSingleSeat(seat) {
+        var index = th.socketIOManager.getLocalIndex(seat.index);
+        this._seatNodes[index].setInfo(seat.userId, seat.name, seat.score, seat.headImgUrl);
+        this._seatNodes[index].setFangzhu(seat.userId == th.socketIOManager.creator);
+        this._seatNodes[index].setReady(seat.ready);
+        this._seatNodes[index].setOffline(!seat.online);
+    },
+
     initEventHandlers: function initEventHandlers() {
         var self = this;
         th.socketIOManager.dataEventHandler = this.node;
@@ -61,17 +86,32 @@ cc.Class({
         this.node.on('init_room', function (data) {
             console.log('==>Gmae init_room:', JSON.stringify(data));
         });
-
+        //加入房间
         this.node.on('join_push', function (data) {
+            self.initSingleSeat(data);
             console.log('==>Gmae join_push:', JSON.stringify(data));
         });
 
+        //检查IP
+        this.node.on('check_ip', function (data) {
+            console.log('==>Gmae check_ip:', JSON.stringify(data));
+        });
+
+        //离开房间
         this.node.on('leave_push', function (data) {
+            self.initSingleSeat(data);
             console.log('==>Gmae leave_push:', JSON.stringify(data));
         });
 
+        //解散房间
         this.node.on('dissolve_push', function (data) {
+
             console.log('==>Gmae dissolve_push:', JSON.stringify(data));
+        });
+        //断线
+        this.node.on('disconnect', function (data) {
+
+            console.log('==>Gmae disconnect:', JSON.stringify(data));
         });
     },
 
@@ -80,7 +120,6 @@ cc.Class({
     },
     initDipai: function initDipai() {
         var dipai = th.socketIOManager.getDipai();
-        cc.log("dipai:" + dipai);
         if (dipai == 8) {
             this.dipai8.node.active = true;
             this.dipai9.node.active = false;
@@ -108,18 +147,31 @@ cc.Class({
     onMenuClicked: function onMenuClicked() {
         this.menuWin.active = !this.menuWin.active;
     },
-    onDissolveClicked: function onDissolveClicked() {
+    onBtnDissolveRequestClicked: function onBtnDissolveRequestClicked() {
         this.menuWin.active = false;
-        cc.log('onChatClicked==>');
-    },
-    onLeaveClicked: function onLeaveClicked() {
-        this.menuWin.active = false;
-        th.alert.show("返回大厅", "返回大厅房间仍会保留，快去邀请大伙来玩吧！", function () {
-            th.wc.show('正在返回游戏大厅');
-            cc.director.loadScene("hall");
+        th.alert.show("申请解散房间", "申请解散房间不会退换钻石，是否确定申请解散？", function () {
+            th.sio.send("dissolve_request");
         }, true);
     },
-    onSettingClicked: function onSettingClicked() {
+    onBtnDissolveClicked: function onBtnDissolveClicked() {
+        this.menuWin.active = false;
+        th.alert.show("解散房间", "解散房间不扣钻石，是否确定解散？", function () {
+            th.sio.send("dissolve");
+        }, true);
+    },
+    onBtnLeaveClicked: function onBtnLeaveClicked() {
+        if (th.socketIOManager.isFangzhu()) {
+            th.alert.show("离开房间", "您是房主，不能离开房间。", function () {
+                th.sio.send("leave");
+            });
+            return;
+        }
+        this.menuWin.active = false;
+        th.alert.show("离开房间", "您确定要离开房间?", function () {
+            th.sio.send("leave");
+        }, true);
+    },
+    onBtnSettingClicked: function onBtnSettingClicked() {
         this.menuWin.active = false;
         this.settingWin.active = true;
     },

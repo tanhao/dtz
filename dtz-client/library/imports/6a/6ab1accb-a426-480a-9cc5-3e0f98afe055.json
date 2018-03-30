@@ -47160,7 +47160,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [],
     "_prefab": null,
     "_id": "5c2Xq5bxRMha8ADQJ8Y15A",
@@ -47432,7 +47432,7 @@
       "__id__": 2
     },
     "component": "Game",
-    "handler": "onDissolveClicked",
+    "handler": "onBtnDissolveClicked",
     "customEventData": ""
   },
   {
@@ -47590,7 +47590,7 @@
       "__id__": 2
     },
     "component": "Game",
-    "handler": "onLeaveClicked",
+    "handler": "onBtnLeaveClicked",
     "customEventData": ""
   },
   {
@@ -47748,7 +47748,7 @@
       "__id__": 2
     },
     "component": "Game",
-    "handler": "onSettingClicked",
+    "handler": "onBtnSettingClicked",
     "customEventData": ""
   },
   {
@@ -50746,7 +50746,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1148
@@ -51727,7 +51727,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1168
