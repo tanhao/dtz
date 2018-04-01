@@ -2,7 +2,7 @@ const logger=require('../common/log.js').getLogger('room_manager.js');
 const crypto=require('../common/crypto.js');
 const mongoose=require('mongoose');
 const db=require('../common/db.js');
-const  manager = require("./game_manager_dtz.js");
+const manager = require("./game_manager_dtz.js");
 
 var rooms = {};
 //存放用户在那个房间那个座位
@@ -64,22 +64,25 @@ module.exports.joinRoom = function(userId,name,headImgUrl,sex,roomId,ip,port,cal
         let idleSeats=[];
         for(let i=0;i<room.seats.length;i++){
             if(room.seats[i].userId==null){
-                idleSeats.push(i);
+                idleSeats.push(room.seats[i].index);
             }
         }
+        
         if(idleSeats.length==0){
             return false;
         }
         let index=Math.floor(Math.random()*idleSeats.length);
-        let seat=room.seats[index];
+        let seatIndex=idleSeats[index];
+        let seat=room.seats[seatIndex];
         //seat.userId=mongoose.Types.ObjectId(userId);
         seat.userId=userId;
         seat.name=name;
         seat.headImgUrl=headImgUrl;
         seat.sex=sex;
+        seat.score=0;
         locations[userId]={
             roomId:roomId,
-            seatIndex:index
+            seatIndex:seatIndex
         }
         return true;        
     }
@@ -93,7 +96,9 @@ module.exports.joinRoom = function(userId,name,headImgUrl,sex,roomId,ip,port,cal
             if(err) return callback(err,null);
             if(!room) return callback(new Error('room no exist'),null);
             //根据DB的数据还原room
+            //console.log("根据DB的数据还原room",manager);
             rooms[roomId]=room;
+            rooms[roomId].manager=manager;
             if(!fnTakeSeat(room)) return  callback(new Error('room is full'),null);
             callback(null,room);
         })
@@ -135,7 +140,7 @@ module.exports.getTotalRooms = function(){
 module.exports.isCreator = function(roomId,userId){
     var room = rooms[roomId];
     if(!room) return false;
-	return room.config.creator == userId;
+	return room.creator == userId;
 };
 
 module.exports.destroyRoom = function(roomId){
@@ -155,27 +160,30 @@ module.exports.destroyRoom = function(roomId){
 };
 
 module.exports.leaveRoom = function(userId){
+   
     var location=locations[userId];
     if(!location) return;
     var roomId=location.roomId;
     var seatIndex=location.seatIndex;
     var room=rooms[roomId];
     delete locations[userId];
-    if(!room||!seatIndex) return;
+    if(room==null||seatIndex==null) return;
     var seat=room.seats[seatIndex];
     seat.userId=null;
     seat.name=null;
     seat.headImgUrl=null;
     seat.sex=null;
-    seat.score=0,
+    seat.score=null;
     seat.ready=false;
     seat.online=false;
+    seat.ip=null;
+
     var peoples=0;
     room.seats.forEach(seat => {
         peoples+=seat.userId?1:0;
     });
     db.updateUsersRoomId([userId],null,function(err,res){
-         log.info(userId+" leave room "+roomId)
+         logger.info(userId+" leave room "+roomId)
     })
 
     if(peoples==0){

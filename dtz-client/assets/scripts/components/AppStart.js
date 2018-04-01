@@ -39,11 +39,11 @@ cc.Class({
         //cc.log("start");
     },
 
-    onBtnWeichatClicked:function(){
+    onBtnWeichatClicked:function(target,account){
         if(this._isAgree){
             cc.log("onBtnWeichatClicked");
             th.wc.show("正在登录游戏");
-            th.userManager.lingshiAuth();
+            th.userManager.lingshiAuth(account);
         }
     },
 

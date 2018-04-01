@@ -26,7 +26,7 @@ var RoomSchema=new Schema({
     port: { type:Number, required:true },
     config:{ type:Object, required:true },
     seats: { type:Array },
-    round: { type:Number, required:true ,default:1},   
+    round: { type:Number, required:true ,default:0},   
     //creator:{ type:Schema.Types.ObjectId, required:true,ref:'User'},
     creator:{ type:Number, required:true },
     createdTime:{ type:Number,required:true}

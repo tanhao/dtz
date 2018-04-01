@@ -49,7 +49,7 @@ cc.Class({
             if (!err) {
                 var headSpriteFrame = new cc.SpriteFrame(texture, cc.Rect(0, 0, texture.width, texture.height));
                 self.spriteHead.spriteFrame = headSpriteFrame;
-                //cc.log(texture.width, texture.height);
+                self.spriteHead.node.setScale(2 - texture.width / 106);
             }
         });
     },
@@ -77,8 +77,8 @@ cc.Class({
 
     onReturnRoomClicked: function onReturnRoomClicked() {
         th.wc.show('正在返回游戏房间');
-        cc.director.loadScene("game");
-        //th.userManager.joinRoom(th.userManager.roomId);
+        //cc.director.loadScene("game");  
+        th.userManager.joinRoom(th.userManager.roomId);
     },
 
     onSettingClicked: function onSettingClicked() {

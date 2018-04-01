@@ -25,8 +25,8 @@ cc.Class({
 
     // },
 
-    lingshiAuth:function(){
-        th.http.get('/lingshi_auth',{account:'oy4oyv4IBaxtkPjSq9ee4w42QazA'},this.onAuth);
+    lingshiAuth:function(account){
+        th.http.get('/lingshi_auth',{account:account},this.onAuth);
     },
 
     onAuth:function(err,data){

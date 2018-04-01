@@ -30,8 +30,8 @@ cc.Class({
 
     // },
 
-    lingshiAuth: function lingshiAuth() {
-        th.http.get('/lingshi_auth', { account: 'oy4oyv4IBaxtkPjSq9ee4w42QazA' }, this.onAuth);
+    lingshiAuth: function lingshiAuth(account) {
+        th.http.get('/lingshi_auth', { account: account }, this.onAuth);
     },
 
     onAuth: function onAuth(err, data) {

@@ -7,13 +7,23 @@ module.exports.bind = function(userId,socket){
 }
 
 module.exports.deleteUser=function(userId){
-    logger.info('deleteUser:'+userId);
     delete users[userId];
 }
+
+
+module.exports.isExist=function(userId){
+    return users.hasOwnProperty(userId);
+}
+
+
 
 module.exports.get=function(userId){
     return users[userId];
 }
+
+module.exports.offline = function(userId){
+    return users[userId]=null;
+};
 
 module.exports.isOnline = function(userId){
    return users[userId]?true:false;

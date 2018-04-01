@@ -2,11 +2,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-       
-        seatLeft:cc.Node,
-        seatMyself:cc.Node,
-        seatRight:cc.Node,
-        seatUp:cc.Node,
         options:cc.Node,
         wangfa:cc.Label,
         dipai8:cc.Sprite,
@@ -15,7 +10,7 @@ cc.Class({
         settingWin:cc.Node,
         menuWin:cc.Node,
 
-        _seatNodes:[],
+        _seatComponent:[],
         _myHoldPokers:[],
         _myFoldPokers:[]
     },
@@ -33,16 +28,19 @@ cc.Class({
     },
 
     initView:function(){
-        this._seatNodes.push(this.seatMyself);
-        this._seatNodes.push(this.seatRight);
-        if(th.socketIOManager.seats.length==4){
-            this._seatNodes.push(this.seatUp);
+        var seatNames = ["myself","right","up","left"];
+        for(var i=0;i<seatNames.length;i++){
+            if(i==2&&th.socketIOManager.seats.length==3){
+                continue;
+            }
+            var seatComponent=this.node.getChildByName(seatNames[i]).getChildByName('Seat').getComponent('Seat');
+            this._seatComponent.push(seatComponent);
         }
-        this._seatNodes.push(this.seatLeft);
+
 
         var myholds=['Holds1','Holds2'];
         for(var i=0;i<myholds.length;i++){
-            var holds = this.seatMyself.getChildByName(myholds[i]);
+            var holds = this.node.getChildByName('myself').getChildByName(myholds[i]);
             for(var j=0;j<holds.children.length;j++){
                 var sprite = holds.children[j].getComponent(cc.Sprite);
                 this._myHoldPokers.push(sprite);
@@ -50,7 +48,7 @@ cc.Class({
             }
         }
         //this.initDragStuffs(sprite.node);
-        cc.log("mypokers:"+this._myHoldPokers.length);
+        //cc.log("mypokers:"+this._myHoldPokers.length);
         //var realwidth = cc.director.getVisibleSize().width;
         //cc.log("realWidth:"+(realwidth/1280));
 
@@ -66,45 +64,59 @@ cc.Class({
 
     initSingleSeat:function(seat){
         var index = th.socketIOManager.getLocalIndex(seat.index);
-        this._seatNodes[index].setInfo(seat.userId,seat.name,seat.score,seat.headImgUrl);
-        this._seatNodes[index].setFangzhu(seat.userId==th.socketIOManager.creator);
-        this._seatNodes[index].setReady(seat.ready);
-        this._seatNodes[index].setOffline(!seat.online);
+        this._seatComponent[index].setInfo(seat.userId,seat.name,seat.score,seat.headImgUrl);
+        this._seatComponent[index].setFangzhu(seat.userId==th.socketIOManager.creator);
+        this._seatComponent[index].setReady(seat.ready);
+        this._seatComponent[index].setOffline(!seat.online);
     },
+    
 
     initEventHandlers:function(){
         var self=this;
         th.socketIOManager.dataEventHandler=this.node;
 
-        this.node.on('init_room', function (data) {
-            console.log('==>Gmae init_room:',JSON.stringify(data));
+        this.node.on('init_room', function (target) {
+            console.log('==>Gmae init_room:',JSON.stringify(target.detail));
         });
         //加入房间
-        this.node.on('join_push', function (data) {
-            self.initSingleSeat(data);
-            console.log('==>Gmae join_push:',JSON.stringify(data));
+        this.node.on('join_push', function (target) {
+            console.log('==>Gmae join_push:',JSON.stringify(target.detail));
+            self.initSingleSeat(target.detail);
         });
 
         //检查IP
-        this.node.on('check_ip', function (data) {
-            console.log('==>Gmae check_ip:',JSON.stringify(data));
+        this.node.on('check_ip', function (target) {
+            console.log('==>Gmae check_ip:',JSON.stringify(target.detail));
         });
 
         //离开房间
-        this.node.on('leave_push', function (data) {
-            self.initSingleSeat(data);
-            console.log('==>Gmae leave_push:',JSON.stringify(data));
+        this.node.on('leave_push', function (target) {
+            console.log('==>Gmae leave_push:',JSON.stringify(target.detail));
+            self.initSingleSeat(target.detail);
         });
 
          //解散房间
-        this.node.on('dissolve_push', function (data) {
-
-            console.log('==>Gmae dissolve_push:',JSON.stringify(data));
+        this.node.on('dissolve_push', function (target) {
+            console.log('==>Gmae dissolve_push:',JSON.stringify(target.detail));
+            
         });
+        //其他玩家断线
+        this.node.on("offline_push",function(target){
+            console.log('==>Gmae offline_push:',JSON.stringify(target.detail));
+            var seatIndex=th.socketIOManager.getSeatIndexById(target.detail.userId)
+            var index = th.socketIOManager.getLocalIndex(seatIndex);
+            self._seatComponent[index].setOffline(true);
+        })
+        //其他玩家上线
+        this.node.on("online_push",function(target){
+            console.log('==>Gmae online_push:',JSON.stringify(target.detail));
+            var seatIndex=th.socketIOManager.getSeatIndexById(target.detail.userId)
+            var index = th.socketIOManager.getLocalIndex(seatIndex);
+            self._seatComponent[index].setOffline(false);
+        })
         //断线
-        this.node.on('disconnect', function (data) {
-
-            console.log('==>Gmae disconnect:',JSON.stringify(data));
+        this.node.on('disconnect', function (target) {
+            console.log('==>Gmae disconnect:',JSON.stringify(target.detail));
         });
         
 
@@ -155,13 +167,13 @@ cc.Class({
         },true)
     },
     onBtnLeaveClicked:function(){
+        this.menuWin.active=false;
         if(th.socketIOManager.isFangzhu()){
             th.alert.show("离开房间","您是房主，不能离开房间。",function(){
-                th.sio.send("leave"); 
+                //th.sio.send("leave"); 
             })
             return ;
         }
-        this.menuWin.active=false;
         th.alert.show("离开房间","您确定要离开房间?",function(){
             th.sio.send("leave"); 
         },true)

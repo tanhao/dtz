@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "default_head",
+    "name": "head_default",
     "texture": "b788984d-21c5-4bd8-b937-de31b497605b",
     "atlas": "",
     "rect": [

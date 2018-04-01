@@ -47,6 +47,7 @@ module.exports.start=function(config){
         let roomId = roomManager.getUserRoomId(userId);
         let ip = socket.handshake.address.replace('::ffff:','');
         //logger.info('connection=>',token,userId,roomId);
+        let isExist=userManager.isExist(userId);
         userManager.bind(userId,socket);
         //设置用户IP
         roomManager.setUserIp(userId,ip);
@@ -63,9 +64,15 @@ module.exports.start=function(config){
         socket.userId=userId;
         socket.manager=room.manager;
         socket.emit('init_room',initData);
-        //通知其它客户端
-        let newUserData=room.seats.find(seat=>seat.userId==userId);
-        userManager.broacastInRoom('join_push',newUserData,userId);
+        if(isExist){
+            //通知其它客户端
+            userManager.broacastInRoom('online_push',{userId:userId},userId,false);
+        }else{
+            //通知其它客户端
+            let newUserData=room.seats.find(seat=>seat.userId==userId);
+            userManager.broacastInRoom('join_push',newUserData,userId,false);
+        }
+       
         
         //离开房间
         socket.on('leave',function(data){
@@ -76,12 +83,14 @@ module.exports.start=function(config){
             //如果游戏已经开始，则不可以
 			if(socket.manager.isBegin(roomId)) return;
             //如果是房主，则只能走解散房间
-            if(roomManager.isCreator(userId)) return;
+            if(roomManager.isCreator(roomId,userId)) return;
             //通知其它玩家，有人退出了房间
+          
             userManager.broacastInRoom('leave_push',{userId:userId},userId,false);
             roomManager.leaveRoom(userId);
             userManager.deleteUser(userId);
-            socket.emit('leave');
+         
+            socket.emit('leave_result');
             socket.disconnect();
         });
 
@@ -93,10 +102,10 @@ module.exports.start=function(config){
             if(!roomId) return;
             //如果游戏已经开始，则不可以
             if(socket.manager.isBegin(roomId)) return;
-             //只有房主才能解散房间
-             if(!roomManager.isCreator(userId)) return;
+            //只有房主才能解散房间
+            if(!roomManager.isCreator(roomId,userId)) return;
             userManager.broacastInRoom('dissolve_push',{},userId,true);
-            userManager.kickAllInRoom();
+            userManager.kickAllInRoom(roomId);
             roomManager.destroyRoom(roomId);
             socket.disconnect();
         });
@@ -106,7 +115,7 @@ module.exports.start=function(config){
             var userId=socket.userId;
             if(!userId) return;
             socket.manager.setReady(userId);
-            userManager.broacastInRoom('ready_push',{userId:userId,ready:true},userId,true);
+            userManager.broacastInRoom('ready_push',{userId:userId},userId,true);
         });
         //聊天
 		socket.on('chat',function(data){
@@ -116,9 +125,15 @@ module.exports.start=function(config){
         });
         //断开链接
 		socket.on('disconnect',function(data){
+            logger.info(userId+" disconnect !!!");
             var userId=socket.userId;
             if(!userId) return;
-            logger.info(userId+" disconnect !!!");
+            var roomId=roomManager.getUserRoomId(userId);
+            if(!roomId) return;
+            roomManager.setUserOnline(userId,false);
+            userManager.offline(userId)
+            userManager.broacastInRoom('offline_push',{userId:userId},userId,false);
+            socket.userId = null;
         });
         //ping
 

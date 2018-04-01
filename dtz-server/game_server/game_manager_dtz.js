@@ -39,10 +39,11 @@ module.exports.initSeats=function(config){
             name:null,
             headImgUrl:null,
             sex:null,
-            score:0,
+            score:null,
             ready:false,
             online:false,
-            index:i
+            index:i,
+            ip:null
         })
     }
     return seats;

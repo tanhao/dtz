@@ -1,75 +1,55 @@
-2018-03-30T00:56:03.474Z - normal: Load ~/.CocosCreator/settings.json
-2018-03-30T00:56:03.478Z - normal: checking language setting...
-2018-03-30T00:56:03.479Z - normal: Language: zh
-2018-03-30T00:56:05.485Z - success: protocol editor-framework registered
-2018-03-30T00:56:05.485Z - success: protocol app registered
-2018-03-30T00:56:05.486Z - success: protocol theme registered
-2018-03-30T00:56:05.486Z - success: protocol packages registered
-2018-03-30T00:56:05.486Z - success: protocol unpack registerred
-2018-03-30T00:56:05.486Z - success: protocol disable-commonjs registerred
-2018-03-30T00:56:05.720Z - normal: connected!
-2018-03-30T00:56:05.727Z - normal: Check project D:\Workspaces_Chess\dtz\dtz-client
-2018-03-30T00:56:05.743Z - normal: Initializing Cocos2d
-2018-03-30T00:56:06.024Z - normal: Initializing Asset Database
-2018-03-30T00:56:06.079Z - success: protocol uuid registerred
-2018-03-30T00:56:06.079Z - success: protocol db registerred
-2018-03-30T00:56:06.080Z - success: protocol thumbnail registerred
-2018-03-30T00:56:06.080Z - normal: Loading editor/builtin packages
-2018-03-30T00:56:06.105Z - success: anysdk loaded
-2018-03-30T00:56:06.262Z - success: assets loaded
-2018-03-30T00:56:06.265Z - success: builder loaded
-2018-03-30T00:56:06.268Z - success: cocos-analytics loaded
-2018-03-30T00:56:06.271Z - success: console loaded
-2018-03-30T00:56:06.320Z - success: fb-instant-games loaded
-2018-03-30T00:56:06.324Z - success: hierarchy loaded
-2018-03-30T00:56:06.327Z - success: inspector loaded
-2018-03-30T00:56:06.328Z - success: keystore loaded
-2018-03-30T00:56:06.331Z - success: node-library loaded
-2018-03-30T00:56:06.333Z - success: package-asset loaded
-2018-03-30T00:56:06.335Z - success: preferences loaded
-2018-03-30T00:56:06.337Z - success: project-exporter loaded
-2018-03-30T00:56:06.357Z - success: project-importer loaded
-2018-03-30T00:56:06.359Z - success: project-settings loaded
-2018-03-30T00:56:06.362Z - success: ui-kit loaded
-2018-03-30T00:56:06.363Z - success: ui-grid loaded
-2018-03-30T00:56:06.367Z - success: scene loaded
-2018-03-30T00:56:06.368Z - success: sprite-editor loaded
-2018-03-30T00:56:06.372Z - success: store loaded
-2018-03-30T00:56:06.377Z - success: timeline loaded
-2018-03-30T00:56:06.377Z - normal: Loading builtin packages
-2018-03-30T00:56:06.380Z - success: asset-db-debugger loaded
-2018-03-30T00:56:06.381Z - success: code-editor loaded
-2018-03-30T00:56:06.382Z - success: color-picker loaded
-2018-03-30T00:56:06.384Z - success: package-manager loaded
-2018-03-30T00:56:06.389Z - success: sdkbox loaded
-2018-03-30T00:56:06.392Z - success: tester loaded
-2018-03-30T00:56:06.394Z - success: ui-kit-preview-extra loaded
-2018-03-30T00:56:06.395Z - success: ui-kit-preview loaded
-2018-03-30T00:56:06.403Z - success: ui-tree loaded
-2018-03-30T00:56:07.819Z - normal: Initializing project D:\Workspaces_Chess\dtz\dtz-client
-2018-03-30T00:56:07.821Z - normal: Loading packages
-2018-03-30T00:56:07.828Z - normal: Watching packages
-2018-03-30T00:56:07.844Z - normal: Run Application
-2018-03-30T00:56:08.609Z - warn: [db-task][init] Backup unused meta file: db://assets/anims.meta
-2018-03-30T00:56:13.521Z - success: preview server running at http://localhost:7456
-2018-03-30T00:56:22.854Z - normal: 1.9.0
-2018-03-30T07:02:34.285Z - failed: [db-task][sync-changes] Failed to import asset D:\Workspaces_Chess\dtz\dtz-client\assets\scripts\SocketIOManager.js, message: Compile error: SyntaxError: D:/Workspaces_Chess/dtz/dtz-client/assets/scripts/SocketIOManager.js: Unexpected token, expected , (118:4)
-  116 |     }
-  117 | 
-> 118 |     connectServer:function(data){
-      |     ^
-  119 |         var onConnectSuccess=function(){
-  120 |             cc.director.loadScene("game",function(){
-  121 |                 th.sio.ping();
-    at Parser.pp$5.raise (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp.unexpected (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp.expect (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
-    at Parser.pp$3.parseObj (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
-    at Parser.pp$3.parseExprAtom (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
-    at Parser.pp$3.parseExprSubscripts (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
-    at Parser.pp$3.parseMaybeUnary (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
-    at Parser.pp$3.parseExprOps (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (D:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
-2018-03-30T07:45:48.542Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/scripts/components/Room.js.meta
-2018-03-30T11:02:18.184Z - info: shutdown preview server
+2018-04-01T16:30:35.759Z - normal: Load ~/.CocosCreator/settings.json
+2018-04-01T16:30:35.763Z - normal: checking language setting...
+2018-04-01T16:30:35.763Z - normal: Language: zh
+2018-04-01T16:30:38.491Z - success: protocol editor-framework registered
+2018-04-01T16:30:38.491Z - success: protocol app registered
+2018-04-01T16:30:38.491Z - success: protocol theme registered
+2018-04-01T16:30:38.491Z - success: protocol packages registered
+2018-04-01T16:30:38.492Z - success: protocol unpack registerred
+2018-04-01T16:30:38.492Z - success: protocol disable-commonjs registerred
+2018-04-01T16:30:38.757Z - normal: connected!
+2018-04-01T16:30:38.765Z - normal: Check project D:\Workspace_Chess\dtz\dtz-client
+2018-04-01T16:30:38.785Z - normal: Initializing Cocos2d
+2018-04-01T16:30:39.640Z - normal: Initializing Asset Database
+2018-04-01T16:30:39.691Z - success: protocol uuid registerred
+2018-04-01T16:30:39.691Z - success: protocol db registerred
+2018-04-01T16:30:39.691Z - success: protocol thumbnail registerred
+2018-04-01T16:30:39.691Z - normal: Loading editor/builtin packages
+2018-04-01T16:30:39.803Z - success: anysdk loaded
+2018-04-01T16:30:39.974Z - success: assets loaded
+2018-04-01T16:30:39.988Z - success: builder loaded
+2018-04-01T16:30:39.990Z - success: cocos-analytics loaded
+2018-04-01T16:30:40.004Z - success: console loaded
+2018-04-01T16:30:40.044Z - success: fb-instant-games loaded
+2018-04-01T16:30:40.047Z - success: hierarchy loaded
+2018-04-01T16:30:40.050Z - success: inspector loaded
+2018-04-01T16:30:40.051Z - success: keystore loaded
+2018-04-01T16:30:40.053Z - success: node-library loaded
+2018-04-01T16:30:40.054Z - success: package-asset loaded
+2018-04-01T16:30:40.056Z - success: preferences loaded
+2018-04-01T16:30:40.057Z - success: project-exporter loaded
+2018-04-01T16:30:40.094Z - success: project-importer loaded
+2018-04-01T16:30:40.095Z - success: project-settings loaded
+2018-04-01T16:30:40.096Z - success: ui-kit loaded
+2018-04-01T16:30:40.110Z - success: ui-grid loaded
+2018-04-01T16:30:40.113Z - success: scene loaded
+2018-04-01T16:30:40.114Z - success: sprite-editor loaded
+2018-04-01T16:30:40.116Z - success: store loaded
+2018-04-01T16:30:40.119Z - success: timeline loaded
+2018-04-01T16:30:40.120Z - normal: Loading builtin packages
+2018-04-01T16:30:40.129Z - success: asset-db-debugger loaded
+2018-04-01T16:30:40.130Z - success: code-editor loaded
+2018-04-01T16:30:40.139Z - success: color-picker loaded
+2018-04-01T16:30:40.140Z - success: package-manager loaded
+2018-04-01T16:30:40.154Z - success: sdkbox loaded
+2018-04-01T16:30:40.156Z - success: tester loaded
+2018-04-01T16:30:40.157Z - success: ui-kit-preview-extra loaded
+2018-04-01T16:30:40.158Z - success: ui-kit-preview loaded
+2018-04-01T16:30:40.159Z - success: ui-tree loaded
+2018-04-01T16:30:41.690Z - normal: Initializing project D:\Workspace_Chess\dtz\dtz-client
+2018-04-01T16:30:41.716Z - normal: Loading packages
+2018-04-01T16:30:41.726Z - normal: Watching packages
+2018-04-01T16:30:41.761Z - normal: Run Application
+2018-04-01T16:30:44.202Z - success: preview server running at http://localhost:7456
+2018-04-01T16:30:49.749Z - normal: 1.9.0
+2018-04-01T17:07:24.906Z - info: shutdown preview server

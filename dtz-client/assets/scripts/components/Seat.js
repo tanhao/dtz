@@ -3,6 +3,7 @@ cc.Class({
 
     properties: {
        headImg:cc.Sprite,
+       headwho:cc.Sprite,
        lblName:cc.Label,
        lblScore:cc.Label,
        offline:cc.Sprite,
@@ -15,7 +16,7 @@ cc.Class({
        restCard:cc.Node,
 
        _userId:null,
-       _userName:"",
+       _userName:'--',
        _headImgUrl:null,
        _sex:0,
        _score:0,
@@ -69,15 +70,13 @@ cc.Class({
     },
 
     setUserID:function(id){
-        if(id){
-            this._userId = id;
-        }
+        this._userId = id;
     },
 
     setUserName:function(name){
-        if(name){
-            this._userName = name;
-            this.lblName.string=name;
+        this._userName = name;
+        if(this.lblName){
+            this.lblName.string=this._userName;
         }
     },
 
@@ -87,21 +86,27 @@ cc.Class({
 
     setHeadImgUrl:function(headImgUrl){
         var self=this;
-        if(headImgUrl){
-            this._headImgUrl = headImgUrl;
-            cc.loader.load({url: headImgUrl, type: 'jpg'}, function (err, texture) {
+        this._headImgUrl = headImgUrl;
+        if(this._headImgUrl && this.headImg){
+            this.headwho.node.active=false;
+            this.headImg.node.active=true;
+            cc.loader.load({url: this._headImgUrl, type: 'jpg'}, function (err, texture) {
                 if(!err){
                     var headSpriteFrame = new cc.SpriteFrame(texture, cc.Rect(0, 0, texture.width, texture.height));
                     self.headImg.spriteFrame=headSpriteFrame;
+                    self.headImg.node.setScale(2-(texture.width/94));
                 }
             });
+        }else if(!this._headImgUrl &&  self.headImg){
+            this.headwho.node.active=true;
+            this.headImg.node.active=false;
         }
     },
 
     setScore:function(score){
-        if(score){
-            this._score = score;
-            this.lblScore.string=score;
+        this._score = score;
+        if(this.lblScore){
+            this.lblScore.string=this._score;
         }
     },
 
@@ -161,9 +166,16 @@ cc.Class({
 
     setInfo:function(id,name,score,headImgUrl){
         this.setUserID(id);
-        this.setUserName(name);
-        this.setScore(score);
-        this.setHeadImgUrl(headImgUrl);  
+        if(id){
+            this.setUserName(name);
+            this.setScore(score);
+            this.setHeadImgUrl(headImgUrl)
+        }else{
+            this.setUserName('--');
+            this.setScore('--');
+            this.setHeadImgUrl(null)
+        }
+       
     },
 
     update: function (dt) {

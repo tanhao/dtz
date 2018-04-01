@@ -44,11 +44,11 @@ cc.Class({
     },
 
 
-    onBtnWeichatClicked: function onBtnWeichatClicked() {
+    onBtnWeichatClicked: function onBtnWeichatClicked(target, account) {
         if (this._isAgree) {
             cc.log("onBtnWeichatClicked");
             th.wc.show("正在登录游戏");
-            th.userManager.lingshiAuth();
+            th.userManager.lingshiAuth(account);
         }
     },
 

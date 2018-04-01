@@ -71,10 +71,8 @@ var SIO=cc.Class({
                 fnError(error);
             });
 
-            cc.log("==============>>size:"+Object.keys(this.handlers).length+" is connect:"+(!!this.sio));
             for(var key in this.handlers){
                 var handler = this.handlers[key];
-                cc.log(key+":"+typeof(handler))
                 if(typeof(handler) == "function"){
                     if(key == 'disconnect'){
                         this.fnDisconnect = handler;
@@ -92,7 +90,7 @@ var SIO=cc.Class({
             this.sio.on('th-pong',function(){
                 self.lastRecieveTime = Date.now();
                 self.delay = self.lastRecieveTime - self.lastSendTime;
-                console.log('th-pong:',self.delay,self==th.sio);
+                //console.log('th-pong:',self.delay,self==th.sio);
             });
             if(!self.isPinging){
                 cc.game.on(cc.game.EVENT_HIDE,function(){

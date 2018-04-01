@@ -14,13 +14,23 @@ cc.Class({
 
 
     onLoad () {
-
     },
 
     /*
     update (dt) {
     },
     */
+
+    reset:function(){
+        th.userManager.roomId=null;
+        this.roomId=null;
+        this.config=null;
+        this.seats=null;
+        this.round=null;
+        this.creator=null;
+        this.seatIndex=-1;
+        this.needCheckIp=false;
+    },
 
     dispatchEvent(event,data){
         if(this.dataEventHandler){
@@ -43,7 +53,7 @@ cc.Class({
         })
         //其他玩家加入房间
         th.sio.addHandler("join_push",function(data){
-            cc.log("==>SocketIOManager init_room:",JSON.stringify(data));
+            cc.log("==>SocketIOManager join_push:",JSON.stringify(data));
             var index=data.index;
             if(self.seats[index].userId){
                 self.seats[index].online = true;
@@ -56,15 +66,21 @@ cc.Class({
                 self.needCheckIp=true;
             }
             self.dispatchEvent("join_push",self.seats[index]);
-            if(needCheckIp){
-                self.dispatchEvent('check_ip',self.seats[seatIndex]);
+            if(self.needCheckIp){
+                self.dispatchEvent('check_ip',self.seats[index]);
             }
+        })
+
+        cc.log("seats:"+JSON.stringify(self.seats));
+         //自己离开房间
+         th.sio.addHandler("leave_result",function(data){
+            self.reset();
         })
 
         //其他玩家离开房间
         th.sio.addHandler("leave_push",function(data){
             cc.log("==>SocketIOManager leave_push:",JSON.stringify(data));
-            var userId=data.usereId;
+            var userId=data.userId;
             var seat=self.getSeatByUserId(userId);
             if(seat){
                 seat.userId=null;
@@ -81,18 +97,25 @@ cc.Class({
 
         //解散房间，所有玩家退出房间，收到此消息返回大厅
         th.sio.addHandler("dissolve_push",function(data){
-            self.roomId=null;
-            self.config=null;
-            self.seats=null;
-            self.round=null;
-            self.seatIndex=-1;
+            self.reset();
             cc.log("==>SocketIOManager dissolve_push:",JSON.stringify(data));
-            self.dispatchEvent("dissolve_push",data);
         })
+
+        //其他玩家断线
+        th.sio.addHandler("offline_push",function(data){
+            cc.log("==>SocketIOManager offline_push:",JSON.stringify(data));
+            self.dispatchEvent("offline_push",data);
+        })
+        //其他玩家上线
+        th.sio.addHandler("online_push",function(data){
+            cc.log("==>SocketIOManager online_push:",JSON.stringify(data));
+            self.dispatchEvent("online_push",data);
+        })
+
         //断线
         th.sio.addHandler("disconnect",function(data){
             if(self.roomId == null){
-                cc.vv.wc.show('正在返回游戏大厅');
+                th.wc.show('正在返回游戏大厅');
                 cc.director.loadScene("hall");
             }else{
                 if(self.isOver == false){
@@ -126,7 +149,7 @@ cc.Class({
     },
 
     getSeatByUserId:function(userId){
-        var index = this.getSeatIndexByID(userId);
+        var index = this.getSeatIndexById(userId);
         var seat = this.seats[index];
         return seat;
     },
@@ -142,9 +165,12 @@ cc.Class({
        return str.join("");
     },
     getDipai:function(){
-        return this.config.liudipai?(peoples==4?8:(peoples==3?9:0)):0;  
+        return this.config.liudipai?(this.config.peoples==4?8:(this.config.peoples==3?9:0)):0;  
     },
 
+    isFangzhu:function(){
+        return this.creator==th.userManager.userId;
+    },
 
     connectServer:function(data){
         var onConnectSuccess=function(){
