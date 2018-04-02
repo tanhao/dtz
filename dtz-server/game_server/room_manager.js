@@ -121,17 +121,34 @@ module.exports.getUserSeatIndex = function(userId){
 
 module.exports.setUserIp = function(userId,ip){
     let roomId=module.exports.getUserRoomId(userId);
+    if(roomId == null) return;
     let room=module.exports.getRoom(roomId);
+    if(room == null) return;
     let seatIndex=module.exports.getUserSeatIndex(userId);
+    if(seatIndex == null) return;
     room.seats[seatIndex].ip=ip;
 };
 
 module.exports.setUserOnline = function(userId,isOnline){
     let roomId=module.exports.getUserRoomId(userId);
+    if(roomId == null) return;
     let room=module.exports.getRoom(roomId);
+    if(room == null) return;
     let seatIndex=module.exports.getUserSeatIndex(userId);
+    if(seatIndex == null) return;
     room.seats[seatIndex].online=isOnline;
 };
+
+module.exports.setReady = function(userId,isReady){
+    let roomId=module.exports.getUserRoomId(userId);
+    if(roomId == null) return;
+    let room=module.exports.getRoom(roomId);
+    if(room == null) return;
+    let seatIndex=module.exports.getUserSeatIndex(userId);
+    if(seatIndex == null) return;
+    room.seats[seatIndex].ready=isReady;
+};
+
 
 module.exports.getTotalRooms = function(){
 	return Object.keys(rooms).length+2;
@@ -190,3 +207,4 @@ module.exports.leaveRoom = function(userId){
         module.exports.destroyRoom (roomId);
     }
 }
+

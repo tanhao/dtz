@@ -51,13 +51,56 @@ module.exports.initSeats=function(config){
 
 
 module.exports.isBegin=function(roomId){
-    var game=games[roomId];
+    let game=games[roomId];
     if(game) return true;
-    var room=roomManager.getRoom(roomId);
+    let room=roomManager.getRoom(roomId);
     if(room) return room.round>0;
     return false;
 }
 
 module.exports.setReady=function(userId){
+    let roomId=roomManager.getUserRoomId(userId);
+    if(roomId==null) return;
+    let room=roomManager.getRoom(roomId);
+    if(room==null) return;
+    roomManager.setReady(userId,true);
+    let game=games[roomId];
+    if(game==null){
+        for(let i = 0; i < room.seats.length; i++){
+            let seat = room.seats[i];
+            if(seat.ready == false || userManager.isOnline(s.userId)==false){
+                return;
+            }
+        }
+        module.exports.begin(roomId);
+    }else{
 
+    }
+}
+
+module.exports.begin=function(roomId){
+    let room=roomManager.getRoom(roomId);
+    if(room==null) return;
+    let seats = room.seats;
+    let game={
+        room:room,
+        config:room.config,
+        round:room.round,
+        seats:new Array(room.seats.length),
+        pokers:new Array(132),
+
+        
+    }
+    room.round++;
+
+    for(let i=0;i<game.seats.length;i++){
+        let seat=game.seats[i]={};
+        seat.game=game;
+        seat.index=i;
+        seat.userId=seats[i].userId;
+        //持有的牌
+        seat.holds = [];
+        //打出的牌
+        seat.folds = [];
+    }
 }
