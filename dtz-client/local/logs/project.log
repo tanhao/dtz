@@ -1,55 +1,58 @@
-2018-04-02T12:58:28.247Z - normal: Load ~/.CocosCreator/settings.json
-2018-04-02T12:58:28.250Z - normal: checking language setting...
-2018-04-02T12:58:28.251Z - normal: Language: zh
-2018-04-02T12:58:30.956Z - success: protocol editor-framework registered
-2018-04-02T12:58:30.957Z - success: protocol app registered
-2018-04-02T12:58:30.957Z - success: protocol theme registered
-2018-04-02T12:58:30.957Z - success: protocol packages registered
-2018-04-02T12:58:30.957Z - success: protocol unpack registerred
-2018-04-02T12:58:30.957Z - success: protocol disable-commonjs registerred
-2018-04-02T12:58:31.265Z - normal: connected!
-2018-04-02T12:58:31.270Z - normal: Check project D:\Workspace_Chess\dtz\dtz-client
-2018-04-02T12:58:31.282Z - normal: Initializing Cocos2d
-2018-04-02T12:58:31.927Z - normal: Initializing Asset Database
-2018-04-02T12:58:32.132Z - success: protocol uuid registerred
-2018-04-02T12:58:32.133Z - success: protocol db registerred
-2018-04-02T12:58:32.133Z - success: protocol thumbnail registerred
-2018-04-02T12:58:32.134Z - normal: Loading editor/builtin packages
-2018-04-02T12:58:32.345Z - success: anysdk loaded
-2018-04-02T12:58:32.486Z - success: assets loaded
-2018-04-02T12:58:32.498Z - success: builder loaded
-2018-04-02T12:58:32.500Z - success: cocos-analytics loaded
-2018-04-02T12:58:32.502Z - success: console loaded
-2018-04-02T12:58:32.544Z - success: fb-instant-games loaded
-2018-04-02T12:58:32.547Z - success: hierarchy loaded
-2018-04-02T12:58:32.549Z - success: inspector loaded
-2018-04-02T12:58:32.551Z - success: keystore loaded
-2018-04-02T12:58:32.553Z - success: node-library loaded
-2018-04-02T12:58:32.554Z - success: package-asset loaded
-2018-04-02T12:58:32.556Z - success: preferences loaded
-2018-04-02T12:58:32.558Z - success: project-exporter loaded
-2018-04-02T12:58:32.572Z - success: project-importer loaded
-2018-04-02T12:58:32.573Z - success: project-settings loaded
-2018-04-02T12:58:32.575Z - success: ui-kit loaded
-2018-04-02T12:58:32.586Z - success: ui-grid loaded
-2018-04-02T12:58:32.590Z - success: scene loaded
-2018-04-02T12:58:32.591Z - success: sprite-editor loaded
-2018-04-02T12:58:32.593Z - success: store loaded
-2018-04-02T12:58:32.596Z - success: timeline loaded
-2018-04-02T12:58:32.596Z - normal: Loading builtin packages
-2018-04-02T12:58:32.605Z - success: asset-db-debugger loaded
-2018-04-02T12:58:32.606Z - success: code-editor loaded
-2018-04-02T12:58:32.615Z - success: color-picker loaded
-2018-04-02T12:58:32.617Z - success: package-manager loaded
-2018-04-02T12:58:32.622Z - success: sdkbox loaded
-2018-04-02T12:58:32.624Z - success: tester loaded
-2018-04-02T12:58:32.625Z - success: ui-kit-preview-extra loaded
-2018-04-02T12:58:32.626Z - success: ui-kit-preview loaded
-2018-04-02T12:58:32.627Z - success: ui-tree loaded
-2018-04-02T12:58:34.617Z - normal: Initializing project D:\Workspace_Chess\dtz\dtz-client
-2018-04-02T12:58:34.631Z - normal: Loading packages
-2018-04-02T12:58:34.636Z - normal: Watching packages
-2018-04-02T12:58:34.653Z - normal: Run Application
-2018-04-02T12:58:37.910Z - success: preview server running at http://localhost:7456
-2018-04-02T12:58:43.573Z - normal: 1.9.0
-2018-04-02T15:32:44.407Z - info: shutdown preview server
+2018-04-03T13:18:50.677Z - normal: Load ~/.CocosCreator/settings.json
+2018-04-03T13:18:50.680Z - normal: checking language setting...
+2018-04-03T13:18:50.680Z - normal: Language: zh
+2018-04-03T13:18:53.488Z - success: protocol editor-framework registered
+2018-04-03T13:18:53.489Z - success: protocol app registered
+2018-04-03T13:18:53.489Z - success: protocol theme registered
+2018-04-03T13:18:53.489Z - success: protocol packages registered
+2018-04-03T13:18:53.489Z - success: protocol unpack registerred
+2018-04-03T13:18:53.489Z - success: protocol disable-commonjs registerred
+2018-04-03T13:18:53.776Z - normal: connected!
+2018-04-03T13:18:53.779Z - normal: Check project D:\Workspace_Chess\dtz\dtz-client
+2018-04-03T13:18:53.781Z - normal: Initializing Cocos2d
+2018-04-03T13:18:54.516Z - normal: Initializing Asset Database
+2018-04-03T13:18:54.568Z - success: protocol uuid registerred
+2018-04-03T13:18:54.568Z - success: protocol db registerred
+2018-04-03T13:18:54.569Z - success: protocol thumbnail registerred
+2018-04-03T13:18:54.569Z - normal: Loading editor/builtin packages
+2018-04-03T13:18:54.630Z - success: anysdk loaded
+2018-04-03T13:18:54.774Z - success: assets loaded
+2018-04-03T13:18:54.776Z - success: builder loaded
+2018-04-03T13:18:54.778Z - success: cocos-analytics loaded
+2018-04-03T13:18:54.781Z - success: console loaded
+2018-04-03T13:18:54.824Z - success: fb-instant-games loaded
+2018-04-03T13:18:54.827Z - success: hierarchy loaded
+2018-04-03T13:18:54.829Z - success: inspector loaded
+2018-04-03T13:18:54.831Z - success: keystore loaded
+2018-04-03T13:18:54.833Z - success: node-library loaded
+2018-04-03T13:18:54.834Z - success: package-asset loaded
+2018-04-03T13:18:54.836Z - success: preferences loaded
+2018-04-03T13:18:54.838Z - success: project-exporter loaded
+2018-04-03T13:18:54.876Z - success: project-importer loaded
+2018-04-03T13:18:54.878Z - success: project-settings loaded
+2018-04-03T13:18:54.880Z - success: ui-kit loaded
+2018-04-03T13:18:54.893Z - success: ui-grid loaded
+2018-04-03T13:18:54.896Z - success: scene loaded
+2018-04-03T13:18:54.897Z - success: sprite-editor loaded
+2018-04-03T13:18:54.899Z - success: store loaded
+2018-04-03T13:18:54.903Z - success: timeline loaded
+2018-04-03T13:18:54.903Z - normal: Loading builtin packages
+2018-04-03T13:18:54.912Z - success: asset-db-debugger loaded
+2018-04-03T13:18:54.913Z - success: code-editor loaded
+2018-04-03T13:18:54.922Z - success: color-picker loaded
+2018-04-03T13:18:54.924Z - success: package-manager loaded
+2018-04-03T13:18:54.928Z - success: sdkbox loaded
+2018-04-03T13:18:54.930Z - success: tester loaded
+2018-04-03T13:18:54.931Z - success: ui-kit-preview-extra loaded
+2018-04-03T13:18:54.932Z - success: ui-kit-preview loaded
+2018-04-03T13:18:54.933Z - success: ui-tree loaded
+2018-04-03T13:18:56.445Z - normal: Initializing project D:\Workspace_Chess\dtz\dtz-client
+2018-04-03T13:18:56.457Z - normal: Loading packages
+2018-04-03T13:18:56.461Z - normal: Watching packages
+2018-04-03T13:18:56.481Z - normal: Run Application
+2018-04-03T13:18:58.525Z - success: preview server running at http://localhost:7456
+2018-04-03T13:19:03.990Z - normal: 1.9.0
+2018-04-03T15:56:23.592Z - error: Window "main" crashed: [object Object]
+    at WebContents.Window.nativeWin.webContents.on.e (D:\CocosCreator1.9\resources\app.asar\editor-framework\lib\main\window.js:1:2853)
+    at emitTwo (events.js:106:13)
+    at WebContents.emit (events.js:194:7)

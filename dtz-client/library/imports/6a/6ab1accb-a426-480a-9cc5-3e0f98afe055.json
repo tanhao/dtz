@@ -788,9 +788,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 185,
-      "g": 215,
-      "b": 145,
+      "r": 198,
+      "g": 226,
+      "b": 132,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -862,9 +862,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 185,
-      "g": 215,
-      "b": 145,
+      "r": 198,
+      "g": 226,
+      "b": 132,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -3250,9 +3250,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 184,
-      "g": 197,
-      "b": 84,
+      "r": 198,
+      "g": 226,
+      "b": 132,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -3866,9 +3866,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 184,
-      "g": 197,
-      "b": 84,
+      "r": 198,
+      "g": 226,
+      "b": 132,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -4014,9 +4014,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 184,
-      "g": 197,
-      "b": 84,
+      "r": 198,
+      "g": 226,
+      "b": 132,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -4162,9 +4162,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 184,
-      "g": 197,
-      "b": 84,
+      "r": 198,
+      "g": 226,
+      "b": 132,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -46616,7 +46616,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -70
+      "y": -50
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -46843,7 +46843,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -200,
-      "y": -70
+      "y": -50
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -47070,7 +47070,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -70
+      "y": -50
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -47297,7 +47297,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 200,
-      "y": -70
+      "y": -50
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -51082,7 +51082,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1156
@@ -52063,7 +52063,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1176

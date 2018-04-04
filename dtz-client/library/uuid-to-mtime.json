@@ -60,8 +60,8 @@
     "relativePath": "scenes\\login.fire"
   },
   "d2c04a79-2cb0-40bf-ad0d-8c8224a7e190": {
-    "asset": 1522568992261,
-    "meta": 1522568992276,
+    "asset": 1522766210922,
+    "meta": 1522766210947,
     "relativePath": "scenes\\hall.fire"
   },
   "aae98627-8003-4ce0-9cf7-855401c43fd6": {
@@ -1435,8 +1435,8 @@
     "relativePath": "scripts\\SocketIO.js"
   },
   "6ab1accb-a426-480a-9cc5-3e0f98afe055": {
-    "asset": 1522602444305,
-    "meta": 1522602444448,
+    "asset": 1522762801482,
+    "meta": 1522762801518,
     "relativePath": "scenes\\game.fire"
   },
   "527a616c-7b93-4b63-8066-39d37e2a62e7": {
