@@ -10,6 +10,7 @@ cc.Class({
         creator:null,
         seatIndex:-1,
         needCheckIp:false,
+        status:null,
     },
 
 
@@ -70,13 +71,10 @@ cc.Class({
                 self.dispatchEvent('check_ip',self.seats[index]);
             }
         })
-
-        cc.log("seats:"+JSON.stringify(self.seats));
-         //自己离开房间
-         th.sio.addHandler("leave_result",function(data){
+        //自己离开房间
+        th.sio.addHandler("leave_result",function(data){
             self.reset();
         })
-
         //其他玩家离开房间
         th.sio.addHandler("leave_push",function(data){
             cc.log("==>SocketIOManager leave_push:",JSON.stringify(data));
@@ -94,13 +92,11 @@ cc.Class({
             }
             self.dispatchEvent("leave_push",seat);
         })
-
         //解散房间，所有玩家退出房间，收到此消息返回大厅
         th.sio.addHandler("dissolve_push",function(data){
             self.reset();
             cc.log("==>SocketIOManager dissolve_push:",JSON.stringify(data));
         })
-
         //其他玩家断线
         th.sio.addHandler("offline_push",function(data){
             cc.log("==>SocketIOManager offline_push:",JSON.stringify(data));
@@ -111,6 +107,35 @@ cc.Class({
             cc.log("==>SocketIOManager online_push:",JSON.stringify(data));
             self.dispatchEvent("online_push",data);
         })
+        //自己准备返回
+        th.sio.addHandler("ready_result",function(data){
+            cc.log("==>SocketIOManager ready_result:",JSON.stringify(data));
+            var seat = self.getSeatByUserId(th.userManager.userId);
+            seat.ready=true;
+            self.dispatchEvent("ready_result",seat);
+        })
+        //其他玩家准备
+        th.sio.addHandler("ready_push",function(data){
+            cc.log("==>SocketIOManager ready_push:",JSON.stringify(data));
+            var seat = self.getSeatByUserId(data.userId);
+            seat.ready=true;
+            self.dispatchEvent("ready_push",seat);
+        })
+
+        //玩家手上的牌
+        th.sio.addHandler("holds_push",function(data){
+            cc.log("==>SocketIOManager holds_push:",JSON.stringify(data));
+            var seat = self.seats[self.seatIndex]; 
+            seat.holds=data;
+            self.dispatchEvent("holds_push");
+        })
+
+        //开始游戏，出头的人
+        th.sio.addHandler("begin_push",function(data){
+            cc.log("==>SocketIOManager begin_push:",JSON.stringify(data));
+            self.dispatchEvent("begin_push",data);
+        })
+
 
         //断线
         th.sio.addHandler("disconnect",function(data){
@@ -170,6 +195,11 @@ cc.Class({
 
     isFangzhu:function(){
         return this.creator==th.userManager.userId;
+    },
+
+    isReady:function(userId){
+        var seat=this.getSeatByUserId(userId);
+        return seat.ready;
     },
 
     connectServer:function(data){

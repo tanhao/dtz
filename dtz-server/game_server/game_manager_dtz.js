@@ -96,7 +96,7 @@ module.exports.setReady=function(userId){
     if(game==null){
         for(let i = 0; i < room.seats.length; i++){
             let seat = room.seats[i];
-            if(seat.ready == false || userManager.isOnline(s.userId)==false){
+            if(seat.ready == false || userManager.isOnline(userId)==false){
                 return;
             }
         }
@@ -140,7 +140,7 @@ module.exports.begin=function(roomId){
         let data=game.seats[i]={};
         data.game=game;
         data.index=i;
-        data.userId=data[i].userId;
+        data.userId=room.seats[i].userId;
         //持有的牌
         data.holds = [];
         //打出的牌
@@ -178,15 +178,24 @@ module.exports.begin=function(roomId){
     let seatIndex=game.turn;
     for(let i=0;i<pokersCount;i++){
         let holds=game.seats[seatIndex].holds;
-        holds.push(pokers.pop());
+        let poker=pokers.pop();
+        holds.push(poker);
         seatIndex ++;
-        seatIndex &=peoples;
+        seatIndex %=peoples;
     }
     //把剩余的牌放到底牌
     if(game.config.liudipai){
         for(let i=0;i<pokers.length;i++){
             game.dipai.push(pokers.pop());
         }
+    }
+
+    for(let i=0;i<game.seats.length;i++){
+        let seat = game.seats[i];
+        //通知玩家手牌
+        userManager.sendMsg(seat.userId,'holds_push',seat.holds);
+        //通知游戏开始
+        userManager.sendMsg(seat.userId,'begin_push',game.turn);
     }
 
 

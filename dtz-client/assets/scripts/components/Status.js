@@ -16,7 +16,7 @@ cc.Class({
 
     onLoad () {
          this.roomId.string=th.socketIOManager.roomId || '------';
-         this.round.string=th.socketIOManager.round || '-';        
+         this.round.string=th.socketIOManager.round==null?'-':(th.socketIOManager.round+'');        
     },
 
 

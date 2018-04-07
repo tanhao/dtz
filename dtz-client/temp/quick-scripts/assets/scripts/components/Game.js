@@ -8,7 +8,11 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        options: cc.Node,
+        btnReady: cc.Button,
+        btnNo: cc.Button,
+        btnTip: cc.Button,
+        btnOut: cc.Button,
+
         wangfa: cc.Label,
         dipai8: cc.Sprite,
         dipai9: cc.Sprite,
@@ -88,18 +92,15 @@ cc.Class({
             console.log('==>Gmae join_push:', JSON.stringify(target.detail));
             self.initSingleSeat(target.detail);
         });
-
         //检查IP
         this.node.on('check_ip', function (target) {
             console.log('==>Gmae check_ip:', JSON.stringify(target.detail));
         });
-
         //离开房间
         this.node.on('leave_push', function (target) {
             console.log('==>Gmae leave_push:', JSON.stringify(target.detail));
             self.initSingleSeat(target.detail);
         });
-
         //解散房间
         this.node.on('dissolve_push', function (target) {
             console.log('==>Gmae dissolve_push:', JSON.stringify(target.detail));
@@ -118,12 +119,50 @@ cc.Class({
             var index = th.socketIOManager.getLocalIndex(seatIndex);
             self._seatComponent[index].setOffline(false);
         });
+        //自己准备返回
+        this.node.on("ready_result", function (target) {
+            console.log('==>Gmae ready_result:', JSON.stringify(target.detail));
+            var seat = target.detail;
+            self.btnReady.node.active = th.socketIOManager.round == 0 && !seat.ready;
+            self.initSingleSeat(seat);
+        });
+        //其他玩家准备
+        this.node.on("ready_push", function (target) {
+            console.log('==>Gmae ready_push:', JSON.stringify(target.detail));
+            self.initSingleSeat(target.detail);
+        });
+        //玩家手上的牌
+        this.node.on("holds_push", function (target) {
+            console.log('==>Gmae holds_push:', JSON.stringify(target.detail));
+            self.initPokers();
+        });
+        //开始游戏，出头的人
+        this.node.on("begin_push", function (target) {
+            console.log('==>Gmae begin_push:', JSON.stringify(target.detail));
+        });
+
         //断线
         this.node.on('disconnect', function (target) {
             console.log('==>Gmae disconnect:', JSON.stringify(target.detail));
         });
     },
-
+    initPokers: function initPokers() {
+        var seats = th.socketIOManager.seats;
+        var seat = seats[th.socketIOManager.seatIndex];
+        var holds = seat.holds;
+        cc.log("initPokers:", holds);
+        //排序
+        holds.sort(function (a, b) {
+            return a - b;
+        });
+        for (var i = 0; i < holds.length; i++) {
+            var pokerId = holds[i];
+            var sprite = this._myHoldPokers[i];
+            sprite.node.pokerId = pokerId;
+            sprite.spriteFrame = th.pokerManager.getSpriteFrameByPokerId(pokerId);
+            sprite.node.active = true;
+        }
+    },
     initWanfaLabel: function initWanfaLabel() {
         this.wangfa.string = th.socketIOManager.getWanfa();
     },
@@ -146,11 +185,11 @@ cc.Class({
     */
 
     hideOptions: function hideOptions(data) {
-        this.options.active = false;
-        for (var i = 0; i < this.options.children.length; i++) {
-            var child = this.options.children[i];
-            child.active = false;
-        }
+        this.btnOut.node.active = false;
+        this.btnNo.node.active = false;
+        this.btnTip.node.active = false;
+        var activeReadyBtn = th.socketIOManager.round == 0 && !th.socketIOManager.isReady(th.userManager.userId);
+        this.btnReady.node.active = activeReadyBtn;
     },
 
     onMenuClicked: function onMenuClicked() {
@@ -184,11 +223,25 @@ cc.Class({
         this.menuWin.active = false;
         this.settingWin.active = true;
     },
-    onChatClicked: function onChatClicked() {
+    onBtnChatClicked: function onBtnChatClicked() {
+        this._seatComponent[0].setCountdown(10);
         cc.log('onChatClicked==>');
     },
-    onVoiceClicked: function onVoiceClicked() {
+    onBtnVoiceClicked: function onBtnVoiceClicked() {
         cc.log('onVoiceClicked==>');
+    },
+    onBtnReadyClicked: function onBtnReadyClicked() {
+        cc.log('onBtnReadyClicked==>');
+        th.sio.send("ready");
+    },
+    onBtnTipClicked: function onBtnTipClicked() {
+        cc.log('onBtnTipClicked==>');
+    },
+    onBtnOutClicked: function onBtnOutClicked() {
+        cc.log('onBtnOutClicked==>');
+    },
+    onBtnNoClicked: function onBtnNoClicked() {
+        cc.log('onBtnNoClicked==>');
     }
 
 });

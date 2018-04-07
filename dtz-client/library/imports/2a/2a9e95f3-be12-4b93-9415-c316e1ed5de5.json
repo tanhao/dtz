@@ -723,7 +723,7 @@
     },
     "component": "AppStart",
     "handler": "onBtnWeichatClicked",
-    "customEventData": ""
+    "customEventData": "oy4oyv2OEKXgM-3y3fz7lBLzsxkU"
   },
   {
     "__type__": "cc.Node",
@@ -869,7 +869,7 @@
     },
     "component": "AppStart",
     "handler": "onBtnWeichatClicked",
-    "customEventData": ""
+    "customEventData": "oy4oyv9wH0GfiXaL52bogr3wFVJI"
   },
   {
     "__type__": "cc.Node",

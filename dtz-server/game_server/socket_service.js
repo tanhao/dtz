@@ -72,7 +72,6 @@ module.exports.start=function(config){
             let newUserData=room.seats.find(seat=>seat.userId==userId);
             userManager.broacastInRoom('join_push',newUserData,userId,false);
         }
-       
         
         //离开房间
         socket.on('leave',function(data){
@@ -113,9 +112,12 @@ module.exports.start=function(config){
         //准备
         socket.on('ready',function(data){
             var userId=socket.userId;
+            logger.info("ready:"+userId)
             if(!userId) return;
             socket.manager.setReady(userId);
-            userManager.broacastInRoom('ready_push',{userId:userId},userId,true);
+            logger.info("ready done.");
+            userManager.broacastInRoom('ready_push',{userId:userId,ready:true},userId,false);
+            socket.emit('ready_result');
         });
         //聊天
 		socket.on('chat',function(data){

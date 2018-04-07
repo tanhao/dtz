@@ -24,6 +24,8 @@ cc.Class({
         _userId: null,
         _userName: '--',
         _headImgUrl: null,
+        _countdown: null,
+        _countdownEndTime: null,
         _sex: 0,
         _score: 0,
         _restCard: 0,
@@ -171,6 +173,12 @@ cc.Class({
         }
     },
 
+    setCountdown: function setCountdown(time) {
+        this._countdown = time;
+        this._countdownEndTime = Date.now() + time * 1000;
+    },
+
+
     setInfo: function setInfo(id, name, score, headImgUrl) {
         this.setUserID(id);
         if (id) {
@@ -191,6 +199,16 @@ cc.Class({
                 this.chat.node.active = false;
                 this.emoji.node.active = false;
             }
+        }
+
+        if (this._countdownEndTime > Date.now()) {
+            if (this.countdown.node.active == false) {
+                this.countdown.node.active = true;
+            } else {
+                this.countdown.getComponent(cc.Sprite).fillRange = (this._countdownEndTime - Date.now()) / 1000 / this._countdown;
+            }
+        } else if (this._countdownEndTime <= Date.now() && this.countdown.node.active == true) {
+            this.countdown.node.active = false;
         }
     }
 
