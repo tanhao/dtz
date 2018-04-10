@@ -20,7 +20,7 @@ cc.Class({
             this._lastPosY=posY;
             //console.log("SCROLLING",scrollview.isScrolling(),scrollview.isAutoScrolling(),scrollview.getContentPosition());
             //cc.log(scrollview.getScrollOffset(),scrollview.getMaxScrollOffset());
-            cc.log(posY,parseInt(posY/200),scrollview.getComponent('cc.Button')).length;
+            cc.log(posY,parseInt(posY/200),scrollview.node.getComponents(cc.Button).length);
             var items=scrollview.getComponentsInChildren(cc.Sprite);
         }else if(eventType=== cc.ScrollView.EventType.SCROLL_ENDED){
             console.log("SCROLL_ENDED");
