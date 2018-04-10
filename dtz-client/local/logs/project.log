@@ -1,132 +1,55 @@
-2018-04-10T06:34:32.638Z - normal: Load ~/.CocosCreator/settings.json
-2018-04-10T06:34:32.643Z - normal: checking language setting...
-2018-04-10T06:34:32.643Z - normal: Language: zh
-2018-04-10T06:34:35.135Z - success: protocol editor-framework registered
-2018-04-10T06:34:35.136Z - success: protocol app registered
-2018-04-10T06:34:35.136Z - success: protocol theme registered
-2018-04-10T06:34:35.136Z - success: protocol packages registered
-2018-04-10T06:34:35.136Z - success: protocol unpack registerred
-2018-04-10T06:34:35.136Z - success: protocol disable-commonjs registerred
-2018-04-10T06:34:35.409Z - normal: connected!
-2018-04-10T06:34:35.417Z - normal: Check project D:\Workspaces_Chess\dtz\dtz-client
-2018-04-10T06:34:35.422Z - normal: Initializing Cocos2d
-2018-04-10T06:34:35.798Z - normal: Initializing Asset Database
-2018-04-10T06:34:35.859Z - success: protocol uuid registerred
-2018-04-10T06:34:35.859Z - success: protocol db registerred
-2018-04-10T06:34:35.859Z - success: protocol thumbnail registerred
-2018-04-10T06:34:35.860Z - normal: Loading editor/builtin packages
-2018-04-10T06:34:35.892Z - success: anysdk loaded
-2018-04-10T06:34:36.067Z - success: assets loaded
-2018-04-10T06:34:36.071Z - success: builder loaded
-2018-04-10T06:34:36.074Z - success: cocos-analytics loaded
-2018-04-10T06:34:36.078Z - success: console loaded
-2018-04-10T06:34:36.133Z - success: fb-instant-games loaded
-2018-04-10T06:34:36.138Z - success: hierarchy loaded
-2018-04-10T06:34:36.142Z - success: inspector loaded
-2018-04-10T06:34:36.144Z - success: keystore loaded
-2018-04-10T06:34:36.147Z - success: node-library loaded
-2018-04-10T06:34:36.149Z - success: package-asset loaded
-2018-04-10T06:34:36.152Z - success: preferences loaded
-2018-04-10T06:34:36.155Z - success: project-exporter loaded
-2018-04-10T06:34:36.178Z - success: project-importer loaded
-2018-04-10T06:34:36.181Z - success: project-settings loaded
-2018-04-10T06:34:36.184Z - success: ui-kit loaded
-2018-04-10T06:34:36.187Z - success: ui-grid loaded
-2018-04-10T06:34:36.192Z - success: scene loaded
-2018-04-10T06:34:36.193Z - success: sprite-editor loaded
-2018-04-10T06:34:36.197Z - success: store loaded
-2018-04-10T06:34:36.204Z - success: timeline loaded
-2018-04-10T06:34:36.204Z - normal: Loading builtin packages
-2018-04-10T06:34:36.207Z - success: asset-db-debugger loaded
-2018-04-10T06:34:36.209Z - success: code-editor loaded
-2018-04-10T06:34:36.210Z - success: color-picker loaded
-2018-04-10T06:34:36.213Z - success: package-manager loaded
-2018-04-10T06:34:36.220Z - success: sdkbox loaded
-2018-04-10T06:34:36.223Z - success: tester loaded
-2018-04-10T06:34:36.226Z - success: ui-kit-preview-extra loaded
-2018-04-10T06:34:36.234Z - success: ui-kit-preview loaded
-2018-04-10T06:34:36.237Z - success: ui-tree loaded
-2018-04-10T06:34:37.930Z - normal: Initializing project D:\Workspaces_Chess\dtz\dtz-client
-2018-04-10T06:34:37.935Z - normal: Loading packages
-2018-04-10T06:34:37.941Z - normal: Watching packages
-2018-04-10T06:34:37.958Z - normal: Run Application
-2018-04-10T06:34:39.001Z - warn: [db-task][init] Backup unused meta file: db://assets/anims.meta
-2018-04-10T06:34:43.956Z - success: preview server running at http://localhost:7456
-2018-04-10T06:34:51.063Z - normal: 1.9.0
-2018-04-10T06:38:32.773Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
-2018-04-10T06:38:32.775Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 990.00
-2018-04-10T06:38:32.775Z - normal: Simulator: FRAME SCALE = 1.00
-2018-04-10T06:38:33.135Z - normal: Simulator: Ready for GLSL
-2018-04-10T06:38:33.135Z - normal: Simulator: Ready for OpenGL 2.0
-2018-04-10T06:38:33.136Z - normal: Simulator: 
-2018-04-10T06:38:33.136Z - normal: Simulator: {
-2018-04-10T06:38:33.136Z - normal: Simulator: 	gl.version: 3.0.0 - Build 8.15.10.2353
-2018-04-10T06:38:33.137Z - normal: Simulator: 	gl.supports_NPOT: true
-2018-04-10T06:38:33.137Z - normal: Simulator: 	cocos2d.x.version: Cocos2d-x-lite v1.8.2
-2018-04-10T06:38:33.137Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
-2018-04-10T06:38:33.137Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
-2018-04-10T06:38:33.137Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
-2018-04-10T06:38:33.138Z - normal: Simulator: 	gl.max_texture_size: 4096
-2018-04-10T06:38:33.138Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
-2018-04-10T06:38:33.138Z - normal: Simulator: 	gl.vendor: Intel
-2018-04-10T06:38:33.138Z - normal: Simulator: 	gl.renderer: Intel(R) HD Graphics Family
-2018-04-10T06:38:33.139Z - normal: Simulator: 	gl.max_texture_units: 16
-2018-04-10T06:38:33.139Z - normal: Simulator: 	gl.supports_ETC1: false
-2018-04-10T06:38:33.139Z - normal: Simulator: 	gl.supports_PVRTC: false
-2018-04-10T06:38:33.140Z - normal: Simulator: 	gl.supports_BGRA8888: false
-2018-04-10T06:38:33.140Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
-2018-04-10T06:38:33.140Z - normal: Simulator: 	gl.supports_vertex_array_object: true
-2018-04-10T06:38:33.141Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
-2018-04-10T06:38:33.141Z - normal: Simulator: 	gl.supports_OES_depth24: false
-2018-04-10T06:38:33.141Z - normal: Simulator: }
-2018-04-10T06:38:33.142Z - normal: Simulator: 
-2018-04-10T06:38:33.142Z - normal: Simulator: 
-2018-04-10T06:38:33.142Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
-2018-04-10T06:38:33.142Z - normal: Simulator: Project Config:
-2018-04-10T06:38:33.142Z - normal: Simulator:     project dir: D:\CocosCreator\resources\cocos2d-x\simulator\win32\
-2018-04-10T06:38:33.142Z - normal: Simulator:     writable path: $(PROJDIR)\
-2018-04-10T06:38:33.143Z - normal: Simulator:     script file: $(PROJDIR)\main.js
-2018-04-10T06:38:33.143Z - normal: Simulator:     frame size: 1334 x 750
-2018-04-10T06:38:33.143Z - normal: Simulator:     frame scale: 1.00
-2018-04-10T06:38:33.143Z - normal: Simulator:     show console: NO
-2018-04-10T06:38:33.143Z - normal: Simulator:     write debug log: NO ()
-2018-04-10T06:38:33.143Z - normal: Simulator:     listen: 
-2018-04-10T06:38:33.143Z - normal: Simulator:     debugger: none
-2018-04-10T06:38:33.144Z - normal: Simulator:     add searching path:
-2018-04-10T06:38:33.144Z - normal: Simulator: 
-2018-04-10T06:38:33.144Z - normal: Simulator: 
-2018-04-10T06:38:33.144Z - normal: Simulator: 
-2018-04-10T06:38:33.144Z - normal: Simulator: ------------------------------------------------
-2018-04-10T06:38:33.144Z - normal: Simulator: LOAD Js FILE: main.js
-2018-04-10T06:38:33.145Z - normal: Simulator: ------------------------------------------------
-2018-04-10T06:38:33.145Z - normal: Simulator: D/jswrapper (364): Initializing V8, version: 6.0.286.52
-2018-04-10T06:38:33.525Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
-2018-04-10T06:38:33.534Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
-2018-04-10T06:38:33.534Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
-2018-04-10T06:38:33.829Z - normal: Simulator: D/jswrapper (125): JS: Cocos2d-x-lite v1.8.2
-2018-04-10T06:38:34.142Z - normal: Simulator: iShow!
-2018-04-10T06:38:34.345Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 6.528999999999996ms
-2018-04-10T06:38:34.345Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.20500000000004093ms
-2018-04-10T06:38:34.346Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 0.1230000000000473ms
-2018-04-10T06:38:34.346Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.010999999999967258ms
-2018-04-10T06:38:34.395Z - normal: Simulator: D/jswrapper (125): JS: [WARN]: Sorry, lineHeight of system font not supported on JSB.
-2018-04-10T06:38:34.400Z - normal: Simulator: D/jswrapper (125): JS: WaitingConnection====>onload
-2018-04-10T06:38:34.410Z - normal: Simulator: D/jswrapper (125): JS: Activate: 59.11800000000005ms
-2018-04-10T06:38:35.770Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 0980C300 ... 
-2018-04-10T06:38:35.770Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 09362018 ... 
-2018-04-10T06:38:36.684Z - normal: Simulator: D/jswrapper (125): JS: onBtnWeichatClicked
-2018-04-10T06:38:36.696Z - normal: Simulator: In the constructor of HttpClient!
-2018-04-10T06:38:37.900Z - normal: Simulator: D/jswrapper (353): Response failed, error buffer: Failed to connect to 127.0.0.1 port 9001: Connection refused
-2018-04-10T06:38:40.982Z - normal: Simulator: D/jswrapper (447): ScriptEngine::cleanup begin ...
-2018-04-10T06:38:40.983Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 114, all objects: 395
-2018-04-10T06:38:41.029Z - normal: Simulator: D/jswrapper (535): XMLHttpRequest_finalize, 09362018 ... 
-2018-04-10T06:38:41.058Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 91, all objects: 373
-2018-04-10T06:38:41.059Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 91, all objects: 372
-2018-04-10T06:38:41.100Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 91, all objects: 372
-2018-04-10T06:38:41.100Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 0, all objects: 0
-2018-04-10T06:38:41.144Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 0, all objects: 0
-2018-04-10T06:38:41.145Z - normal: Simulator: D/jswrapper (480): Starting to cleanup dragonbones object, count: 0
-2018-04-10T06:38:41.145Z - normal: Simulator: D/jswrapper (499): After first cleanup, dragonbones object remained count: 0
-2018-04-10T06:38:41.145Z - normal: Simulator: D/jswrapper (515): After second cleanup, dragonbones object remained count: 0
-2018-04-10T06:38:41.146Z - normal: Simulator: D/jswrapper (510): ScriptEngine::cleanup end ...
-2018-04-10T07:50:46.369Z - info: shutdown preview server
+2018-04-10T13:21:28.904Z - normal: Load ~/.CocosCreator/settings.json
+2018-04-10T13:21:28.907Z - normal: checking language setting...
+2018-04-10T13:21:28.907Z - normal: Language: zh
+2018-04-10T13:21:31.576Z - success: protocol editor-framework registered
+2018-04-10T13:21:31.576Z - success: protocol app registered
+2018-04-10T13:21:31.576Z - success: protocol theme registered
+2018-04-10T13:21:31.577Z - success: protocol packages registered
+2018-04-10T13:21:31.577Z - success: protocol unpack registerred
+2018-04-10T13:21:31.577Z - success: protocol disable-commonjs registerred
+2018-04-10T13:21:31.920Z - normal: connected!
+2018-04-10T13:21:31.929Z - normal: Check project D:\Workspace_Chess\dtz\dtz-client
+2018-04-10T13:21:31.934Z - normal: Initializing Cocos2d
+2018-04-10T13:21:32.522Z - normal: Initializing Asset Database
+2018-04-10T13:21:32.559Z - success: protocol uuid registerred
+2018-04-10T13:21:32.559Z - success: protocol db registerred
+2018-04-10T13:21:32.559Z - success: protocol thumbnail registerred
+2018-04-10T13:21:32.559Z - normal: Loading editor/builtin packages
+2018-04-10T13:21:32.648Z - success: anysdk loaded
+2018-04-10T13:21:32.930Z - success: assets loaded
+2018-04-10T13:21:32.944Z - success: builder loaded
+2018-04-10T13:21:32.952Z - success: cocos-analytics loaded
+2018-04-10T13:21:32.954Z - success: console loaded
+2018-04-10T13:21:32.987Z - success: fb-instant-games loaded
+2018-04-10T13:21:32.990Z - success: hierarchy loaded
+2018-04-10T13:21:32.992Z - success: inspector loaded
+2018-04-10T13:21:32.993Z - success: keystore loaded
+2018-04-10T13:21:32.995Z - success: node-library loaded
+2018-04-10T13:21:32.996Z - success: package-asset loaded
+2018-04-10T13:21:32.997Z - success: preferences loaded
+2018-04-10T13:21:32.998Z - success: project-exporter loaded
+2018-04-10T13:21:33.011Z - success: project-importer loaded
+2018-04-10T13:21:33.013Z - success: project-settings loaded
+2018-04-10T13:21:33.014Z - success: ui-kit loaded
+2018-04-10T13:21:33.021Z - success: ui-grid loaded
+2018-04-10T13:21:33.024Z - success: scene loaded
+2018-04-10T13:21:33.025Z - success: sprite-editor loaded
+2018-04-10T13:21:33.027Z - success: store loaded
+2018-04-10T13:21:33.030Z - success: timeline loaded
+2018-04-10T13:21:33.030Z - normal: Loading builtin packages
+2018-04-10T13:21:33.040Z - success: asset-db-debugger loaded
+2018-04-10T13:21:33.041Z - success: code-editor loaded
+2018-04-10T13:21:33.050Z - success: color-picker loaded
+2018-04-10T13:21:33.052Z - success: package-manager loaded
+2018-04-10T13:21:33.055Z - success: sdkbox loaded
+2018-04-10T13:21:33.057Z - success: tester loaded
+2018-04-10T13:21:33.058Z - success: ui-kit-preview-extra loaded
+2018-04-10T13:21:33.059Z - success: ui-kit-preview loaded
+2018-04-10T13:21:33.060Z - success: ui-tree loaded
+2018-04-10T13:21:34.463Z - normal: Initializing project D:\Workspace_Chess\dtz\dtz-client
+2018-04-10T13:21:34.474Z - normal: Loading packages
+2018-04-10T13:21:34.482Z - success: bitmap-font loaded
+2018-04-10T13:21:34.483Z - normal: Watching packages
+2018-04-10T13:21:34.511Z - normal: Run Application
+2018-04-10T13:21:41.220Z - success: preview server running at http://localhost:7456
+2018-04-10T13:21:45.986Z - normal: 1.9.0
