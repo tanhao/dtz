@@ -1,90 +1,81 @@
-2018-04-07T12:05:17.138Z - normal: Load ~/.CocosCreator/settings.json
-2018-04-07T12:05:17.141Z - normal: checking language setting...
-2018-04-07T12:05:17.142Z - normal: Language: zh
-2018-04-07T12:05:19.718Z - success: protocol editor-framework registered
-2018-04-07T12:05:19.719Z - success: protocol app registered
-2018-04-07T12:05:19.719Z - success: protocol theme registered
-2018-04-07T12:05:19.719Z - success: protocol packages registered
-2018-04-07T12:05:19.719Z - success: protocol unpack registerred
-2018-04-07T12:05:19.719Z - success: protocol disable-commonjs registerred
-2018-04-07T12:05:20.001Z - normal: connected!
-2018-04-07T12:05:20.004Z - normal: Check project D:\Workspace_Chess\dtz\dtz-client
-2018-04-07T12:05:20.011Z - normal: Initializing Cocos2d
-2018-04-07T12:05:20.691Z - normal: Initializing Asset Database
-2018-04-07T12:05:20.746Z - success: protocol uuid registerred
-2018-04-07T12:05:20.747Z - success: protocol db registerred
-2018-04-07T12:05:20.747Z - success: protocol thumbnail registerred
-2018-04-07T12:05:20.747Z - normal: Loading editor/builtin packages
-2018-04-07T12:05:20.835Z - success: anysdk loaded
-2018-04-07T12:05:20.979Z - success: assets loaded
-2018-04-07T12:05:20.986Z - success: builder loaded
-2018-04-07T12:05:20.988Z - success: cocos-analytics loaded
-2018-04-07T12:05:20.992Z - success: console loaded
-2018-04-07T12:05:21.033Z - success: fb-instant-games loaded
-2018-04-07T12:05:21.036Z - success: hierarchy loaded
-2018-04-07T12:05:21.039Z - success: inspector loaded
-2018-04-07T12:05:21.041Z - success: keystore loaded
-2018-04-07T12:05:21.044Z - success: node-library loaded
-2018-04-07T12:05:21.046Z - success: package-asset loaded
-2018-04-07T12:05:21.048Z - success: preferences loaded
-2018-04-07T12:05:21.049Z - success: project-exporter loaded
-2018-04-07T12:05:21.065Z - success: project-importer loaded
-2018-04-07T12:05:21.068Z - success: project-settings loaded
-2018-04-07T12:05:21.070Z - success: ui-kit loaded
-2018-04-07T12:05:21.208Z - success: ui-grid loaded
-2018-04-07T12:05:21.211Z - success: scene loaded
-2018-04-07T12:05:21.213Z - success: sprite-editor loaded
-2018-04-07T12:05:21.216Z - success: store loaded
-2018-04-07T12:05:21.221Z - success: timeline loaded
-2018-04-07T12:05:21.221Z - normal: Loading builtin packages
-2018-04-07T12:05:21.228Z - success: asset-db-debugger loaded
-2018-04-07T12:05:21.230Z - success: code-editor loaded
-2018-04-07T12:05:21.240Z - success: color-picker loaded
-2018-04-07T12:05:21.242Z - success: package-manager loaded
-2018-04-07T12:05:21.256Z - success: sdkbox loaded
-2018-04-07T12:05:21.258Z - success: tester loaded
-2018-04-07T12:05:21.275Z - success: ui-kit-preview-extra loaded
-2018-04-07T12:05:21.276Z - success: ui-kit-preview loaded
-2018-04-07T12:05:21.279Z - success: ui-tree loaded
-2018-04-07T12:05:22.938Z - normal: Initializing project D:\Workspace_Chess\dtz\dtz-client
-2018-04-07T12:05:22.967Z - normal: Loading packages
-2018-04-07T12:05:22.971Z - normal: Watching packages
-2018-04-07T12:05:22.985Z - normal: Run Application
-2018-04-07T12:05:26.631Z - success: preview server running at http://localhost:7456
-2018-04-07T12:05:32.383Z - normal: 1.9.0
-2018-04-07T14:29:59.640Z - failed: [db-task][sync-changes] Failed to import asset D:\Workspace_Chess\dtz\dtz-client\assets\scripts\components\Seat.js, message: Compile error: SyntaxError: D:/Workspace_Chess/dtz/dtz-client/assets/scripts/components/Seat.js: Unexpected token, expected ; (201:76)
-  199 |                 this.countdown
-  200 |             }
-> 201 |         }else(this._countdown<=Date.now()**this.countdown.node.active==true){
-      |                                                                             ^
-  202 |             this.countdown.note.active=false;
-  203 |         }
-  204 |     },
+2018-04-09T13:58:16.042Z - normal: Load ~/.CocosCreator/settings.json
+2018-04-09T13:58:16.045Z - normal: checking language setting...
+2018-04-09T13:58:16.045Z - normal: Language: zh
+2018-04-09T13:58:18.680Z - success: protocol editor-framework registered
+2018-04-09T13:58:18.680Z - success: protocol app registered
+2018-04-09T13:58:18.680Z - success: protocol theme registered
+2018-04-09T13:58:18.680Z - success: protocol packages registered
+2018-04-09T13:58:18.680Z - success: protocol unpack registerred
+2018-04-09T13:58:18.681Z - success: protocol disable-commonjs registerred
+2018-04-09T13:58:19.017Z - normal: connected!
+2018-04-09T13:58:19.023Z - normal: Check project D:\Workspace_Chess\dtz\dtz-client
+2018-04-09T13:58:19.031Z - normal: Initializing Cocos2d
+2018-04-09T13:58:19.849Z - normal: Initializing Asset Database
+2018-04-09T13:58:19.905Z - success: protocol uuid registerred
+2018-04-09T13:58:19.905Z - success: protocol db registerred
+2018-04-09T13:58:19.905Z - success: protocol thumbnail registerred
+2018-04-09T13:58:19.905Z - normal: Loading editor/builtin packages
+2018-04-09T13:58:19.998Z - success: anysdk loaded
+2018-04-09T13:58:20.153Z - success: assets loaded
+2018-04-09T13:58:20.159Z - success: builder loaded
+2018-04-09T13:58:20.161Z - success: cocos-analytics loaded
+2018-04-09T13:58:20.164Z - success: console loaded
+2018-04-09T13:58:20.203Z - success: fb-instant-games loaded
+2018-04-09T13:58:20.206Z - success: hierarchy loaded
+2018-04-09T13:58:20.208Z - success: inspector loaded
+2018-04-09T13:58:20.209Z - success: keystore loaded
+2018-04-09T13:58:20.211Z - success: node-library loaded
+2018-04-09T13:58:20.212Z - success: package-asset loaded
+2018-04-09T13:58:20.213Z - success: preferences loaded
+2018-04-09T13:58:20.214Z - success: project-exporter loaded
+2018-04-09T13:58:20.227Z - success: project-importer loaded
+2018-04-09T13:58:20.229Z - success: project-settings loaded
+2018-04-09T13:58:20.230Z - success: ui-kit loaded
+2018-04-09T13:58:20.237Z - success: ui-grid loaded
+2018-04-09T13:58:20.239Z - success: scene loaded
+2018-04-09T13:58:20.240Z - success: sprite-editor loaded
+2018-04-09T13:58:20.242Z - success: store loaded
+2018-04-09T13:58:20.245Z - success: timeline loaded
+2018-04-09T13:58:20.245Z - normal: Loading builtin packages
+2018-04-09T13:58:20.256Z - success: asset-db-debugger loaded
+2018-04-09T13:58:20.257Z - success: code-editor loaded
+2018-04-09T13:58:20.266Z - success: color-picker loaded
+2018-04-09T13:58:20.267Z - success: package-manager loaded
+2018-04-09T13:58:20.272Z - success: sdkbox loaded
+2018-04-09T13:58:20.273Z - success: tester loaded
+2018-04-09T13:58:20.275Z - success: ui-kit-preview-extra loaded
+2018-04-09T13:58:20.275Z - success: ui-kit-preview loaded
+2018-04-09T13:58:20.276Z - success: ui-tree loaded
+2018-04-09T13:58:21.756Z - normal: Initializing project D:\Workspace_Chess\dtz\dtz-client
+2018-04-09T13:58:21.777Z - normal: Loading packages
+2018-04-09T13:58:21.782Z - normal: Watching packages
+2018-04-09T13:58:21.802Z - normal: Run Application
+2018-04-09T13:58:25.059Z - success: preview server running at http://localhost:7456
+2018-04-09T13:58:30.867Z - normal: 1.9.0
+2018-04-09T15:15:27.254Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:51878
+2018-04-09T15:15:43.995Z - normal: 位图字体生成工具安装成功，如果没有自动加载，请重启编辑器
+2018-04-09T15:33:01.153Z - warn: The Scrollbar referenced by component "cc.ScrollView" is invalid. Detailed information:
+Node path: "Canvas/left/scrollview"
+
+2018-04-09T15:33:38.653Z - warn: The Scrollbar referenced by component "cc.ScrollView" is invalid. Detailed information:
+Node path: "Canvas/left/scrollview"
+
+2018-04-09T15:33:52.358Z - warn: The Scrollbar referenced by component "cc.ScrollView" is invalid. Detailed information:
+Node path: "Canvas/left/scrollview"
+
+2018-04-09T15:37:53.320Z - failed: [db-task][sync-changes] Failed to import asset D:\Workspace_Chess\dtz\dtz-client\assets\scripts\components\GameScrollBar.js, message: Compile error: SyntaxError: D:/Workspace_Chess/dtz/dtz-client/assets/scripts/components/GameScrollBar.js: Unexpected token, expected , (28:1)
+  26 |     }
+  27 | 
+> 28 | });
+     |  ^
+  29 | 
     at Parser.pp$5.raise (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
     at Parser.pp.unexpected (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp.semicolon (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1742:38)
-    at Parser.pp$1.parseExpressionStatement (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:2236:8)
-    at Parser.pp$1.parseStatement (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1911:17)
-    at Parser.pp$1.parseIfStatement (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:2060:49)
-    at Parser.pp$1.parseStatement (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
-    at Parser.pp$1.parseBlockBody (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
-    at Parser.pp$1.parseBlock (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
-    at Parser.pp$3.parseFunctionBody (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
-2018-04-07T14:30:48.541Z - failed: [db-task][sync-changes] Failed to import asset D:\Workspace_Chess\dtz\dtz-client\assets\scripts\components\Seat.js, message: Compile error: SyntaxError: D:/Workspace_Chess/dtz/dtz-client/assets/scripts/components/Seat.js: Unexpected token, expected ; (201:76)
-  199 |                // this.countdown.set
-  200 |             }
-> 201 |         }else(this._countdown<=Date.now()**this.countdown.node.active==true){
-      |                                                                             ^
-  202 |             this.countdown.note.active=false;
-  203 |         }
-  204 |     },
-    at Parser.pp$5.raise (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp.unexpected (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp.semicolon (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1742:38)
-    at Parser.pp$1.parseExpressionStatement (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:2236:8)
-    at Parser.pp$1.parseStatement (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1911:17)
-    at Parser.pp$1.parseIfStatement (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:2060:49)
-    at Parser.pp$1.parseStatement (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
-    at Parser.pp$1.parseBlockBody (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
-    at Parser.pp$1.parseBlock (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
-    at Parser.pp$3.parseFunctionBody (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
+    at Parser.pp.expect (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (D:\CocosCreator1.9\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)

@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 18,
-      "y": 7,
+      "x": -8,
+      "y": -8,
       "width": 1936,
-      "height": 1004,
+      "height": 1056,
       "layout": {
         "children": [
           {
@@ -115,9 +115,9 @@
       "height": 564
     },
     "store": {
-      "x": 552,
-      "y": 211,
-      "width": 816,
+      "x": 497,
+      "y": 196,
+      "width": 1159,
       "height": 638
     },
     "project-settings": {

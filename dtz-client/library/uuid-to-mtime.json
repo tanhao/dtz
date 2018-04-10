@@ -60,8 +60,8 @@
     "relativePath": "scenes\\login.fire"
   },
   "d2c04a79-2cb0-40bf-ad0d-8c8224a7e190": {
-    "asset": 1523088458209,
-    "meta": 1523088458235,
+    "asset": 1523295039613,
+    "meta": 1523295039637,
     "relativePath": "scenes\\hall.fire"
   },
   "aae98627-8003-4ce0-9cf7-855401c43fd6": {
@@ -1250,8 +1250,8 @@
     "relativePath": "scripts\\components\\Status.js"
   },
   "f3060721-473f-4553-aad0-dcebd2bbb9b2": {
-    "asset": 1523108810273,
-    "meta": 1523108819965,
+    "asset": 1523113947861,
+    "meta": 1523282304312,
     "relativePath": "scripts\\SocketIOManager.js"
   },
   "f2f68099-3485-4ba2-b5e4-02dbb8d5a6d4": {
@@ -1260,8 +1260,8 @@
     "relativePath": "scripts\\PokerManager.js"
   },
   "6ab1accb-a426-480a-9cc5-3e0f98afe055": {
-    "asset": 1523113917241,
-    "meta": 1523113917297,
+    "asset": 1523293080575,
+    "meta": 1523293080628,
     "relativePath": "scenes\\game.fire"
   },
   "527a616c-7b93-4b63-8066-39d37e2a62e7": {
@@ -1458,5 +1458,45 @@
     "asset": 1520937982000,
     "meta": 1523113921080,
     "relativePath": "prefab\\webview.prefab"
+  },
+  "d5fe9d07-42f8-466e-bd44-fb54602d7dfb": {
+    "asset": 1523285230236,
+    "meta": 1523285230242,
+    "relativePath": "images\\game_btn"
+  },
+  "6471badb-3d35-4075-8814-af34b19560b3": {
+    "asset": 1523285249767,
+    "meta": 1523285249807,
+    "relativePath": "images\\game_btn\\bbtz.png"
+  },
+  "4e9cc3e8-9274-48f6-ac46-33a522d829c1": {
+    "asset": 1523285249767,
+    "meta": 1523285249810,
+    "relativePath": "images\\game_btn\\ddz.png"
+  },
+  "c1b47575-c3f5-4fb3-b256-4759059a9c40": {
+    "asset": 1523285249767,
+    "meta": 1523285249820,
+    "relativePath": "images\\game_btn\\pdk.png"
+  },
+  "b8cb728d-c681-456e-abad-786eb296b052": {
+    "asset": 1523285249768,
+    "meta": 1523285249823,
+    "relativePath": "images\\game_btn\\ysz.png"
+  },
+  "474a840d-05f1-4753-8178-8fa74446f9e8": {
+    "asset": 1523285249768,
+    "meta": 1523285249834,
+    "relativePath": "images\\game_btn\\dn.png"
+  },
+  "07676fa6-cda6-404f-a733-665a239eaadb": {
+    "asset": 1523285249769,
+    "meta": 1523285249835,
+    "relativePath": "images\\game_btn\\zjh.png"
+  },
+  "a27476a4-5d2f-4fe8-bd00-4cd47f690dd4": {
+    "asset": 1523295026994,
+    "meta": 1523295028983,
+    "relativePath": "scripts\\components\\GameScrollBar.js"
   }
 }
