@@ -5,37 +5,7 @@ const userManager=require('./user_manager.js');
 
 var games = {};
 var users={};
-//洗牌
-function shuffle(game) {
-    var pokers=game.pokers;
-    var index=0;
-    for(var x=0;x<3;x++){
-        for(var y=5;y<=15;y++){
-            for(var z=1;z<=4;z++){
-                pokers[index]=y*10+z;
-                index++;
-            }
-        }
-    }
-    //打乱顺序
-    pokers.sort(function(){ return 0.5 - Math.random() });
-}
-//发牌
-function deal(game){
-    //3人玩每人44张，4人玩每人33张
-    var peoples=game.config.peoples;
-    var average=peoples==4?33:44;
-    var dipaiCount=game.config.liudipai?(peoples==4?8:9):0;
-    average -= dipaiCount;
-    var seatIndex=0;
-    for(var i=0;i<average;i++){
-        var holds=game.seats[seatIndex].holds;
-        holds.push(game.poksers.pop());
-        seatIndex ++;
-        seatIndex &=peoples;
-    }
-    
-}
+
 //开房间时验证配置
 module.exports.checkConfig=function(config){
     if(config.peoples == null
@@ -130,6 +100,8 @@ module.exports.begin=function(roomId){
         scoreTotalB:0,
         //出牌人的位置索引
         turn:0,
+        //出的牌
+        chupai:[],
         
     }
     room.round++;
@@ -196,6 +168,7 @@ module.exports.begin=function(roomId){
         userManager.sendMsg(seat.userId,'holds_push',seat.holds);
         //通知游戏开始
         userManager.sendMsg(seat.userId,'begin_push',game.turn);
+      
     }
 
 

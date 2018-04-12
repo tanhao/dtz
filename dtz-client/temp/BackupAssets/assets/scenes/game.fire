@@ -46608,7 +46608,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "btn_ready",
+    "_name": "btn_tip",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1007
@@ -46629,7 +46629,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "1a5wdv2R1M1LLVJsXtCnfj",
+    "_id": "252SNvbcJDGpkWIlDRh08W",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -46667,7 +46667,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "act_ready",
+    "_name": "act_tip",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1008
@@ -46681,7 +46681,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "31bVfi49lK3ozE7aySJISB",
+    "_id": "5dBctRpP5EyYykKJlOZFKZ",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -46698,8 +46698,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 82,
-      "height": 41
+      "width": 81,
+      "height": 42
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -46708,7 +46708,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 4
+      "y": 6
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -46726,7 +46726,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "d96e2194-3d7c-4146-8770-96c51b81481a"
+      "__uuid__": "59ee4b6a-8c5c-4a97-ae60-9be9ee3dad16"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -46816,7 +46816,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "22a65c6e-5a39-48c1-a27b-c55a55f9f388"
+      "__uuid__": "827deacb-aaf8-4719-a6b4-1bd8a084f5ec"
     },
     "_N$pressedSprite": {
       "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
@@ -46843,7 +46843,7 @@
       "__id__": 2
     },
     "component": "Game",
-    "handler": "onBtnReadyClicked",
+    "handler": "onBtnTipClicked",
     "customEventData": ""
   },
   {
@@ -47088,7 +47088,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "btn_tip",
+    "_name": "btn_ready",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1007
@@ -47109,7 +47109,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "252SNvbcJDGpkWIlDRh08W",
+    "_id": "1a5wdv2R1M1LLVJsXtCnfj",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -47147,7 +47147,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "act_tip",
+    "_name": "act_ready",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1020
@@ -47161,7 +47161,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "5dBctRpP5EyYykKJlOZFKZ",
+    "_id": "31bVfi49lK3ozE7aySJISB",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -47178,8 +47178,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 81,
-      "height": 42
+      "width": 82,
+      "height": 41
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -47188,7 +47188,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 6
+      "y": 4
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -47206,7 +47206,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "59ee4b6a-8c5c-4a97-ae60-9be9ee3dad16"
+      "__uuid__": "d96e2194-3d7c-4146-8770-96c51b81481a"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -47296,7 +47296,7 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "827deacb-aaf8-4719-a6b4-1bd8a084f5ec"
+      "__uuid__": "22a65c6e-5a39-48c1-a27b-c55a55f9f388"
     },
     "_N$pressedSprite": {
       "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
@@ -47323,7 +47323,7 @@
       "__id__": 2
     },
     "component": "Game",
-    "handler": "onBtnTipClicked",
+    "handler": "onBtnReadyClicked",
     "customEventData": ""
   },
   {
@@ -52822,13 +52822,13 @@
     },
     "_enabled": true,
     "btnReady": {
-      "__id__": 1012
+      "__id__": 1024
     },
     "btnNo": {
       "__id__": 1018
     },
     "btnTip": {
-      "__id__": 1024
+      "__id__": 1012
     },
     "btnOut": {
       "__id__": 1030

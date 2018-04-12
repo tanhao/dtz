@@ -46,6 +46,16 @@ cc.Class({
         });
     },
 
+    hideAllFolds: function hideAllFolds() {
+        cc.log("Folds hideAllFolds.....");
+        for (var key in this._folds) {
+            var pokers = this._folds[key];
+            for (var i = 0; i < pokers.length; i++) {
+                pokers[i].node.active = false;
+            }
+        }
+    },
+
     refreshAllSeat: function refreshAllSeat() {},
 
     refreshOneSeat: function refreshOneSeat() {}

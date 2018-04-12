@@ -135,6 +135,11 @@ cc.Class({
         //开始游戏，出头的人
         this.node.on("begin_push",function(target){
             console.log('==>Gmae begin_push:',JSON.stringify(target.detail));
+            self.onGameBegin();
+             //第一把开局，要检查IP
+            if(th.socketIOManager.round == 1){
+                cc.log("check ip ....");    
+            }
         })
 
 
@@ -144,6 +149,12 @@ cc.Class({
         });
         
 
+    },
+    onGameBegin:function(){
+        //隐藏微信邀请，返回大厅，按钮，
+        //启动第一个倒计时
+        this._seatComponent[th.socketIOManager.turn].setCountdown(20);
+        
     },
     initPokers:function(){
         var seats=th.socketIOManager.seats;
@@ -158,6 +169,9 @@ cc.Class({
             sprite.node.pokerId = pokerId;
             sprite.spriteFrame = th.pokerManager.getSpriteFrameByPokerId(pokerId);
             sprite.node.active = true;
+        }
+        for(var i=0;i<seats.length;i++){
+            this._seatComponent[i].setRestCard(holds.length);
         }
     },
     initWanfaLabel:function(){

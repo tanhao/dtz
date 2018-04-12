@@ -18,32 +18,32 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 452,
+                "height": 464.03125,
                 "type": "panel",
-                "width": 204
+                "width": 205.515625
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 450,
+                "height": 461.96875,
                 "type": "panel",
-                "width": 204
+                "width": 205.515625
               }
             ],
-            "height": 905,
+            "height": 929,
             "type": "dock-v",
-            "width": 204
+            "width": 205.515625
           },
           {
             "active": 0,
             "children": [
               "inspector"
             ],
-            "height": 905,
+            "height": 929,
             "type": "panel",
-            "width": 304
+            "width": 306.25
           },
           {
             "children": [
@@ -54,23 +54,23 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 647.984375,
+                    "height": 665.234375,
                     "type": "panel",
-                    "width": 1133.96875
+                    "width": 1142.390625
                   },
                   {
                     "active": 0,
                     "children": [
                       "node-library"
                     ],
-                    "height": 647.984375,
+                    "height": 665.234375,
                     "type": "panel",
-                    "width": 245
+                    "width": 246.8125
                   }
                 ],
-                "height": 647.984375,
+                "height": 665.234375,
                 "type": "dock-h",
-                "width": 1381.984375
+                "width": 1392.21875
               },
               {
                 "active": 0,
@@ -78,14 +78,14 @@
                   "console",
                   "timeline"
                 ],
-                "height": 254,
+                "height": 260.75,
                 "type": "panel",
-                "width": 1381.984375
+                "width": 1392.21875
               }
             ],
-            "height": 905,
+            "height": 929,
             "type": "dock-v",
-            "width": 1381.984375
+            "width": 1392.21875
           }
         ],
         "type": "dock-h"

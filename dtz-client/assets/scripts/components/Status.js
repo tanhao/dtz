@@ -16,8 +16,15 @@ cc.Class({
 
     onLoad () {
          this.roomId.string=th.socketIOManager.roomId || '------';
-         this.round.string=th.socketIOManager.round==null?'-':(th.socketIOManager.round+'');        
+         this.round.string=th.socketIOManager.round==null?'-':(th.socketIOManager.round+'');
+         
+         this.node.on("begin_push",function(target){
+            console.log('==>Status begin_push:',JSON.stringify(target.detail));
+            this.round.string=th.socketIOManager.round==null?'-':(th.socketIOManager.round+'');
+        })
     },
+
+    
 
 
     update (dt) {

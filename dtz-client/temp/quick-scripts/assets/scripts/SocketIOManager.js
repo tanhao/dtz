@@ -139,7 +139,9 @@ cc.Class({
         //开始游戏，出头的人
         th.sio.addHandler("begin_push", function (data) {
             cc.log("==>SocketIOManager begin_push:", JSON.stringify(data));
-            self.dispatchEvent("begin_push", data);
+            self.turn = data.turn;
+            self.status = "begin";
+            self.dispatchEvent("begin_push");
         });
 
         //断线
